@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#08111F"/>
+  <circle cx="980" cy="180" r="200" fill="#11B864" fill-opacity="0.15"/>
+  <rect x="340" y="220" width="520" height="340" rx="56" fill="#0B1220" stroke="#F2BD3B" stroke-opacity="0.3" stroke-width="8"/>
+  <rect x="410" y="290" width="85" height="205" rx="28" fill="#DDB06A"/>
+  <rect x="545" y="280" width="120" height="180" rx="30" fill="#F8FAFC"/>
+  <rect x="710" y="300" width="110" height="160" rx="28" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Tour Edition</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Premium Match Kit</text>
+</svg>

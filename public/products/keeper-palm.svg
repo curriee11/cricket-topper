@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091223"/>
+  <circle cx="220" cy="700" r="210" fill="#F2BD3B" fill-opacity="0.12"/>
+  <path d="M445 255H575V575H445C420.147 575 400 554.853 400 530V300C400 275.147 420.147 255 445 255Z" fill="#F7E7C6"/>
+  <path d="M755 255H625V575H755C779.853 575 800 554.853 800 530V300C800 275.147 779.853 255 755 255Z" fill="#F7E7C6"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Secure Grip</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Deep cups with responsive palms</text>
+</svg>

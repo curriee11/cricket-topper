@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="980" cy="700" r="230" fill="#11B864" fill-opacity="0.14"/>
+  <rect x="480" y="200" width="90" height="340" rx="34" fill="#F8FAFC"/>
+  <rect x="650" y="200" width="90" height="340" rx="34" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Flexible Fit</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Split-finger control and airflow</text>
+</svg>

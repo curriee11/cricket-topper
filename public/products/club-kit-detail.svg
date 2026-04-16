@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="980" cy="690" r="230" fill="#11B864" fill-opacity="0.15"/>
+  <rect x="390" y="230" width="420" height="300" rx="44" fill="#0F172A" stroke="#63E89A" stroke-opacity="0.3" stroke-width="8"/>
+  <rect x="470" y="290" width="78" height="180" rx="26" fill="#DDB06A"/>
+  <rect x="600" y="290" width="130" height="150" rx="32" fill="#F8FAFC"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Premium Storage</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Organized setup for academy players</text>
+</svg>

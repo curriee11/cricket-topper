@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1222"/>
+  <circle cx="190" cy="160" r="170" fill="#F2BD3B" fill-opacity="0.14"/>
+  <rect x="525" y="120" width="142" height="560" rx="48" fill="#E3B872"/>
+  <path d="M556 220H636V610H556V220Z" fill="#D8A962"/>
+  <rect x="562" y="650" width="68" height="130" rx="26" fill="#A15B37"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Sweet Spot</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Mid-low profile for front-foot play</text>
+</svg>

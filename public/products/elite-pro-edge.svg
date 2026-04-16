@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091426"/>
+  <circle cx="960" cy="720" r="260" fill="#11B864" fill-opacity="0.16"/>
+  <rect x="570" y="120" width="54" height="540" rx="24" fill="#DDB06A"/>
+  <rect x="582" y="640" width="28" height="145" rx="14" fill="#A95A34"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Massive Edge</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Balanced pickup for match play</text>
+</svg>

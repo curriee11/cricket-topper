@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="980" cy="680" r="220" fill="#11B864" fill-opacity="0.14"/>
+  <rect x="390" y="230" width="430" height="300" rx="48" fill="#0F172A" stroke="#F2BD3B" stroke-opacity="0.3" stroke-width="8"/>
+  <rect x="470" y="288" width="84" height="182" rx="24" fill="#DDB06A"/>
+  <rect x="607" y="286" width="118" height="160" rx="30" fill="#F8FAFC"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Elite Bundle</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Designed for competitive squads</text>
+</svg>

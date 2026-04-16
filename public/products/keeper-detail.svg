@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="980" cy="680" r="230" fill="#11B864" fill-opacity="0.14"/>
+  <path d="M505 210H585V620H505C471.863 620 445 593.137 445 560V270C445 236.863 471.863 210 505 210Z" fill="#F8FAFC"/>
+  <path d="M695 210H615V620H695C728.137 620 755 593.137 755 560V270C755 236.863 728.137 210 695 210Z" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Match Ready</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Comfort support across long innings</text>
+</svg>

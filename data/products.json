@@ -1,0 +1,134 @@
+[
+  {
+    "id": "bat-elite-pro",
+    "slug": "elite-pro-english-willow-bat",
+    "name": "Elite Pro English Willow Bat",
+    "category": "bats",
+    "price": 18999,
+    "tagline": "Explosive pickup with a huge mid-to-low sweet spot.",
+    "shortDescription": "Grade 1 English willow bat built for aggressive stroke play.",
+    "description": "The Elite Pro is crafted from hand-selected Grade 1 English willow with a full profile, generous edges, and a balanced pickup that feels fast through the hands. It is designed for club and academy players who want crisp rebound, controlled pickup, and a premium finish.",
+    "featured": true,
+    "images": [
+      "/products/elite-pro-main.svg",
+      "/products/elite-pro-edge.svg",
+      "/products/elite-pro-face.svg"
+    ],
+    "specifications": [
+      { "label": "Willow", "value": "Grade 1 English Willow" },
+      { "label": "Profile", "value": "Mid-low swell with thick edges" },
+      { "label": "Handle", "value": "Semi-oval Singapore cane" },
+      { "label": "Weight", "value": "1160-1190 grams" }
+    ]
+  },
+  {
+    "id": "bat-powerdrive",
+    "slug": "powerdrive-kashmir-willow-bat",
+    "name": "PowerDrive Kashmir Willow Bat",
+    "category": "bats",
+    "price": 6999,
+    "tagline": "Reliable training bat with bold pick-up and strong edges.",
+    "shortDescription": "Durable Kashmir willow bat ideal for practice nets and weekend games.",
+    "description": "PowerDrive blends long-lasting Kashmir willow with a forgiving sweet spot, making it a dependable option for schools, academies, and new hard-ball players. The profile is built to deliver confidence on drives and pulls without feeling heavy.",
+    "featured": false,
+    "images": [
+      "/products/powerdrive-main.svg",
+      "/products/powerdrive-edge.svg",
+      "/products/powerdrive-face.svg"
+    ],
+    "specifications": [
+      { "label": "Willow", "value": "Premium Kashmir Willow" },
+      { "label": "Profile", "value": "Mid sweet spot" },
+      { "label": "Handle", "value": "Round cane handle" },
+      { "label": "Best For", "value": "Training and club matches" }
+    ]
+  },
+  {
+    "id": "glove-impact",
+    "slug": "impact-pro-batting-gloves",
+    "name": "Impact Pro Batting Gloves",
+    "category": "gloves",
+    "price": 4299,
+    "tagline": "Multi-section protection with lightweight airflow comfort.",
+    "shortDescription": "Premium batting gloves with split-finger flexibility and soft lining.",
+    "description": "Impact Pro gloves are designed for long innings and faster hands. Reinforced finger chambers, cushioned palms, and breathable mesh panels help reduce fatigue while giving players a secure, high-grip feel through every shot.",
+    "featured": true,
+    "images": [
+      "/products/impact-main.svg",
+      "/products/impact-palm.svg",
+      "/products/impact-side.svg"
+    ],
+    "specifications": [
+      { "label": "Construction", "value": "Split-finger design" },
+      { "label": "Palm", "value": "Premium sheep leather" },
+      { "label": "Padding", "value": "High-density foam with fiber inserts" },
+      { "label": "Fit", "value": "Adult and youth sizes" }
+    ]
+  },
+  {
+    "id": "glove-keeper",
+    "slug": "keeper-shield-wicket-gloves",
+    "name": "Keeper Shield Wicket Gloves",
+    "category": "gloves",
+    "price": 5599,
+    "tagline": "Sharp grip and responsive catching support behind the stumps.",
+    "shortDescription": "Match-ready wicket-keeping gloves with deep cups and supple leather palms.",
+    "description": "Keeper Shield is built for quick takes, close-in standing, and dependable comfort over long sessions. The palm grip pattern is tuned for ball control while the inner lining stays soft and flexible throughout the innings.",
+    "featured": false,
+    "images": [
+      "/products/keeper-main.svg",
+      "/products/keeper-palm.svg",
+      "/products/keeper-detail.svg"
+    ],
+    "specifications": [
+      { "label": "Palm", "value": "Octopus grip rubber with leather base" },
+      { "label": "Cuff", "value": "Long support cuff" },
+      { "label": "Lining", "value": "Moisture-control inner lining" },
+      { "label": "Best For", "value": "Match and advanced training use" }
+    ]
+  },
+  {
+    "id": "kit-club",
+    "slug": "club-series-cricket-kit",
+    "name": "Club Series Cricket Kit",
+    "category": "kits",
+    "price": 14999,
+    "tagline": "An all-in-one starter bundle for serious training sessions.",
+    "shortDescription": "Complete cricket kit with bat, pads, gloves, thigh guard, and duffle.",
+    "description": "The Club Series kit gives players a ready-to-play setup in one premium bundle. It is curated for academy and club cricketers who want matching gear, dependable comfort, and a sleek duffle that keeps everything organized on the move.",
+    "featured": true,
+    "images": [
+      "/products/club-kit-main.svg",
+      "/products/club-kit-open.svg",
+      "/products/club-kit-detail.svg"
+    ],
+    "specifications": [
+      { "label": "Included", "value": "Bat, gloves, pads, guards, duffle bag" },
+      { "label": "Bag", "value": "Wheel duffle with shoe tunnel" },
+      { "label": "Target Player", "value": "Academy and club level" },
+      { "label": "Material", "value": "Mixed PU and performance fabrics" }
+    ]
+  },
+  {
+    "id": "kit-tour",
+    "slug": "tour-edition-premium-kit",
+    "name": "Tour Edition Premium Kit",
+    "category": "kits",
+    "price": 27999,
+    "tagline": "Premium bundle with elite-grade protective gear and travel bag.",
+    "shortDescription": "High-end cricket kit curated for competitive players and touring squads.",
+    "description": "Tour Edition combines premium-grade batting gear with advanced protection and a pro-level travel duffle. It is designed for players who want a polished setup with coordinated, match-ready equipment that performs across formats.",
+    "featured": false,
+    "images": [
+      "/products/tour-kit-main.svg",
+      "/products/tour-kit-open.svg",
+      "/products/tour-kit-detail.svg"
+    ],
+    "specifications": [
+      { "label": "Included", "value": "Premium bat, gloves, pads, guards, wheel bag" },
+      { "label": "Protection", "value": "Lightweight high-density foam package" },
+      { "label": "Bag Capacity", "value": "80 litres" },
+      { "label": "Use Case", "value": "Competitive and touring players" }
+    ]
+  }
+]

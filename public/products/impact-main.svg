@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#08111F"/>
+  <circle cx="980" cy="180" r="210" fill="#11B864" fill-opacity="0.16"/>
+  <rect x="430" y="220" width="150" height="300" rx="48" fill="#F8FAFC"/>
+  <rect x="620" y="210" width="150" height="320" rx="48" fill="#E2E8F0"/>
+  <rect x="468" y="150" width="76" height="90" rx="24" fill="#CBD5E1"/>
+  <rect x="658" y="140" width="76" height="90" rx="24" fill="#CBD5E1"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Impact Pro</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Batting Gloves</text>
+</svg>

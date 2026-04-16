@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091223"/>
+  <circle cx="220" cy="740" r="210" fill="#F2BD3B" fill-opacity="0.12"/>
+  <rect x="300" y="220" width="600" height="360" rx="56" fill="#111827" stroke="#334155" stroke-width="8"/>
+  <rect x="360" y="290" width="95" height="190" rx="30" fill="#DDB06A"/>
+  <rect x="510" y="280" width="125" height="180" rx="30" fill="#F8FAFC"/>
+  <rect x="690" y="300" width="150" height="130" rx="26" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Ready To Play</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Bat, guards, gloves and duffle</text>
+</svg>

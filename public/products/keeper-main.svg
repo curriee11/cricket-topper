@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#08111F"/>
+  <circle cx="1020" cy="180" r="210" fill="#11B864" fill-opacity="0.15"/>
+  <path d="M425 280C425 231.399 464.399 192 513 192H585V560H513C464.399 560 425 520.601 425 472V280Z" fill="#F8FAFC"/>
+  <path d="M775 280C775 231.399 735.601 192 687 192H615V560H687C735.601 560 775 520.601 775 472V280Z" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Keeper Shield</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Wicket Gloves</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091223"/>
+  <circle cx="230" cy="740" r="210" fill="#F2BD3B" fill-opacity="0.12"/>
+  <rect x="300" y="220" width="600" height="360" rx="56" fill="#111827" stroke="#475569" stroke-width="8"/>
+  <rect x="370" y="290" width="95" height="200" rx="28" fill="#DDB06A"/>
+  <rect x="530" y="280" width="135" height="190" rx="32" fill="#F8FAFC"/>
+  <rect x="720" y="295" width="110" height="165" rx="28" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Travel Ready</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">High-capacity duffle and elite protection</text>
+</svg>

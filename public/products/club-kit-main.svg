@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#08111F"/>
+  <circle cx="980" cy="180" r="200" fill="#11B864" fill-opacity="0.15"/>
+  <rect x="360" y="220" width="480" height="320" rx="52" fill="#0F172A" stroke="#63E89A" stroke-opacity="0.35" stroke-width="8"/>
+  <rect x="430" y="300" width="70" height="190" rx="22" fill="#DDB06A"/>
+  <rect x="545" y="290" width="110" height="170" rx="28" fill="#F8FAFC"/>
+  <rect x="700" y="310" width="90" height="150" rx="24" fill="#E2E8F0"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Club Series</text>
+  <text x="86" y="210" fill="#63E89A" font-size="28" font-family="Arial">Complete Cricket Kit</text>
+</svg>

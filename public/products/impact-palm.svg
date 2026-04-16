@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091223"/>
+  <circle cx="240" cy="720" r="200" fill="#F2BD3B" fill-opacity="0.12"/>
+  <rect x="430" y="230" width="150" height="280" rx="52" fill="#F7E7C6"/>
+  <rect x="620" y="230" width="150" height="280" rx="52" fill="#F7E7C6"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Soft Palm</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Leather comfort with grip control</text>
+</svg>

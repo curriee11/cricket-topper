@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1323"/>
+  <circle cx="240" cy="760" r="210" fill="#F2BD3B" fill-opacity="0.11"/>
+  <rect x="576" y="145" width="48" height="525" rx="20" fill="#C89254"/>
+  <rect x="586" y="650" width="28" height="135" rx="14" fill="#8F4F30"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Training Ready</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Built for long net sessions</text>
+</svg>
