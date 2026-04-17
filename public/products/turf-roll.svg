@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="250" cy="720" r="180" fill="#E3C76B" fill-opacity="0.1"/>
+  <rect x="230" y="280" width="560" height="220" rx="110" fill="#0E5B38"/>
+  <circle cx="790" cy="390" r="130" fill="#2F855A"/>
+  <circle cx="790" cy="390" r="56" fill="#C8D5CC"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Roll Format</text>
+  <text x="86" y="210" fill="#E3C76B" font-size="28" font-family="Arial">Portable and fixed turf installations</text>
+</svg>

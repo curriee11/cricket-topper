@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1222"/>
+  <circle cx="1020" cy="180" r="180" fill="#E3C76B" fill-opacity="0.1"/>
+  <rect x="180" y="250" width="840" height="290" rx="32" fill="#0D6A41"/>
+  <path d="M220 300H980M220 350H980M220 400H980M220 450H980M220 500H980" stroke="#53D686" stroke-opacity="0.55" stroke-width="3"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Dense Pile</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Artificial field grass with infill support</text>
+</svg>

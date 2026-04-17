@@ -47,9 +47,10 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
   return (
     <>
-      <section className="pb-28 pt-10 sm:pb-20 sm:pt-14">
-        <div className="container-shell">
-          <Link href="/products" className="text-sm text-slate-400 transition hover:text-white">
+      <section className="relative overflow-hidden bg-black pb-28 pt-10 sm:pb-20 sm:pt-14">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(29,59,114,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(10,31,68,0.24),transparent_30%)]" />
+        <div className="container-shell relative">
+          <Link href="/products" className="text-sm text-stone-300 transition hover:text-brand-300">
             Back to catalogue
           </Link>
 
@@ -64,28 +65,28 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                 <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">
                   {product.name}
                 </h1>
-                <p className="mt-4 text-lg text-slate-300">{product.tagline}</p>
+                <p className="mt-4 text-lg text-stone-300">{product.tagline}</p>
               </div>
 
-              <div className="surface-strong rounded-[28px] p-6">
+              <div className="surface-strong rounded-[28px] p-6 shadow-glow">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div>
-                    <p className="text-sm text-slate-400">Catalogue Price</p>
-                    <p className="mt-2 text-3xl font-semibold text-brand-300">
+                    <p className="text-sm text-stone-400">Catalogue Price</p>
+                    <p className="mt-2 text-3xl font-semibold text-brand-600">
                       {formatCurrency(product.price)}
                     </p>
                   </div>
-                  <div className="rounded-full border border-amber-300/20 bg-amber-300/10 px-4 py-2 text-sm text-amber-200">
+                  <div className="rounded-full border border-brand-500/25 bg-brand-500/10 px-4 py-2 text-sm text-brand-300">
                     Fast enquiry response
                   </div>
                 </div>
 
-                <p className="mt-5 text-base leading-7 text-slate-300">{product.description}</p>
+                <p className="mt-5 text-base leading-7 text-stone-300">{product.description}</p>
 
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <a
                     href={`tel:${PHONE_NUMBER}`}
-                    className="rounded-full bg-brand-500 px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:bg-brand-400"
+                    className="rounded-full bg-brand-500 px-6 py-3 text-center text-sm font-semibold text-black transition hover:bg-brand-400"
                   >
                     Call Now
                   </a>
@@ -93,28 +94,28 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     href={whatsappLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-full border border-brand-400/30 bg-brand-500/10 px-6 py-3 text-center text-sm font-semibold text-brand-200 transition hover:bg-brand-500/20"
+                    className="rounded-full border border-brand-500/30 bg-transparent px-6 py-3 text-center text-sm font-semibold text-brand-300 transition hover:bg-brand-500/10"
                   >
                     WhatsApp Enquiry
                   </a>
                 </div>
-                <p className="mt-3 text-sm text-slate-500">
+                <p className="mt-3 text-sm text-stone-400">
                   Talk to our team on {DISPLAY_PHONE} for stock, sizes, and bulk orders.
                 </p>
               </div>
 
-              <div className="surface rounded-[28px] p-6">
+              <div className="surface-strong rounded-[28px] p-6 shadow-glow">
                 <h2 className="text-xl font-semibold text-white">Specifications</h2>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
                   {product.specifications.map((item) => (
                     <div
                       key={item.label}
-                      className="rounded-2xl border border-white/10 bg-slate-950/50 p-4"
+                      className="rounded-2xl border border-brand-500/15 bg-black/35 p-4"
                     >
                       <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                         {item.label}
                       </p>
-                      <p className="mt-2 text-sm leading-6 text-slate-200">{item.value}</p>
+                      <p className="mt-2 text-sm leading-6 text-stone-300">{item.value}</p>
                     </div>
                   ))}
                 </div>

@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1222"/>
+  <circle cx="250" cy="720" r="180" fill="#E3C76B" fill-opacity="0.1"/>
+  <circle cx="620" cy="420" r="190" fill="#9F2020"/>
+  <path d="M620 230C668 280 695 347 695 420C695 493 668 560 620 610" stroke="#F8FAFC" stroke-width="10"/>
+  <path d="M620 230C572 280 545 347 545 420C545 493 572 560 620 610" stroke="#F8FAFC" stroke-width="10"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Raised Seam</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Hand-stitched finish for grip and swing</text>
+</svg>

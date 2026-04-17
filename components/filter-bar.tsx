@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
+import { categories as productCategories } from "@/lib/products";
 
 const priceRanges = [
   { label: "All Prices", value: "all" },
@@ -8,13 +9,6 @@ const priceRanges = [
   { label: "Under Rs. 10,000", value: "10000" },
   { label: "Under Rs. 20,000", value: "20000" },
   { label: "Under Rs. 30,000", value: "30000" }
-];
-
-const categories = [
-  { label: "All Categories", value: "all" },
-  { label: "Bats", value: "bats" },
-  { label: "Gloves", value: "gloves" },
-  { label: "Kits", value: "kits" }
 ];
 
 export function FilterBar() {
@@ -36,33 +30,34 @@ export function FilterBar() {
   };
 
   return (
-    <div className="surface-strong rounded-[28px] p-5">
+    <div className="surface rounded-[28px] p-5 shadow-luxe">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
+          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Category
           </span>
           <select
             value={selectedCategory}
             onChange={(event) => handleChange("category", event.target.value)}
-            className="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-brand-400/40"
+            className="w-full rounded-2xl border border-brand-500/15 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-500/40"
           >
-            {categories.map((category) => (
-              <option key={category.value} value={category.value}>
-                {category.label}
+            <option value="all">All Categories</option>
+            {productCategories.map((category) => (
+              <option key={category.id} value={category.id}>
+                {category.name}
               </option>
             ))}
           </select>
         </label>
 
         <label className="space-y-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
+          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Price
           </span>
           <select
             value={selectedPrice}
             onChange={(event) => handleChange("price", event.target.value)}
-            className="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 outline-none transition focus:border-brand-400/40"
+            className="w-full rounded-2xl border border-brand-500/15 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-500/40"
           >
             {priceRanges.map((range) => (
               <option key={range.value} value={range.value}>

@@ -14,7 +14,7 @@ export function ProductGallery({
 
   return (
     <div className="space-y-4">
-      <div className="surface overflow-hidden rounded-[32px]">
+      <div className="surface-strong overflow-hidden rounded-[32px] shadow-glow">
         <div className="relative aspect-[4/3]">
           <Image src={activeImage} alt={name} fill className="object-cover" />
         </div>
@@ -29,8 +29,10 @@ export function ProductGallery({
               key={image}
               type="button"
               onClick={() => setActiveImage(image)}
-              className={`surface relative overflow-hidden rounded-2xl transition ${
-                isActive ? "border-brand-400/40" : "border-white/10"
+              className={`surface-strong relative overflow-hidden rounded-2xl transition ${
+                isActive
+                  ? "border-brand-500/45 shadow-glow"
+                  : "border-brand-500/10 hover:border-brand-500/25"
               }`}
             >
               <div className="relative aspect-[4/3]">

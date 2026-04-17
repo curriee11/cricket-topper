@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1222"/>
+  <circle cx="220" cy="720" r="200" fill="#E3C76B" fill-opacity="0.11"/>
+  <rect x="315" y="165" width="570" height="430" rx="24" stroke="#E3C76B" stroke-width="8"/>
+  <path d="M315 236H885M315 307H885M315 378H885M315 449H885M315 520H885" stroke="#64748B" stroke-width="4"/>
+  <path d="M386 165V595M457 165V595M528 165V595M599 165V595M670 165V595M741 165V595M812 165V595" stroke="#64748B" stroke-width="4"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Strong Mesh</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Outdoor-ready synthetic net build</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="985" cy="170" r="210" fill="#11B864" fill-opacity="0.12"/>
+  <rect x="250" y="170" width="700" height="450" rx="28" stroke="#E3C76B" stroke-width="10"/>
+  <path d="M250 245H950M250 320H950M250 395H950M250 470H950M250 545H950" stroke="#5C6B86" stroke-width="4"/>
+  <path d="M335 170V620M420 170V620M505 170V620M590 170V620M675 170V620M760 170V620M845 170V620" stroke="#5C6B86" stroke-width="4"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Pro Practice Net</text>
+  <text x="86" y="210" fill="#E3C76B" font-size="28" font-family="Arial">Cricket and training netting</text>
+</svg>

@@ -22,6 +22,21 @@ export const categories: {
     id: "kits",
     name: "Kits",
     description: "Complete bundles for academy players, clubs, and touring squads."
+  },
+  {
+    id: "nets",
+    name: "Nets",
+    description: "Cricket, volleyball, and football net solutions for training spaces."
+  },
+  {
+    id: "turf",
+    name: "Turf & Pitch",
+    description: "Astro turf, cricket pitch rolls, and artificial grass surfaces."
+  },
+  {
+    id: "balls",
+    name: "Leather Balls",
+    description: "Match and practice leather cricket balls with durable seam finish."
   }
 ];
 

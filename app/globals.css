@@ -11,15 +11,16 @@ html {
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 antialiased;
+  @apply bg-stone-50 text-slate-900 antialiased;
   background-image:
-    radial-gradient(circle at top, rgba(17, 184, 100, 0.16), transparent 30%),
-    linear-gradient(180deg, #07101f 0%, #050816 55%, #04060f 100%);
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.34), transparent 24%),
+    radial-gradient(circle at top center, rgba(212, 175, 55, 0.14), transparent 36%),
+    linear-gradient(180deg, #050505 0%, #111111 20%, #f8f5ee 46%, #f6f2e8 74%, #0a1f44 100%);
 }
 
 ::selection {
-  background: rgba(99, 232, 154, 0.28);
-  color: #f8fafc;
+  background: rgba(212, 175, 55, 0.35);
+  color: #111111;
 }
 
 .container-shell {
@@ -27,11 +28,11 @@ body {
 }
 
 .surface {
-  @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  @apply border border-brand-500/15 bg-white/90 backdrop-blur-xl;
 }
 
 .surface-strong {
-  @apply border border-white/10 bg-slate-900/80 backdrop-blur-xl;
+  @apply border border-brand-500/20 bg-black/80 backdrop-blur-xl;
 }
 
 .text-balance {

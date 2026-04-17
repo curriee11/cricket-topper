@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <rect x="150" y="220" width="900" height="360" rx="42" fill="#0E6B42"/>
+  <path d="M220 305H980M220 390H980M220 475H980" stroke="#6CE58F" stroke-opacity="0.45" stroke-width="4"/>
+  <circle cx="910" cy="250" r="150" fill="#E3C76B" fill-opacity="0.08"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Artificial Field Grass</text>
+  <text x="86" y="210" fill="#E3C76B" font-size="28" font-family="Arial">Sports turf with infill-ready finish</text>
+</svg>

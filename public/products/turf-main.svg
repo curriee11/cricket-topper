@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <rect x="180" y="220" width="840" height="360" rx="40" fill="#0F5132"/>
+  <path d="M250 310H950M250 400H950M250 490H950" stroke="#63E89A" stroke-opacity="0.5" stroke-width="4"/>
+  <rect x="430" y="250" width="340" height="300" rx="28" stroke="#E3C76B" stroke-width="8"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Astro Turf Pitch</text>
+  <text x="86" y="210" fill="#E3C76B" font-size="28" font-family="Arial">Practice wicket and turf surface</text>
+</svg>

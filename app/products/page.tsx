@@ -21,8 +21,9 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
   const products = filterProducts({ category, maxPrice });
 
   return (
-    <section className="pb-20 pt-12 sm:pt-16">
-      <div className="container-shell">
+    <section className="relative overflow-hidden bg-black pb-20 pt-12 sm:pt-16">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(29,59,114,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(10,31,68,0.24),transparent_28%)]" />
+      <div className="container-shell relative">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
             Product Catalogue
@@ -30,7 +31,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
           <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">
             Find the right cricket equipment for your game.
           </h1>
-          <p className="mt-4 text-base leading-7 text-slate-400">
+          <p className="mt-4 text-base leading-7 text-stone-300">
             Browse our premium range and narrow the catalogue by category or budget in
             seconds.
           </p>
@@ -41,7 +42,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
         </div>
 
         <div className="mt-8 flex items-center justify-between gap-4">
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-stone-300">
             Showing <span className="text-white">{products.length}</span> products
           </p>
         </div>
@@ -53,9 +54,9 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
         </div>
 
         {products.length === 0 ? (
-          <div className="surface mt-8 rounded-[28px] p-10 text-center">
-            <p className="text-lg font-medium text-white">No products match these filters.</p>
-            <p className="mt-2 text-sm text-slate-400">
+          <div className="surface mt-8 rounded-[28px] p-10 text-center shadow-luxe">
+            <p className="text-lg font-medium text-slate-950">No products match these filters.</p>
+            <p className="mt-2 text-sm text-slate-600">
               Try a broader price range or switch back to all categories.
             </p>
           </div>

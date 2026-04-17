@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#091120"/>
+  <circle cx="980" cy="700" r="180" fill="#11B864" fill-opacity="0.08"/>
+  <rect x="220" y="300" width="520" height="180" rx="90" fill="#116F44"/>
+  <circle cx="760" cy="390" r="120" fill="#2D8A58"/>
+  <circle cx="760" cy="390" r="50" fill="#D9E3DA"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Field Roll</text>
+  <text x="86" y="210" fill="#E3C76B" font-size="28" font-family="Arial">Artificial grass roll for installations</text>
+</svg>

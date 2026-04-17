@@ -15,10 +15,22 @@
       "/products/elite-pro-face.svg"
     ],
     "specifications": [
-      { "label": "Willow", "value": "Grade 1 English Willow" },
-      { "label": "Profile", "value": "Mid-low swell with thick edges" },
-      { "label": "Handle", "value": "Semi-oval Singapore cane" },
-      { "label": "Weight", "value": "1160-1190 grams" }
+      {
+        "label": "Willow",
+        "value": "Grade 1 English Willow"
+      },
+      {
+        "label": "Profile",
+        "value": "Mid-low swell with thick edges"
+      },
+      {
+        "label": "Handle",
+        "value": "Semi-oval Singapore cane"
+      },
+      {
+        "label": "Weight",
+        "value": "1160-1190 grams"
+      }
     ]
   },
   {
@@ -37,10 +49,22 @@
       "/products/powerdrive-face.svg"
     ],
     "specifications": [
-      { "label": "Willow", "value": "Premium Kashmir Willow" },
-      { "label": "Profile", "value": "Mid sweet spot" },
-      { "label": "Handle", "value": "Round cane handle" },
-      { "label": "Best For", "value": "Training and club matches" }
+      {
+        "label": "Willow",
+        "value": "Premium Kashmir Willow"
+      },
+      {
+        "label": "Profile",
+        "value": "Mid sweet spot"
+      },
+      {
+        "label": "Handle",
+        "value": "Round cane handle"
+      },
+      {
+        "label": "Best For",
+        "value": "Training and club matches"
+      }
     ]
   },
   {
@@ -59,10 +83,22 @@
       "/products/impact-side.svg"
     ],
     "specifications": [
-      { "label": "Construction", "value": "Split-finger design" },
-      { "label": "Palm", "value": "Premium sheep leather" },
-      { "label": "Padding", "value": "High-density foam with fiber inserts" },
-      { "label": "Fit", "value": "Adult and youth sizes" }
+      {
+        "label": "Construction",
+        "value": "Split-finger design"
+      },
+      {
+        "label": "Palm",
+        "value": "Premium sheep leather"
+      },
+      {
+        "label": "Padding",
+        "value": "High-density foam with fiber inserts"
+      },
+      {
+        "label": "Fit",
+        "value": "Adult and youth sizes"
+      }
     ]
   },
   {
@@ -81,10 +117,22 @@
       "/products/keeper-detail.svg"
     ],
     "specifications": [
-      { "label": "Palm", "value": "Octopus grip rubber with leather base" },
-      { "label": "Cuff", "value": "Long support cuff" },
-      { "label": "Lining", "value": "Moisture-control inner lining" },
-      { "label": "Best For", "value": "Match and advanced training use" }
+      {
+        "label": "Palm",
+        "value": "Octopus grip rubber with leather base"
+      },
+      {
+        "label": "Cuff",
+        "value": "Long support cuff"
+      },
+      {
+        "label": "Lining",
+        "value": "Moisture-control inner lining"
+      },
+      {
+        "label": "Best For",
+        "value": "Match and advanced training use"
+      }
     ]
   },
   {
@@ -103,10 +151,22 @@
       "/products/club-kit-detail.svg"
     ],
     "specifications": [
-      { "label": "Included", "value": "Bat, gloves, pads, guards, duffle bag" },
-      { "label": "Bag", "value": "Wheel duffle with shoe tunnel" },
-      { "label": "Target Player", "value": "Academy and club level" },
-      { "label": "Material", "value": "Mixed PU and performance fabrics" }
+      {
+        "label": "Included",
+        "value": "Bat, gloves, pads, guards, duffle bag"
+      },
+      {
+        "label": "Bag",
+        "value": "Wheel duffle with shoe tunnel"
+      },
+      {
+        "label": "Target Player",
+        "value": "Academy and club level"
+      },
+      {
+        "label": "Material",
+        "value": "Mixed PU and performance fabrics"
+      }
     ]
   },
   {
@@ -125,10 +185,192 @@
       "/products/tour-kit-detail.svg"
     ],
     "specifications": [
-      { "label": "Included", "value": "Premium bat, gloves, pads, guards, wheel bag" },
-      { "label": "Protection", "value": "Lightweight high-density foam package" },
-      { "label": "Bag Capacity", "value": "80 litres" },
-      { "label": "Use Case", "value": "Competitive and touring players" }
+      {
+        "label": "Included",
+        "value": "Premium bat, gloves, pads, guards, wheel bag"
+      },
+      {
+        "label": "Protection",
+        "value": "Lightweight high-density foam package"
+      },
+      {
+        "label": "Bag Capacity",
+        "value": "80 litres"
+      },
+      {
+        "label": "Use Case",
+        "value": "Competitive and touring players"
+      }
+    ]
+  },
+  {
+    "id": "net-cricket-pro",
+    "slug": "pro-practice-cricket-net",
+    "name": "Pro Practice Cricket Net",
+    "category": "nets",
+    "price": 12499,
+    "tagline": "Heavy-duty netting for academy lanes and backyard practice bays.",
+    "shortDescription": "UV-stabilized cricket net built for regular bowling and batting practice.",
+    "description": "The Pro Practice Cricket Net is designed for clubs, academies, schools, and serious home setups. Its reinforced mesh construction handles repeated impact from leather balls while staying easy to mount for net lanes and enclosed practice areas.",
+    "featured": false,
+    "images": [
+      "/products/net-main.svg",
+      "/products/net-detail.svg",
+      "/products/net-install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "HDPE knotless netting"
+      },
+      {
+        "label": "Use Case",
+        "value": "Cricket practice lanes and backyard setups"
+      },
+      {
+        "label": "Finish",
+        "value": "UV-treated outdoor durability"
+      },
+      {
+        "label": "Sizes",
+        "value": "Custom dimensions available"
+      }
+    ]
+  },
+  {
+    "id": "net-multi-sport",
+    "slug": "multi-sport-goal-and-volleyball-net",
+    "name": "Multi-Sport Goal & Volleyball Net",
+    "category": "nets",
+    "price": 8999,
+    "tagline": "Versatile net setup for football goals, volleyball courts, and training grounds.",
+    "shortDescription": "Durable multi-sport net solution for football and volleyball installations.",
+    "description": "This multi-sport net package is suited for schools, clubs, grounds, and indoor or outdoor facilities needing dependable football goal nets or volleyball court nets. It offers strong mesh retention, clean finish quality, and long-term outdoor use.",
+    "featured": false,
+    "images": [
+      "/products/net-main.svg",
+      "/products/net-detail.svg",
+      "/products/net-install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Sports",
+        "value": "Football and volleyball"
+      },
+      {
+        "label": "Material",
+        "value": "High-strength braided synthetic net"
+      },
+      {
+        "label": "Installation",
+        "value": "Ground and post mounting options"
+      },
+      {
+        "label": "Best For",
+        "value": "Schools, clubs, and sports complexes"
+      }
+    ]
+  },
+  {
+    "id": "turf-cricket-pitch",
+    "slug": "astro-turf-cricket-pitch-roll",
+    "name": "Astro Turf Cricket Pitch Roll",
+    "category": "turf",
+    "price": 32999,
+    "tagline": "Practice pitch surface with true bounce and durable turf backing.",
+    "shortDescription": "Astro turf cricket pitch roll ideal for academies, schools, and training centers.",
+    "description": "The Astro Turf Cricket Pitch Roll creates a consistent training wicket for bowlers and batters. It is designed for repeated use on concrete or prepared surfaces, offering dependable grip, rebound, and long-term durability for academy practice environments.",
+    "featured": true,
+    "images": [
+      "/products/turf-main.svg",
+      "/products/turf-detail.svg",
+      "/products/turf-roll.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Surface",
+        "value": "High-density astro turf"
+      },
+      {
+        "label": "Use Case",
+        "value": "Portable and fixed cricket practice pitches"
+      },
+      {
+        "label": "Backing",
+        "value": "Reinforced non-slip base"
+      },
+      {
+        "label": "Best For",
+        "value": "Academies, schools, and clubs"
+      }
+    ]
+  },
+  {
+    "id": "turf-infill-grass",
+    "slug": "artificial-infill-field-grass",
+    "name": "Artificial Infill Field Grass",
+    "category": "turf",
+    "price": 45999,
+    "tagline": "Artificial sports grass for training grounds and multi-use playing surfaces.",
+    "shortDescription": "Infill-ready artificial field grass for sports flooring and outdoor installations.",
+    "description": "Artificial Infill Field Grass is built for sports spaces that need resilient, low-maintenance surfaces. It works well for cricket practice zones, football grounds, and multi-sport facilities where durability, drainage, and a professional look are important.",
+    "featured": false,
+    "images": [
+      "/products/grass-main.svg",
+      "/products/grass-detail.svg",
+      "/products/grass-roll.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Artificial infill field grass"
+      },
+      {
+        "label": "Usage",
+        "value": "Sports grounds, turf zones, and training areas"
+      },
+      {
+        "label": "Drainage",
+        "value": "Perforated backing for outdoor use"
+      },
+      {
+        "label": "Finish",
+        "value": "Dense pile with infill compatibility"
+      }
+    ]
+  },
+  {
+    "id": "ball-leather-match",
+    "slug": "match-grade-leather-cricket-ball",
+    "name": "Match Grade Leather Cricket Ball",
+    "category": "balls",
+    "price": 1899,
+    "tagline": "Hand-stitched leather ball with strong seam retention and match feel.",
+    "shortDescription": "Premium leather cricket ball suitable for matches, nets, and advanced practice.",
+    "description": "The Match Grade Leather Cricket Ball is crafted for clubs, schools, and serious practice sessions. Its hand-stitched seam, durable core, and polished leather finish help bowlers maintain grip while giving batters a proper match-like response.",
+    "featured": true,
+    "images": [
+      "/products/ball-main.svg",
+      "/products/ball-detail.svg",
+      "/products/ball-pack.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Premium alum-tanned leather"
+      },
+      {
+        "label": "Construction",
+        "value": "Hand-stitched raised seam"
+      },
+      {
+        "label": "Use Case",
+        "value": "Matches and advanced practice"
+      },
+      {
+        "label": "Variants",
+        "value": "Senior and junior options available"
+      }
     ]
   }
 ]
