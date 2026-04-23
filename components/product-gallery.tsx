@@ -21,13 +21,16 @@ export function ProductGallery({
       </div>
 
       <div className="grid grid-cols-3 gap-3">
-        {images.map((image) => {
+        {images.map((image, index) => {
           const isActive = image === activeImage;
+          const label = `View ${name} image ${index + 1}`;
 
           return (
             <button
               key={image}
               type="button"
+              title={label}
+              aria-label={label}
               onClick={() => setActiveImage(image)}
               className={`surface-strong relative overflow-hidden rounded-2xl transition ${
                 isActive
@@ -36,7 +39,12 @@ export function ProductGallery({
               }`}
             >
               <div className="relative aspect-[4/3]">
-                <Image src={image} alt={`${name} preview`} fill className="object-cover" />
+                <Image
+                  src={image}
+                  alt={`${name} preview ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
               </div>
             </button>
           );

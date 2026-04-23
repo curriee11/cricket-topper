@@ -7,18 +7,20 @@ type ProductsPageProps = {
   searchParams?: {
     category?: string;
     price?: string;
+    query?: string;
   };
 };
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Explore cricket bats, gloves, and kits with quick enquiry options."
+  description: "Explore cricket bats, gloves, kits, nets, turf, and leather balls with quick enquiry options."
 };
 
 export default function ProductsPage({ searchParams }: ProductsPageProps) {
   const category = searchParams?.category;
   const maxPrice = searchParams?.price ? Number(searchParams.price) : undefined;
-  const products = filterProducts({ category, maxPrice });
+  const query = searchParams?.query;
+  const products = filterProducts({ category, maxPrice, query });
 
   return (
     <section className="relative overflow-hidden bg-black pb-20 pt-12 sm:pt-16">
@@ -35,6 +37,11 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
             Browse our premium range and narrow the catalogue by category or budget in
             seconds.
           </p>
+          {query ? (
+            <p className="mt-4 inline-flex rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-2 text-sm text-brand-300">
+              Search: {query}
+            </p>
+          ) : null}
         </div>
 
         <div className="mt-8">
@@ -57,7 +64,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
           <div className="surface mt-8 rounded-[28px] p-10 text-center shadow-luxe">
             <p className="text-lg font-medium text-slate-950">No products match these filters.</p>
             <p className="mt-2 text-sm text-slate-600">
-              Try a broader price range or switch back to all categories.
+              Try a broader price range, remove the search, or switch back to all categories.
             </p>
           </div>
         ) : null}

@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0A1222"/>
+  <circle cx="220" cy="720" r="180" fill="#E3C76B" fill-opacity="0.1"/>
+  <rect x="520" y="210" width="78" height="410" rx="36" fill="#F8FAFC"/>
+  <rect x="640" y="210" width="78" height="410" rx="36" fill="#E5E7EB"/>
+  <text x="86" y="142" fill="#E2E8F0" font-size="58" font-family="Arial" font-weight="700">Balanced Fit</text>
+  <text x="86" y="210" fill="#94A3B8" font-size="28" font-family="Arial">Match-ready comfort and movement</text>
+</svg>

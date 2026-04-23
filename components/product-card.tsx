@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/lib/types";
-import { formatCurrency, titleCase } from "@/lib/utils";
+import { getDisplayPrice, titleCase } from "@/lib/utils";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
@@ -27,7 +27,7 @@ export function ProductCard({ product }: { product: Product }) {
 
           <div className="flex items-center justify-between gap-4">
             <p className="text-xl font-semibold text-brand-600">
-              {formatCurrency(product.price)}
+              {getDisplayPrice(product)}
             </p>
             <span className="text-sm font-medium text-slate-700 transition group-hover:text-brand-600">
               View Details

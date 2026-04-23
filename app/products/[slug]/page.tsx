@@ -6,7 +6,7 @@ import { ProductCard } from "@/components/product-card";
 import { ProductGallery } from "@/components/product-gallery";
 import { DISPLAY_PHONE, PHONE_NUMBER } from "@/lib/constants";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/products";
-import { buildWhatsAppLink, formatCurrency, titleCase } from "@/lib/utils";
+import { buildWhatsAppLink, getDisplayPrice, titleCase } from "@/lib/utils";
 
 type ProductDetailPageProps = {
   params: {
@@ -73,7 +73,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                   <div>
                     <p className="text-sm text-stone-400">Catalogue Price</p>
                     <p className="mt-2 text-3xl font-semibold text-brand-600">
-                      {formatCurrency(product.price)}
+                      {getDisplayPrice(product)}
                     </p>
                   </div>
                   <div className="rounded-full border border-brand-500/25 bg-brand-500/10 px-4 py-2 text-sm text-brand-300">
@@ -148,3 +148,4 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     </>
   );
 }
+

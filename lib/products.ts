@@ -19,6 +19,11 @@ export const categories: {
     description: "Premium batting and keeping gloves built for comfort and control."
   },
   {
+    id: "pads",
+    name: "Pads",
+    description: "Protective batting pads built for comfort, balance, and match confidence."
+  },
+  {
     id: "kits",
     name: "Kits",
     description: "Complete bundles for academy players, clubs, and touring squads."
@@ -60,14 +65,25 @@ export function getRelatedProducts(currentSlug: string, category: ProductCategor
 
 export function filterProducts({
   category,
-  maxPrice
+  maxPrice,
+  query
 }: {
   category?: string;
   maxPrice?: number;
+  query?: string;
 }) {
+  const normalizedQuery = query?.trim().toLowerCase();
+
   return products.filter((product) => {
     const matchesCategory = !category || category === "all" || product.category === category;
     const matchesPrice = !maxPrice || product.price <= maxPrice;
-    return matchesCategory && matchesPrice;
+    const matchesQuery =
+      !normalizedQuery ||
+      [product.name, product.shortDescription, product.description, product.category]
+        .join(" ")
+        .toLowerCase()
+        .includes(normalizedQuery);
+
+    return matchesCategory && matchesPrice && matchesQuery;
   });
 }

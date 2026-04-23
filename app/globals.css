@@ -13,8 +13,7 @@ html {
 body {
   @apply bg-stone-50 text-slate-900 antialiased;
   background-image:
-    radial-gradient(circle at top, rgba(212, 175, 55, 0.34), transparent 24%),
-    radial-gradient(circle at top center, rgba(212, 175, 55, 0.14), transparent 36%),
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.22), transparent 22%),
     linear-gradient(180deg, #050505 0%, #111111 20%, #f8f5ee 46%, #f6f2e8 74%, #0a1f44 100%);
 }
 
@@ -28,13 +27,38 @@ body {
 }
 
 .surface {
-  @apply border border-brand-500/15 bg-white/90 backdrop-blur-xl;
+  @apply border border-brand-500/15 bg-white/95;
 }
 
 .surface-strong {
-  @apply border border-brand-500/20 bg-black/80 backdrop-blur-xl;
+  @apply border border-brand-500/20 bg-black/90;
 }
 
 .text-balance {
   text-wrap: balance;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.45) rgba(255, 255, 255, 0.06);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+

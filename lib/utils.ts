@@ -1,3 +1,4 @@
+import type { Product } from "@/lib/types";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export function formatCurrency(value: number) {
@@ -6,6 +7,10 @@ export function formatCurrency(value: number) {
     currency: "INR",
     maximumFractionDigits: 0
   }).format(value);
+}
+
+export function getDisplayPrice(product: Pick<Product, "price" | "displayPrice">) {
+  return product.displayPrice ?? formatCurrency(product.price);
 }
 
 export function buildWhatsAppLink(productName: string) {

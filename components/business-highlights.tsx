@@ -35,8 +35,21 @@ export function BusinessHighlights() {
             <h2 className="mt-3 text-3xl font-semibold text-slate-950">{COMPANY_NAME}</h2>
             <p className="mt-4 text-base leading-7 text-slate-700">
               Sporting goods store in {CITY} with cricket accessories, football gear,
-              badminton rackets, sports suits, and sports shoes.
+              badminton rackets, sports suits, sports shoes, sports nets, turf, and
+              training surfaces.
             </p>
+
+            <div className="mt-6 rounded-2xl border border-brand-500/15 bg-white/80 p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-500">
+                Our Story
+              </p>
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                With a rich history spanning 10 years, Cricket Topper has grown from a
+                small family-owned workshop into a trusted manufacturer and trader serving
+                cricketers, academies, schools, clubs, and sports facilities with quality
+                equipment and dependable support.
+              </p>
+            </div>
 
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
@@ -65,6 +78,21 @@ export function BusinessHighlights() {
               <div className="pb-1">
                 <p className="text-sm text-slate-700">Google rating</p>
                 <p className="text-sm text-slate-500">{GOOGLE_REVIEW_COUNT} reviews</p>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Experience</p>
+                <p className="mt-2 text-2xl font-semibold text-slate-950">10+ Years</p>
+              </div>
+              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Business Type</p>
+                <p className="mt-2 text-sm font-medium text-slate-950">Manufacturer & Trader</p>
+              </div>
+              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Speciality</p>
+                <p className="mt-2 text-sm font-medium text-slate-950">Bats, Nets, Turf & Balls</p>
               </div>
             </div>
 

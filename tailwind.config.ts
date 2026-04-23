@@ -25,12 +25,12 @@ const config: Config = {
         }
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(212,175,55,0.14), 0 22px 70px rgba(4,8,20,0.28)",
-        luxe: "0 18px 55px rgba(10,31,68,0.18)"
+        glow: "0 0 0 1px rgba(212,175,55,0.12), 0 12px 32px rgba(4,8,20,0.18)",
+        luxe: "0 12px 28px rgba(10,31,68,0.12)"
       },
       backgroundImage: {
         "hero-grid":
-          "linear-gradient(rgba(212,175,55,0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.09) 1px, transparent 1px)"
+          "linear-gradient(rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.07) 1px, transparent 1px)"
       }
     }
   },

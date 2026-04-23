@@ -23,12 +23,12 @@ export function CategorySection() {
             <Link
               key={category.id}
               href={`/products?category=${category.id}`}
-              className="surface group rounded-[30px] p-6 shadow-luxe transition hover:-translate-y-1 hover:border-brand-500/30"
+              className="group rounded-[30px] border border-brand-500/20 bg-[linear-gradient(180deg,rgba(255,250,242,0.95)_0%,rgba(248,244,236,0.92)_100%)] p-6 shadow-[0_18px_55px_rgba(0,0,0,0.22)] transition hover:-translate-y-1 hover:border-brand-500/35 hover:shadow-[0_22px_70px_rgba(212,175,55,0.14)]"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-400">
                 {category.name}
               </p>
-              <p className="mt-4 text-lg font-medium text-slate-950">{category.description}</p>
+              <p className="mt-4 text-lg font-medium leading-8 text-slate-950">{category.description}</p>
               <p className="mt-6 text-sm text-slate-600 transition group-hover:text-brand-600">
                 Explore {category.name.toLowerCase()}
               </p>
