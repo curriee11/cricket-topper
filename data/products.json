@@ -1,69 +1,137 @@
 [
   {
-    "id": "bat-elite-pro",
-    "slug": "elite-pro-english-willow-bat",
-    "name": "Elite Pro English Willow Bat",
+    "id": "bat-leather-ball",
+    "slug": "leather-ball-bat",
+    "name": "Leather Ball Bat",
     "category": "bats",
-    "price": 18999,
-    "tagline": "Explosive pickup with a huge mid-to-low sweet spot.",
-    "shortDescription": "Grade 1 English willow bat built for aggressive stroke play.",
-    "description": "The Elite Pro is crafted from hand-selected Grade 1 English willow with a full profile, generous edges, and a balanced pickup that feels fast through the hands. It is designed for club and academy players who want crisp rebound, controlled pickup, and a premium finish.",
+    "price": 8999,
+    "tagline": "Solid profile built for leather ball training and club match play.",
+    "shortDescription": "Durable bat made for leather ball cricket with strong pickup and thick edges.",
+    "description": "Leather Ball Bat is tuned for players who want a sturdy bat for leather ball practice, nets, and regular club games. The profile gives dependable rebound with enough edge thickness to feel secure against pace without becoming too heavy in the hands.",
     "featured": true,
     "images": [
-      "/products/elite-pro-main.svg",
-      "/products/elite-pro-edge.svg",
-      "/products/elite-pro-face.svg"
+      "/products/bats/leather-ball/main.svg",
+      "/products/bats/leather-ball/edge.svg",
+      "/products/bats/leather-ball/face.svg"
     ],
     "specifications": [
       {
-        "label": "Willow",
-        "value": "Grade 1 English Willow"
-      },
-      {
-        "label": "Profile",
-        "value": "Mid-low swell with thick edges"
+        "label": "Build",
+        "value": "Leather ball ready profile with thick edges"
       },
       {
         "label": "Handle",
-        "value": "Semi-oval Singapore cane"
+        "value": "Round cane handle with soft grip"
       },
       {
         "label": "Weight",
-        "value": "1160-1190 grams"
+        "value": "1160-1200 grams"
+      },
+      {
+        "label": "Best For",
+        "value": "Club matches and leather ball training"
       }
     ]
   },
   {
-    "id": "bat-powerdrive",
-    "slug": "powerdrive-kashmir-willow-bat",
-    "name": "PowerDrive Kashmir Willow Bat",
+    "id": "bat-english-willow",
+    "slug": "english-willow-bat",
+    "name": "English Willow Bat",
     "category": "bats",
-    "price": 6999,
-    "tagline": "Reliable training bat with bold pick-up and strong edges.",
-    "shortDescription": "Durable Kashmir willow bat ideal for practice nets and weekend games.",
-    "description": "PowerDrive blends long-lasting Kashmir willow with a forgiving sweet spot, making it a dependable option for schools, academies, and new hard-ball players. The profile is built to deliver confidence on drives and pulls without feeling heavy.",
-    "featured": false,
+    "price": 18999,
+    "tagline": "Premium English willow bat with a clean pickup and match-ready response.",
+    "shortDescription": "English willow bat designed for stroke play, balance, and crisp rebound.",
+    "description": "English Willow Bat is crafted for players who want a premium blade for serious cricket. It combines clean pickup, responsive willow, and a confidence-building middle that feels right for academy, club, and competitive match use.",
+    "featured": true,
     "images": [
-      "/products/powerdrive-main.svg",
-      "/products/powerdrive-edge.svg",
-      "/products/powerdrive-face.svg"
+      "/products/bats/english-willow/main.svg",
+      "/products/bats/english-willow/edge.svg",
+      "/products/bats/english-willow/face.svg"
     ],
     "specifications": [
       {
         "label": "Willow",
-        "value": "Premium Kashmir Willow"
+        "value": "Selected English Willow"
       },
       {
         "label": "Profile",
-        "value": "Mid sweet spot"
+        "value": "Full face with balanced middle"
       },
       {
         "label": "Handle",
-        "value": "Round cane handle"
+        "value": "Semi-oval Singapore cane handle"
       },
       {
         "label": "Best For",
-        "value": "Training and club matches"
+        "value": "Academy, club, and match play"
+      }
+    ]
+  },
+  {
+    "id": "bat-dolphin-profile",
+    "slug": "dolphin-profile-bat",
+    "name": "Dolphin Profile Bat",
+    "category": "bats",
+    "price": 12499,
+    "tagline": "Balanced dolphin profile for smooth pickup and confident front-foot play.",
+    "shortDescription": "Cricket bat with a dolphin profile shape built for balance and controlled power.",
+    "description": "Dolphin Profile Bat is shaped for players who prefer a bat that feels lively without being heavy. The profile supports a quick backlift, smooth swing path, and a forgiving sweet spot for training sessions and competitive weekend games.",
+    "featured": false,
+    "images": [
+      "/products/bats/dolphin-profile/main.svg",
+      "/products/bats/dolphin-profile/edge.svg",
+      "/products/bats/dolphin-profile/face.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Profile",
+        "value": "Dolphin profile with balanced swell"
+      },
+      {
+        "label": "Pickup",
+        "value": "Light feel through the hands"
+      },
+      {
+        "label": "Edges",
+        "value": "Thick edges with stable face"
+      },
+      {
+        "label": "Best For",
+        "value": "All-round stroke play and regular nets"
+      }
+    ]
+  },
+  {
+    "id": "bat-hard-tennis",
+    "slug": "hard-tennis-bat",
+    "name": "Hard Tennis Bat",
+    "category": "bats",
+    "price": 3499,
+    "tagline": "Built for hard tennis cricket with quick hands and easy control.",
+    "shortDescription": "Hard tennis bat with a lightweight feel and durable everyday build.",
+    "description": "Hard Tennis Bat is made for local matches, casual practice, and tournament play with hard tennis balls. It offers easy pickup, quick bat speed, and a durable profile that works well for players who want control without extra weight.",
+    "featured": false,
+    "images": [
+      "/products/bats/hard-tennis/main.svg",
+      "/products/bats/hard-tennis/edge.svg",
+      "/products/bats/hard-tennis/face.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Build",
+        "value": "Hard tennis cricket bat profile"
+      },
+      {
+        "label": "Feel",
+        "value": "Lightweight pickup for quick bat speed"
+      },
+      {
+        "label": "Handle",
+        "value": "Comfort grip handle"
+      },
+      {
+        "label": "Best For",
+        "value": "Hard tennis matches and daily practice"
       }
     ]
   },
@@ -78,9 +146,9 @@
     "description": "Impact Pro gloves are designed for long innings and faster hands. Reinforced finger chambers, cushioned palms, and breathable mesh panels help reduce fatigue while giving players a secure, high-grip feel through every shot.",
     "featured": true,
     "images": [
-      "/products/impact-main.svg",
-      "/products/impact-palm.svg",
-      "/products/impact-side.svg"
+      "/products/gloves/impact-pro/main.svg",
+      "/products/gloves/impact-pro/palm.svg",
+      "/products/gloves/impact-pro/side.svg"
     ],
     "specifications": [
       {
@@ -112,9 +180,9 @@
     "description": "Keeper Shield is built for quick takes, close-in standing, and dependable comfort over long sessions. The palm grip pattern is tuned for ball control while the inner lining stays soft and flexible throughout the innings.",
     "featured": false,
     "images": [
-      "/products/keeper-main.svg",
-      "/products/keeper-palm.svg",
-      "/products/keeper-detail.svg"
+      "/products/gloves/keeper-shield/main.svg",
+      "/products/gloves/keeper-shield/palm.svg",
+      "/products/gloves/keeper-shield/detail.svg"
     ],
     "specifications": [
       {
@@ -146,9 +214,9 @@
     "description": "The Club Series kit gives players a ready-to-play setup in one premium bundle. It is curated for academy and club cricketers who want matching gear, dependable comfort, and a sleek duffle that keeps everything organized on the move.",
     "featured": true,
     "images": [
-      "/products/club-kit-main.svg",
-      "/products/club-kit-open.svg",
-      "/products/club-kit-detail.svg"
+      "/products/kits/club-series/main.svg",
+      "/products/kits/club-series/open.svg",
+      "/products/kits/club-series/detail.svg"
     ],
     "specifications": [
       {
@@ -180,9 +248,9 @@
     "description": "Tour Edition combines premium-grade batting gear with advanced protection and a pro-level travel duffle. It is designed for players who want a polished setup with coordinated, match-ready equipment that performs across formats.",
     "featured": false,
     "images": [
-      "/products/tour-kit-main.svg",
-      "/products/tour-kit-open.svg",
-      "/products/tour-kit-detail.svg"
+      "/products/kits/tour-edition/main.svg",
+      "/products/kits/tour-edition/open.svg",
+      "/products/kits/tour-edition/detail.svg"
     ],
     "specifications": [
       {
@@ -214,9 +282,9 @@
     "description": "The Pro Practice Cricket Net is designed for clubs, academies, schools, and serious home setups. Its reinforced mesh construction handles repeated impact from leather balls while staying easy to mount for net lanes and enclosed practice areas.",
     "featured": false,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -248,9 +316,9 @@
     "description": "This multi-sport net package is suited for schools, clubs, grounds, and indoor or outdoor facilities needing dependable football goal nets or volleyball court nets. It offers strong mesh retention, clean finish quality, and long-term outdoor use.",
     "featured": false,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -282,9 +350,9 @@
     "description": "The Astro Turf Cricket Pitch Roll creates a consistent training wicket for bowlers and batters. It is designed for repeated use on concrete or prepared surfaces, offering dependable grip, rebound, and long-term durability for academy practice environments.",
     "featured": true,
     "images": [
-      "/products/turf-main.svg",
-      "/products/turf-detail.svg",
-      "/products/turf-roll.svg"
+      "/products/turf/astro-pitch/main.svg",
+      "/products/turf/astro-pitch/detail.svg",
+      "/products/turf/astro-pitch/roll.svg"
     ],
     "specifications": [
       {
@@ -316,9 +384,9 @@
     "description": "Artificial Infill Field Grass is built for sports spaces that need resilient, low-maintenance surfaces. It works well for cricket practice zones, football grounds, and multi-sport facilities where durability, drainage, and a professional look are important.",
     "featured": false,
     "images": [
-      "/products/grass-main.svg",
-      "/products/grass-detail.svg",
-      "/products/grass-roll.svg"
+      "/products/turf/artificial-grass/main.svg",
+      "/products/turf/artificial-grass/detail.svg",
+      "/products/turf/artificial-grass/roll.svg"
     ],
     "specifications": [
       {
@@ -350,9 +418,9 @@
     "description": "The Match Grade Leather Cricket Ball is crafted for clubs, schools, and serious practice sessions. Its hand-stitched seam, durable core, and polished leather finish help bowlers maintain grip while giving batters a proper match-like response.",
     "featured": true,
     "images": [
-      "/products/ball-main.svg",
-      "/products/ball-detail.svg",
-      "/products/ball-pack.svg"
+      "/products/balls/match-grade/main.svg",
+      "/products/balls/match-grade/detail.svg",
+      "/products/balls/match-grade/pack.svg"
     ],
     "specifications": [
       {
@@ -384,9 +452,9 @@
     "description": "This Black Nylon Volleyball Net is designed for schools, clubs, grounds, and training setups that need a dependable and durable volleyball net. It is supplied with a minimum order quantity of 50 sq ft and suits both standard court installations and custom sports projects.",
     "featured": false,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -431,9 +499,9 @@
     "description": "The Blue Nylon Cricket Net is a practical option for academies, clubs, sports grounds, and schools building cricket practice spaces. It is supplied with a minimum order quantity of 100 sq ft and works well for enclosed batting lanes, bowling nets, and custom sports net installations.",
     "featured": true,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -478,9 +546,9 @@
     "description": "This Violet Nylon Badminton Net is designed for badminton courts, schools, academies, and multi-sport facilities. With a minimum order quantity of 100 sq ft, it suits custom net supply requirements and regular court use with dependable nylon strength.",
     "featured": false,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -525,9 +593,9 @@
     "description": "Our Sports Nets range supports cricket and other training applications for clubs, schools, academies, and sports grounds. This product is suitable when clients need general net supply with a simple, durable setup for daily use.",
     "featured": false,
     "images": [
-      "/products/net-main.svg",
-      "/products/net-detail.svg",
-      "/products/net-install.svg"
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
     ],
     "specifications": [
       {
@@ -560,9 +628,9 @@
     "description": "Pro Guard Batting Pads are built for players who want reliable protection without a bulky feel. The shape supports movement between the wickets while high-density foam and reinforced knee protection help absorb impact in training and matches.",
     "featured": false,
     "images": [
-      "/products/pads-main.svg",
-      "/products/pads-side.svg",
-      "/products/pads-detail.svg"
+      "/products/pads/pro-guard/main.svg",
+      "/products/pads/pro-guard/side.svg",
+      "/products/pads/pro-guard/detail.svg"
     ],
     "specifications": [
       {
@@ -580,6 +648,74 @@
       {
         "label": "Best For",
         "value": "Club matches and advanced training"
+      }
+    ]
+  },
+  {
+    "id": "bat-serbian-willow",
+    "slug": "serbian-willow-bat",
+    "name": "Serbian Willow Bat",
+    "category": "bats",
+    "price": 10999,
+    "tagline": "Responsive willow bat with a clean pickup for regular cricket sessions.",
+    "shortDescription": "Serbian willow bat built for balanced stroke play, nets, and club-level use.",
+    "description": "Serbian Willow Bat is designed for players who want a dependable bat with a smooth pickup and a forgiving middle. It suits academy players, regular net sessions, and club cricket where balance and control matter as much as power.",
+    "featured": false,
+    "images": [
+      "/products/bats/serbian-willow/main.svg",
+      "/products/bats/serbian-willow/edge.svg",
+      "/products/bats/serbian-willow/face.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Willow",
+        "value": "Selected Serbian willow"
+      },
+      {
+        "label": "Profile",
+        "value": "Balanced profile with stable sweet spot"
+      },
+      {
+        "label": "Handle",
+        "value": "Cane handle with comfort grip"
+      },
+      {
+        "label": "Best For",
+        "value": "Practice, academy cricket, and club games"
+      }
+    ]
+  },
+  {
+    "id": "bat-ss-ton-thala-5-0",
+    "slug": "ss-ton-thala-5-0-english-willow-cricket-bat",
+    "name": "SS Ton Thala 5.0 English Willow Cricket Bat",
+    "category": "bats",
+    "price": 21999,
+    "tagline": "Premium English willow bat with a full profile and match-focused pickup.",
+    "shortDescription": "SS Ton Thala 5.0 English Willow Cricket Bat built for premium stroke play and match use.",
+    "description": "SS Ton Thala 5.0 English Willow Cricket Bat is aimed at players who want a high-end willow option with strong rebound, a commanding middle, and a polished finish. It suits serious academy cricketers and club players looking for a more premium match bat.",
+    "featured": true,
+    "images": [
+      "/products/bats/ss-ton-thala-5-0/main.svg",
+      "/products/bats/ss-ton-thala-5-0/edge.svg",
+      "/products/bats/ss-ton-thala-5-0/face.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Willow",
+        "value": "Premium English willow"
+      },
+      {
+        "label": "Profile",
+        "value": "Full profile with strong spine"
+      },
+      {
+        "label": "Handle",
+        "value": "Semi-oval cane handle"
+      },
+      {
+        "label": "Best For",
+        "value": "Club cricket, match play, and advanced training"
       }
     ]
   }

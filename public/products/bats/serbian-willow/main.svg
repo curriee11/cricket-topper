@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" rx="36" fill="#0F172A"/>
+  <circle cx="660" cy="108" r="158" fill="#C99A58" fill-opacity="0.18"/>
+  <circle cx="84" cy="500" r="148" fill="#292A22"/>
+  <text x="44" y="86" fill="#F8FAFC" font-size="30" font-family="Arial, sans-serif" font-weight="700">Serbian Willow Bat</text>
+  <text x="44" y="126" fill="#56E39F" font-size="18" font-family="Arial, sans-serif">Balanced willow pickup</text>
+  <rect x="350" y="120" width="130" height="360" rx="60" fill="#C99A58"/>
+  <rect x="374" y="475" width="50" height="88" rx="20" fill="#A55E37"/>
+  <rect x="338" y="146" width="154" height="30" rx="14" fill="#E9C57A" fill-opacity="0.9"/>
+</svg>
