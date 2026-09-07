@@ -203,5 +203,75 @@
         "value": "Elite training, club cricket, and competitive matches"
       }
     ]
+  },
+  {
+    "id": "bat-4-no-leather-olympus",
+    "slug": "4-no-leather-bat-model-olympus",
+    "name": "4 No Leather Bat Model Olympus",
+    "category": "bats",
+    "price": 2299,
+    "displayPrice": "MRP ₹2,299",
+    "tagline": "Reliable leather-ball bat for everyday training and match practice.",
+    "shortDescription": "Olympus 4 No leather bat with a balanced profile and dependable pickup.",
+    "description": "The 4 No Leather Bat Model Olympus is built for regular leather-ball practice, academy sessions, and club-level cricket. Its balanced profile gives players a comfortable pickup and confident stroke play at an accessible price.",
+    "featured": false,
+    "images": [
+      "/products/bats/leather-ball/1.jpg",
+      "/products/bats/leather-ball/2.jpg",
+      "/products/bats/leather-ball/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "4 No Olympus leather bat"
+      },
+      {
+        "label": "Price",
+        "value": "MRP ₹2,299"
+      },
+      {
+        "label": "Best For",
+        "value": "Leather-ball training and club practice"
+      },
+      {
+        "label": "Pickup",
+        "value": "Balanced feel for controlled stroke play"
+      }
+    ]
+  },
+  {
+    "id": "bat-limited-edition-imported-wood",
+    "slug": "limited-edition-imported-wood-bat",
+    "name": "Limited Edition Model Imported Wood Bat",
+    "category": "bats",
+    "price": 14999,
+    "displayPrice": "MRP Rs. 14,999",
+    "tagline": "Limited-edition imported wood bat made for premium leather-ball cricket.",
+    "shortDescription": "Premium imported wood bat with a balanced profile and confident match-day pickup.",
+    "description": "The Limited Edition Model Imported Wood Bat is made for players looking for a premium leather-ball bat with a refined imported wood feel. Its balanced profile supports confident stroke play across serious training, club cricket, and match use.",
+    "featured": true,
+    "images": [
+      "/products/bats/english-willow/1.jpg",
+      "/products/bats/english-willow/2.jpg",
+      "/products/bats/english-willow/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Limited Edition"
+      },
+      {
+        "label": "Wood",
+        "value": "Imported wood"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 14,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Serious training, club cricket, and match play"
+      }
+    ]
   }
 ]

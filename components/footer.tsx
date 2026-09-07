@@ -6,7 +6,8 @@ import {
   CITY,
   COMPANY_NAME,
   DISPLAY_PHONE,
-  PHONE_NUMBER
+  PHONE_NUMBER,
+  YOUTUBE_URL
 } from "@/lib/constants";
 
 export function Footer() {
@@ -75,6 +76,14 @@ export function Footer() {
               className="block transition hover:text-brand-300"
             >
               Instagram
+            </a>
+            <a
+              href={YOUTUBE_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="block transition hover:text-brand-300"
+            >
+              YouTube · 5.4K subscribers
             </a>
             <p>{BUSINESS_HOURS}</p>
           </div>

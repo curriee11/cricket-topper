@@ -6,6 +6,7 @@ import {
   DISPLAY_PHONE,
   GOOGLE_RATING,
   GOOGLE_REVIEW_COUNT,
+  YOUTUBE_SUBSCRIBERS,
 } from "@/lib/constants";
 
 const reviews = [
@@ -106,7 +107,7 @@ export function BusinessHighlights() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Experience
@@ -130,6 +131,15 @@ export function BusinessHighlights() {
                 <p className="mt-2 text-sm font-medium text-slate-950">
                   Bats, Nets, Turf & Balls
                 </p>
+              </div>
+              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
+                  YouTube Community
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-slate-950">
+                  {YOUTUBE_SUBSCRIBERS}
+                </p>
+                <p className="mt-1 text-sm font-medium text-slate-600">Subscribers</p>
               </div>
             </div>
 
