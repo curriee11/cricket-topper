@@ -754,5 +754,175 @@
         "value": "Leather-ball practice and club cricket"
       }
     ]
+  },
+  {
+    "id": "bat-ton-glory-english-willow",
+    "slug": "ton-glory-english-willow-leather-bat",
+    "name": "TON Glory English Willow Leather Bat",
+    "category": "bats",
+    "price": 17000,
+    "displayPrice": "MRP Rs. 17,000",
+    "tagline": "English willow leather bat designed for confident stroke play and match performance.",
+    "shortDescription": "TON Glory English willow bat made for serious practice, club cricket, and competitive matches.",
+    "description": "The TON Glory English Willow Leather Bat is built for players who want a premium leather-ball bat with a responsive willow feel. Its full profile is suited to serious practice, club cricket, and competitive match play.",
+    "featured": true,
+    "images": [
+      "/products/bats/ton-glory/1.jpg",
+      "/products/bats/ton-glory/2.jpg",
+      "/products/bats/ton-glory/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "TON Glory"
+      },
+      {
+        "label": "Willow",
+        "value": "English Willow"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 17,000"
+      },
+      {
+        "label": "Best For",
+        "value": "Club cricket, competitive matches, and advanced training"
+      }
+    ]
+  },
+  {
+    "id": "bat-sg-hiscore-xtreme-english-willow",
+    "slug": "sg-hiscore-xtreme-english-willow-leather-bat",
+    "name": "SG Hiscore Xtreme English Willow Leather Bat",
+    "category": "bats",
+    "price": 15999,
+    "displayPrice": "MRP Rs. 15,999",
+    "tagline": "English willow leather bat designed for powerful stroke play and match-ready control.",
+    "shortDescription": "SG Hiscore Xtreme English willow bat made for serious practice, club cricket, and competitive matches.",
+    "description": "The SG Hiscore Xtreme English Willow Leather Bat is made for players looking for a premium leather-ball bat with a responsive willow feel. Its strong profile supports confident stroke play and suits advanced training, club cricket, and competitive match use.",
+    "featured": true,
+    "images": [
+      "/products/bats/sg-hiscore-xtreme/2.jpg",
+      "/products/bats/sg-hiscore-xtreme/1.jpg",
+      "/products/bats/sg-hiscore-xtreme/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Brand",
+        "value": "SG"
+      },
+      {
+        "label": "Model",
+        "value": "Hiscore Xtreme"
+      },
+      {
+        "label": "Willow",
+        "value": "English Willow"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 15,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Club cricket, competitive matches, and advanced training"
+      }
+    ]
+  },
+  {
+    "id": "bat-ss-master-99-english-willow",
+    "slug": "ss-master-99-english-willow-leather-bat",
+    "name": "SS Master 99 English Willow Leather Bat",
+    "category": "bats",
+    "price": 14700,
+    "displayPrice": "MRP Rs. 14,700",
+    "tagline": "English willow leather bat built for dependable pickup, control, and confident stroke play.",
+    "shortDescription": "SS Master 99 English willow bat for advanced training, club cricket, and competitive matches.",
+    "description": "The SS Master 99 English Willow Leather Bat is made for players who want a premium leather-ball bat with a balanced feel and responsive performance. It is suited to advanced training, club cricket, and competitive match play.",
+    "featured": true,
+    "images": [
+      "/products/bats/ss-master-99/1.jpg",
+      "/products/bats/ss-master-99/2.jpg",
+      "/products/bats/ss-master-99/3.jpg",
+      "/products/bats/ss-master-99/4.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Brand",
+        "value": "SS"
+      },
+      {
+        "label": "Model",
+        "value": "Master 99"
+      },
+      {
+        "label": "Willow",
+        "value": "English Willow"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 14,700"
+      },
+      {
+        "label": "Best For",
+        "value": "Club cricket, competitive matches, and advanced training"
+      }
+    ]
+  },
+  {
+    "id": "bat-anthem-top-grade-english-willow",
+    "slug": "anthem-top-grade-english-willow-leather-bat",
+    "name": "Anthem Top Grade English Willow Leather Bat",
+    "category": "bats",
+    "price": 34999,
+    "displayPrice": "MRP Rs. 34,999",
+    "tagline": "Top-grade English willow leather bat for elite stroke play and premium match performance.",
+    "shortDescription": "Anthem Top Grade English willow bat designed for serious players and high-level leather-ball cricket.",
+    "description": "The Anthem Top Grade English Willow Leather Bat is designed for players seeking a premium leather-ball bat with a responsive willow feel and confident balance. It suits serious training, club cricket, and high-level competitive match play.",
+    "featured": true,
+    "images": [
+      "/products/bats/anthem-top-grade/1.jpg",
+      "/products/bats/anthem-top-grade/2.jpg",
+      "/products/bats/anthem-top-grade/3.jpg",
+      "/products/bats/anthem-top-grade/4.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Brand",
+        "value": "Anthem"
+      },
+      {
+        "label": "Model",
+        "value": "Top Grade"
+      },
+      {
+        "label": "Willow",
+        "value": "English Willow"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 34,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Elite training, club cricket, and competitive matches"
+      }
+    ]
   }
 ]
