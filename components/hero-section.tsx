@@ -9,10 +9,7 @@ export function HeroSection() {
       <div className="container-shell relative">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-300">
-              Premium Cricket Catalogue
-            </p>
-            <h1 className="mt-5 text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-7xl">
+            <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-7xl">
               Modern cricket gear curated for players who want to perform.
             </h1>
             <div className="mt-5 h-px w-32 bg-gradient-to-r from-brand-500 via-brand-300 to-transparent" />

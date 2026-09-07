@@ -718,5 +718,41 @@
         "value": "Club cricket, match play, and advanced training"
       }
     ]
+  },
+  {
+    "id": "bat-grade-a-olympus",
+    "slug": "grade-a-olympus-leather-bat",
+    "name": "Grade A Olympus Leather Bat",
+    "category": "bats",
+    "price": 3999,
+    "displayPrice": "MRP Rs. 3,999",
+    "tagline": "Grade A leather bat built for confident stroke play and reliable match-day performance.",
+    "shortDescription": "Leather cricket bat with a strong profile for practice sessions, club games, and everyday play.",
+    "description": "The Grade A Olympus Leather Bat is made for players who want a dependable leather-ball bat at an accessible price. Its solid profile offers a confident feel through the hands and suits practice sessions, club cricket, and regular match play.",
+    "featured": false,
+    "images": [
+      "/products/bats/grade-a-olympus/1.jpg",
+      "/products/bats/grade-a-olympus/2.jpg",
+      "/products/bats/grade-a-olympus/3.jpg",
+      "/products/bats/grade-a-olympus/4.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Grade",
+        "value": "Grade A"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 3,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Leather-ball practice and club cricket"
+      }
+    ]
   }
 ]

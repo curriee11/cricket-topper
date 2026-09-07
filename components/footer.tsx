@@ -68,6 +68,14 @@ export function Footer() {
             >
               WhatsApp Enquiries
             </a>
+            <a
+              href="https://www.instagram.com/crickettopper/"
+              target="_blank"
+              rel="noreferrer"
+              className="block transition hover:text-brand-300"
+            >
+              Instagram
+            </a>
             <p>{BUSINESS_HOURS}</p>
           </div>
         </div>

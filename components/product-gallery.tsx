@@ -15,8 +15,8 @@ export function ProductGallery({
   return (
     <div className="space-y-4">
       <div className="surface-strong overflow-hidden rounded-[32px] shadow-glow">
-        <div className="relative aspect-[4/3]">
-          <Image src={activeImage} alt={name} fill className="object-cover" />
+        <div className="relative aspect-[3/4] bg-black">
+          <Image src={activeImage} alt={name} fill className="object-contain p-2" />
         </div>
       </div>
 
@@ -38,12 +38,12 @@ export function ProductGallery({
                   : "border-brand-500/10 hover:border-brand-500/25"
               }`}
             >
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-[3/4] bg-black">
                 <Image
                   src={image}
                   alt={`${name} preview ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-contain p-1"
                 />
               </div>
             </button>
