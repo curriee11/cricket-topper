@@ -1,0 +1,70 @@
+[
+  {
+    "id": "glove-impact",
+    "slug": "impact-pro-batting-gloves",
+    "name": "Impact Pro Batting Gloves",
+    "category": "gloves",
+    "price": 4299,
+    "tagline": "Multi-section protection with lightweight airflow comfort.",
+    "shortDescription": "Premium batting gloves with split-finger flexibility and soft lining.",
+    "description": "Impact Pro gloves are designed for long innings and faster hands. Reinforced finger chambers, cushioned palms, and breathable mesh panels help reduce fatigue while giving players a secure, high-grip feel through every shot.",
+    "featured": true,
+    "images": [
+      "/products/gloves/impact-pro/main.svg",
+      "/products/gloves/impact-pro/palm.svg",
+      "/products/gloves/impact-pro/side.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Construction",
+        "value": "Split-finger design"
+      },
+      {
+        "label": "Palm",
+        "value": "Premium sheep leather"
+      },
+      {
+        "label": "Padding",
+        "value": "High-density foam with fiber inserts"
+      },
+      {
+        "label": "Fit",
+        "value": "Adult and youth sizes"
+      }
+    ]
+  },
+  {
+    "id": "glove-keeper",
+    "slug": "keeper-shield-wicket-gloves",
+    "name": "Keeper Shield Wicket Gloves",
+    "category": "gloves",
+    "price": 5599,
+    "tagline": "Sharp grip and responsive catching support behind the stumps.",
+    "shortDescription": "Match-ready wicket-keeping gloves with deep cups and supple leather palms.",
+    "description": "Keeper Shield is built for quick takes, close-in standing, and dependable comfort over long sessions. The palm grip pattern is tuned for ball control while the inner lining stays soft and flexible throughout the innings.",
+    "featured": false,
+    "images": [
+      "/products/gloves/keeper-shield/main.svg",
+      "/products/gloves/keeper-shield/palm.svg",
+      "/products/gloves/keeper-shield/detail.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Palm",
+        "value": "Octopus grip rubber with leather base"
+      },
+      {
+        "label": "Cuff",
+        "value": "Long support cuff"
+      },
+      {
+        "label": "Lining",
+        "value": "Moisture-control inner lining"
+      },
+      {
+        "label": "Best For",
+        "value": "Match and advanced training use"
+      }
+    ]
+  }
+]

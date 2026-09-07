@@ -1,0 +1,246 @@
+[
+  {
+    "id": "net-cricket-pro",
+    "slug": "pro-practice-cricket-net",
+    "name": "Pro Practice Cricket Net",
+    "category": "nets",
+    "price": 12499,
+    "tagline": "Heavy-duty netting for academy lanes and backyard practice bays.",
+    "shortDescription": "UV-stabilized cricket net built for regular bowling and batting practice.",
+    "description": "The Pro Practice Cricket Net is designed for clubs, academies, schools, and serious home setups. Its reinforced mesh construction handles repeated impact from leather balls while staying easy to mount for net lanes and enclosed practice areas.",
+    "featured": false,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "HDPE knotless netting"
+      },
+      {
+        "label": "Use Case",
+        "value": "Cricket practice lanes and backyard setups"
+      },
+      {
+        "label": "Finish",
+        "value": "UV-treated outdoor durability"
+      },
+      {
+        "label": "Sizes",
+        "value": "Custom dimensions available"
+      }
+    ]
+  },
+  {
+    "id": "net-multi-sport",
+    "slug": "multi-sport-goal-and-volleyball-net",
+    "name": "Multi-Sport Goal & Volleyball Net",
+    "category": "nets",
+    "price": 8999,
+    "tagline": "Versatile net setup for football goals, volleyball courts, and training grounds.",
+    "shortDescription": "Durable multi-sport net solution for football and volleyball installations.",
+    "description": "This multi-sport net package is suited for schools, clubs, grounds, and indoor or outdoor facilities needing dependable football goal nets or volleyball court nets. It offers strong mesh retention, clean finish quality, and long-term outdoor use.",
+    "featured": false,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Sports",
+        "value": "Football and volleyball"
+      },
+      {
+        "label": "Material",
+        "value": "High-strength braided synthetic net"
+      },
+      {
+        "label": "Installation",
+        "value": "Ground and post mounting options"
+      },
+      {
+        "label": "Best For",
+        "value": "Schools, clubs, and sports complexes"
+      }
+    ]
+  },
+  {
+    "id": "net-volleyball-black-nylon",
+    "slug": "black-nylon-volleyball-net",
+    "name": "Black Nylon Volleyball Net",
+    "category": "nets",
+    "price": 5,
+    "tagline": "Tournament-style nylon volleyball net supplied by square foot for custom sizing.",
+    "shortDescription": "Black nylon volleyball net with 0.9 mm thickness and 30 x 5 ft standard size.",
+    "description": "This Black Nylon Volleyball Net is designed for schools, clubs, grounds, and training setups that need a dependable and durable volleyball net. It is supplied with a minimum order quantity of 50 sq ft and suits both standard court installations and custom sports projects.",
+    "featured": false,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Price",
+        "value": "Rs. 5 per sq ft"
+      },
+      {
+        "label": "Minimum Order",
+        "value": "50 sq ft"
+      },
+      {
+        "label": "Material",
+        "value": "Nylon"
+      },
+      {
+        "label": "Color",
+        "value": "Black"
+      },
+      {
+        "label": "Size",
+        "value": "30 x 5 Feet (L x W)"
+      },
+      {
+        "label": "Thickness",
+        "value": "0.9 mm"
+      },
+      {
+        "label": "Net Type",
+        "value": "Volleyball Net"
+      }
+    ],
+    "displayPrice": "â‚¹ 5/sq ft"
+  },
+  {
+    "id": "net-cricket-blue-nylon",
+    "slug": "blue-nylon-cricket-net",
+    "name": "Blue Nylon Cricket Net",
+    "category": "nets",
+    "price": 1.5,
+    "tagline": "Blue nylon cricket net supplied by square foot for academy lanes and custom practice zones.",
+    "shortDescription": "Blue nylon cricket net with 50 x 12 ft size and custom supply for net practice setups.",
+    "description": "The Blue Nylon Cricket Net is a practical option for academies, clubs, sports grounds, and schools building cricket practice spaces. It is supplied with a minimum order quantity of 100 sq ft and works well for enclosed batting lanes, bowling nets, and custom sports net installations.",
+    "featured": true,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Price",
+        "value": "Rs. 1.50 per sq ft"
+      },
+      {
+        "label": "Minimum Order",
+        "value": "100 sq ft"
+      },
+      {
+        "label": "Material",
+        "value": "Nylon"
+      },
+      {
+        "label": "Color",
+        "value": "Blue"
+      },
+      {
+        "label": "Size",
+        "value": "50 x 12 Feet (L x W)"
+      },
+      {
+        "label": "Thickness",
+        "value": "20 mm"
+      },
+      {
+        "label": "Net Type",
+        "value": "Cricket Net"
+      }
+    ],
+    "displayPrice": "â‚¹ 1.50/sq ft"
+  },
+  {
+    "id": "net-badminton-violet-nylon",
+    "slug": "violet-nylon-badminton-net",
+    "name": "Violet Nylon Badminton Net",
+    "category": "nets",
+    "price": 4,
+    "tagline": "Violet nylon badminton net for courts, schools, and indoor sports setups.",
+    "shortDescription": "Violet nylon badminton net with 24 x 2.5 ft size and durable court-ready build.",
+    "description": "This Violet Nylon Badminton Net is designed for badminton courts, schools, academies, and multi-sport facilities. With a minimum order quantity of 100 sq ft, it suits custom net supply requirements and regular court use with dependable nylon strength.",
+    "featured": false,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Price",
+        "value": "Rs. 4 per sq ft"
+      },
+      {
+        "label": "Minimum Order",
+        "value": "100 sq ft"
+      },
+      {
+        "label": "Material",
+        "value": "Nylon"
+      },
+      {
+        "label": "Color",
+        "value": "Violet"
+      },
+      {
+        "label": "Size",
+        "value": "24 x 2.5 Feet (L x W)"
+      },
+      {
+        "label": "Thickness",
+        "value": "10 mm"
+      },
+      {
+        "label": "Net Type",
+        "value": "Badminton Net"
+      }
+    ],
+    "displayPrice": "â‚¹ 4/sq ft"
+  },
+  {
+    "id": "net-sports-general",
+    "slug": "sports-nets-general",
+    "name": "Sports Nets",
+    "category": "nets",
+    "price": 500,
+    "tagline": "General sports net supply for cricket and custom ground requirements.",
+    "shortDescription": "General sports net supply for cricket and related training installations.",
+    "description": "Our Sports Nets range supports cricket and other training applications for clubs, schools, academies, and sports grounds. This product is suitable when clients need general net supply with a simple, durable setup for daily use.",
+    "featured": false,
+    "images": [
+      "/products/nets/shared/main.svg",
+      "/products/nets/shared/detail.svg",
+      "/products/nets/shared/install.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Price",
+        "value": "Rs. 500 per piece"
+      },
+      {
+        "label": "Net Type",
+        "value": "Cricket Net"
+      },
+      {
+        "label": "Use Case",
+        "value": "General sports and training net supply"
+      },
+      {
+        "label": "Best For",
+        "value": "Clubs, schools, academies, and grounds"
+      }
+    ],
+    "displayPrice": "â‚¹ 500/Piece"
+  }
+]

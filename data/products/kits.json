@@ -1,0 +1,70 @@
+[
+  {
+    "id": "kit-club",
+    "slug": "club-series-cricket-kit",
+    "name": "Club Series Cricket Kit",
+    "category": "kits",
+    "price": 14999,
+    "tagline": "An all-in-one starter bundle for serious training sessions.",
+    "shortDescription": "Complete cricket kit with bat, pads, gloves, thigh guard, and duffle.",
+    "description": "The Club Series kit gives players a ready-to-play setup in one premium bundle. It is curated for academy and club cricketers who want matching gear, dependable comfort, and a sleek duffle that keeps everything organized on the move.",
+    "featured": true,
+    "images": [
+      "/products/kits/club-series/main.svg",
+      "/products/kits/club-series/open.svg",
+      "/products/kits/club-series/detail.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Included",
+        "value": "Bat, gloves, pads, guards, duffle bag"
+      },
+      {
+        "label": "Bag",
+        "value": "Wheel duffle with shoe tunnel"
+      },
+      {
+        "label": "Target Player",
+        "value": "Academy and club level"
+      },
+      {
+        "label": "Material",
+        "value": "Mixed PU and performance fabrics"
+      }
+    ]
+  },
+  {
+    "id": "kit-tour",
+    "slug": "tour-edition-premium-kit",
+    "name": "Tour Edition Premium Kit",
+    "category": "kits",
+    "price": 27999,
+    "tagline": "Premium bundle with elite-grade protective gear and travel bag.",
+    "shortDescription": "High-end cricket kit curated for competitive players and touring squads.",
+    "description": "Tour Edition combines premium-grade batting gear with advanced protection and a pro-level travel duffle. It is designed for players who want a polished setup with coordinated, match-ready equipment that performs across formats.",
+    "featured": false,
+    "images": [
+      "/products/kits/tour-edition/main.svg",
+      "/products/kits/tour-edition/open.svg",
+      "/products/kits/tour-edition/detail.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Included",
+        "value": "Premium bat, gloves, pads, guards, wheel bag"
+      },
+      {
+        "label": "Protection",
+        "value": "Lightweight high-density foam package"
+      },
+      {
+        "label": "Bag Capacity",
+        "value": "80 litres"
+      },
+      {
+        "label": "Use Case",
+        "value": "Competitive and touring players"
+      }
+    ]
+  }
+]

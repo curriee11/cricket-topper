@@ -1,0 +1,70 @@
+[
+  {
+    "id": "turf-cricket-pitch",
+    "slug": "astro-turf-cricket-pitch-roll",
+    "name": "Astro Turf Cricket Pitch Roll",
+    "category": "turf",
+    "price": 32999,
+    "tagline": "Practice pitch surface with true bounce and durable turf backing.",
+    "shortDescription": "Astro turf cricket pitch roll ideal for academies, schools, and training centers.",
+    "description": "The Astro Turf Cricket Pitch Roll creates a consistent training wicket for bowlers and batters. It is designed for repeated use on concrete or prepared surfaces, offering dependable grip, rebound, and long-term durability for academy practice environments.",
+    "featured": true,
+    "images": [
+      "/products/turf/astro-pitch/main.svg",
+      "/products/turf/astro-pitch/detail.svg",
+      "/products/turf/astro-pitch/roll.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Surface",
+        "value": "High-density astro turf"
+      },
+      {
+        "label": "Use Case",
+        "value": "Portable and fixed cricket practice pitches"
+      },
+      {
+        "label": "Backing",
+        "value": "Reinforced non-slip base"
+      },
+      {
+        "label": "Best For",
+        "value": "Academies, schools, and clubs"
+      }
+    ]
+  },
+  {
+    "id": "turf-infill-grass",
+    "slug": "artificial-infill-field-grass",
+    "name": "Artificial Infill Field Grass",
+    "category": "turf",
+    "price": 45999,
+    "tagline": "Artificial sports grass for training grounds and multi-use playing surfaces.",
+    "shortDescription": "Infill-ready artificial field grass for sports flooring and outdoor installations.",
+    "description": "Artificial Infill Field Grass is built for sports spaces that need resilient, low-maintenance surfaces. It works well for cricket practice zones, football grounds, and multi-sport facilities where durability, drainage, and a professional look are important.",
+    "featured": false,
+    "images": [
+      "/products/turf/artificial-grass/main.svg",
+      "/products/turf/artificial-grass/detail.svg",
+      "/products/turf/artificial-grass/roll.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Artificial infill field grass"
+      },
+      {
+        "label": "Usage",
+        "value": "Sports grounds, turf zones, and training areas"
+      },
+      {
+        "label": "Drainage",
+        "value": "Perforated backing for outdoor use"
+      },
+      {
+        "label": "Finish",
+        "value": "Dense pile with infill compatibility"
+      }
+    ]
+  }
+]

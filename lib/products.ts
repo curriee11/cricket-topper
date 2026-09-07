@@ -1,7 +1,21 @@
-import productsData from "@/data/products.json";
+import ballsData from "@/data/products/balls.json";
+import batsData from "@/data/products/bats.json";
+import glovesData from "@/data/products/gloves.json";
+import kitsData from "@/data/products/kits.json";
+import netsData from "@/data/products/nets.json";
+import padsData from "@/data/products/pads.json";
+import turfData from "@/data/products/turf.json";
 import type { Product, ProductCategory } from "@/lib/types";
 
-export const products = productsData as Product[];
+export const products = [
+  ...batsData,
+  ...glovesData,
+  ...padsData,
+  ...kitsData,
+  ...netsData,
+  ...turfData,
+  ...ballsData
+] as Product[];
 
 export const categories: {
   id: ProductCategory;

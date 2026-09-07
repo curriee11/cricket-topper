@@ -31,10 +31,11 @@ export function ProductGallery({
               type="button"
               title={label}
               aria-label={label}
+              aria-pressed={isActive}
               onClick={() => setActiveImage(image)}
-              className={`surface-strong relative overflow-hidden rounded-2xl transition ${
+              className={`surface-strong relative overflow-hidden rounded-2xl transition active:scale-[0.97] ${
                 isActive
-                  ? "border-brand-500/45 shadow-glow"
+                  ? "border-brand-500/70 shadow-glow ring-2 ring-brand-500/35"
                   : "border-brand-500/10 hover:border-brand-500/25"
               }`}
             >
@@ -46,6 +47,11 @@ export function ProductGallery({
                   className="object-contain p-1"
                 />
               </div>
+              {isActive ? (
+                <span className="absolute inset-x-0 bottom-0 bg-brand-500/90 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-black">
+                  Selected
+                </span>
+              ) : null}
             </button>
           );
         })}

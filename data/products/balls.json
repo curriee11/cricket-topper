@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ball-leather-match",
+    "slug": "match-grade-leather-cricket-ball",
+    "name": "Match Grade Leather Cricket Ball",
+    "category": "balls",
+    "price": 1899,
+    "tagline": "Hand-stitched leather ball with strong seam retention and match feel.",
+    "shortDescription": "Premium leather cricket ball suitable for matches, nets, and advanced practice.",
+    "description": "The Match Grade Leather Cricket Ball is crafted for clubs, schools, and serious practice sessions. Its hand-stitched seam, durable core, and polished leather finish help bowlers maintain grip while giving batters a proper match-like response.",
+    "featured": true,
+    "images": [
+      "/products/balls/match-grade/main.svg",
+      "/products/balls/match-grade/detail.svg",
+      "/products/balls/match-grade/pack.svg"
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Premium alum-tanned leather"
+      },
+      {
+        "label": "Construction",
+        "value": "Hand-stitched raised seam"
+      },
+      {
+        "label": "Use Case",
+        "value": "Matches and advanced practice"
+      },
+      {
+        "label": "Variants",
+        "value": "Senior and junior options available"
+      }
+    ]
+  }
+]
