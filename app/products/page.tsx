@@ -27,16 +27,16 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(29,59,114,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(10,31,68,0.24),transparent_28%)]" />
       <div className="container-shell relative">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
-            Product Catalogue
-          </p>
-          <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">
-            Find the right cricket equipment for your game.
-          </h1>
-          <p className="mt-4 text-base leading-7 text-stone-300">
-            Browse our premium range and narrow the catalogue by category or budget in
-            seconds.
-          </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
+            Shop Cricket Equipment
+            </p>
+            <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">
+            Find the right gear for your game.
+            </h1>
+            <p className="mt-4 text-base leading-7 text-stone-300">
+            Explore bats, gloves, kits, nets, turf, and match essentials, then narrow
+            your selection by category or budget.
+            </p>
           {query ? (
             <p className="mt-4 inline-flex rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-2 text-sm text-brand-300">
               Search: {query}

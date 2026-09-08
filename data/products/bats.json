@@ -285,9 +285,9 @@
     "description": "The Olympus No. 2 Leather Bat is designed for regular leather-ball practice, academy sessions, and club cricket. Its balanced profile offers a comfortable pickup and reliable control at an accessible price.",
     "featured": false,
     "images": [
-      "/products/bats/leather-ball/1.jpg",
-      "/products/bats/leather-ball/2.jpg",
-      "/products/bats/leather-ball/3.jpg"
+      "/products/bats/olympus-no-2/1.jpg",
+      "/products/bats/olympus-no-2/2.jpg",
+      "/products/bats/olympus-no-2/3.jpg"
     ],
     "specifications": [
       {
@@ -371,6 +371,41 @@
       {
         "label": "MRP",
         "value": "Rs. 2,998"
+      },
+      {
+        "label": "Best For",
+        "value": "Leather-ball training and club cricket"
+      }
+    ]
+  },
+  {
+    "id": "bat-olympus-no-3-leather",
+    "slug": "olympus-no-3-leather-bat",
+    "name": "Olympus 3 No. Leather Bat",
+    "category": "bats",
+    "price": 2299,
+    "displayPrice": "MRP Rs. 2,299",
+    "tagline": "Olympus leather bat made for balanced pickup and dependable cricket practice.",
+    "shortDescription": "Olympus 3 No. leather bat for leather-ball training and regular club play.",
+    "description": "The Olympus 3 No. Leather Bat is designed for regular leather-ball practice, academy sessions, and club cricket. Its balanced profile offers comfortable pickup and reliable control at an accessible price.",
+    "featured": false,
+    "images": [
+      "/products/bats/olympus-no-3/1.jpg",
+      "/products/bats/olympus-no-3/2.jpg",
+      "/products/bats/olympus-no-3/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Olympus 3 No."
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 2,299"
       },
       {
         "label": "Best For",
