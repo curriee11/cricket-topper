@@ -412,5 +412,145 @@
         "value": "Leather-ball training and club cricket"
       }
     ]
+  },
+  {
+    "id": "bat-triple-blade-tennis-kashmir-willow",
+    "slug": "triple-blade-tennis-bat-kashmir-willow",
+    "name": "Triple Blade Tennis Bat Kashmir Willow",
+    "category": "bats",
+    "price": 2999,
+    "displayPrice": "MRP Rs. 2,999",
+    "tagline": "Triple blade Kashmir willow bat for fast tennis-ball cricket.",
+    "shortDescription": "Triple blade tennis bat made from Kashmir willow for quick hands and controlled power.",
+    "description": "The Triple Blade Tennis Bat Kashmir Willow is built for tennis-ball matches, local tournaments, and everyday practice. Its lightweight profile supports quick bat speed and confident timing.",
+    "featured": false,
+    "images": [
+      "/products/bats/triple-blade-tennis/1.jpg",
+      "/products/bats/triple-blade-tennis/2.jpg",
+      "/products/bats/triple-blade-tennis/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Triple Blade"
+      },
+      {
+        "label": "Wood",
+        "value": "Kashmir Willow"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 2,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Tennis-ball cricket and local matches"
+      }
+    ]
+  },
+  {
+    "id": "bat-side-hole-kashmir-willow",
+    "slug": "side-hole-kashmir-willow-bat",
+    "name": "Side Hole Kashmir Willow Bat",
+    "category": "bats",
+    "price": 3999,
+    "displayPrice": "MRP Rs. 3,999",
+    "tagline": "Distinctive side-hole Kashmir willow bat for powerful tennis-ball play.",
+    "shortDescription": "Side hole Kashmir willow bat designed for quick pickup and aggressive stroke play.",
+    "description": "The Side Hole Kashmir Willow Bat is made for players who want a distinctive tennis-ball bat with quick handling and confident power. It suits local matches, tournament play, and regular practice.",
+    "featured": false,
+    "images": [
+      "/products/bats/side-hole-kashmir-willow/1.jpg",
+      "/products/bats/side-hole-kashmir-willow/2.jpg",
+      "/products/bats/side-hole-kashmir-willow/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Side Hole"
+      },
+      {
+        "label": "Wood",
+        "value": "Kashmir Willow"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 3,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Tennis-ball matches and tournament play"
+      }
+    ]
+  },
+  {
+    "id": "bat-hard-tennis-kashmir-willow",
+    "slug": "hard-tennis-kashmir-willow-bat",
+    "name": "Hard Tennis Bat Kashmir Willow",
+    "category": "bats",
+    "price": 2699,
+    "displayPrice": "MRP Rs. 2,699",
+    "tagline": "Durable Kashmir willow bat for hard tennis-ball cricket.",
+    "shortDescription": "Hard tennis bat with a strong Kashmir willow profile for everyday match play.",
+    "description": "The Hard Tennis Bat Kashmir Willow is designed for hard tennis-ball cricket, local matches, and regular practice. Its durable profile offers reliable control and a comfortable feel through the hands.",
+    "featured": false,
+    "images": [
+      "/products/bats/hard-tennis-kashmir-willow/1.jpg",
+      "/products/bats/hard-tennis-kashmir-willow/2.jpg",
+      "/products/bats/hard-tennis-kashmir-willow/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Hard Tennis"
+      },
+      {
+        "label": "Wood",
+        "value": "Kashmir Willow"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 2,699"
+      },
+      {
+        "label": "Best For",
+        "value": "Hard tennis-ball cricket and local matches"
+      }
+    ]
+  },
+  {
+    "id": "bat-big-hitter-full-size-kashmir-willow",
+    "slug": "big-hitter-full-size-leather-bat-kashmir-willow",
+    "name": "Big Hitter Full Size Leather Bat Kashmir Willow",
+    "category": "bats",
+    "price": 2999,
+    "displayPrice": "MRP Rs. 2,999",
+    "tagline": "Full-size Kashmir willow leather bat built for confident power hitting.",
+    "shortDescription": "Big Hitter full-size leather bat designed for strong stroke play and dependable pickup.",
+    "description": "The Big Hitter Full Size Leather Bat Kashmir Willow is made for players who want a full-size bat with a confident profile and balanced pickup. It suits leather-ball training, club cricket, and powerful stroke play.",
+    "featured": false,
+    "images": [
+      "/products/bats/big-hitter-full-size/1.jpg",
+      "/products/bats/big-hitter-full-size/2.jpg",
+      "/products/bats/big-hitter-full-size/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Big Hitter Full Size"
+      },
+      {
+        "label": "Wood",
+        "value": "Kashmir Willow"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 2,999"
+      }
+    ]
   }
 ]

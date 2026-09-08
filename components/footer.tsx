@@ -7,6 +7,7 @@ import {
   CITY,
   COMPANY_NAME,
   DISPLAY_PHONE,
+  FACEBOOK_URL,
   PHONE_NUMBER,
   WHATSAPP_NUMBER,
   YOUTUBE_SUBSCRIBERS,
@@ -104,6 +105,14 @@ export function Footer() {
                 className="mt-1.5 block transition hover:text-brand-300"
               >
                 Instagram
+              </a>
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1.5 block transition hover:text-brand-300"
+              >
+                Facebook
               </a>
               <a
                 href={YOUTUBE_URL}

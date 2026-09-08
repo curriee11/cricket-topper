@@ -8,6 +8,7 @@ export const ADDITIONAL_PHONE_NUMBERS = [
 export const WHATSAPP_NUMBER = "9186999 10568";
 export const YOUTUBE_URL = "https://www.youtube.com/@cricket_topper";
 export const YOUTUBE_SUBSCRIBERS = "5.5K+";
+export const FACEBOOK_URL = "https://www.facebook.com/crickettopper1305/";
 export const ADDRESS =
   "Near WX-3, Titu Medical, Basti Nau, J.P. Nagar, Jalandhar, Punjab - 144002";
 export const ADDRESS_LINES = [
