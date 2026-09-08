@@ -10,7 +10,7 @@ export function ProductCard({ product }: { product: Product }) {
   const [isOpening, setIsOpening] = useState(false);
 
   return (
-    <article className="group surface overflow-hidden rounded-[28px] shadow-luxe transition duration-300 hover:-translate-y-1 hover:border-brand-500/30">
+    <article className="group surface overflow-hidden rounded-[28px] shadow-luxe transition duration-300 hover:-translate-y-1 hover:border-brand-500/35 hover:shadow-[0_16px_40px_rgba(212,175,55,0.16)]">
       <Link
         href={`/products/${product.slug}`}
         className="block"
@@ -22,7 +22,8 @@ export function ProductCard({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             fill
-            className="object-cover transition duration-500 group-hover:scale-105"
+            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            className="object-cover transition duration-500 group-hover:scale-[1.03]"
           />
           <span className="absolute right-4 top-4 rounded-full border border-brand-500/25 bg-black/70 px-3 py-1 text-xs uppercase tracking-[0.24em] text-brand-300">
             {titleCase(product.category)}
@@ -44,8 +45,8 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="text-xl font-semibold text-brand-600">
               {getDisplayPrice(product)}
             </p>
-            <span className="text-sm font-medium text-slate-700 transition group-hover:text-brand-600">
-              View Details
+              <span className="text-sm font-medium text-slate-700 transition group-hover:font-semibold group-hover:text-brand-600">
+              View Details <span aria-hidden="true">→</span>
             </span>
           </div>
         </div>

@@ -131,8 +131,7 @@
     "images": [
       "/products/bats/ss-master-99/1.jpg",
       "/products/bats/ss-master-99/2.jpg",
-      "/products/bats/ss-master-99/3.jpg",
-      "/products/bats/ss-master-99/4.jpg"
+      "/products/bats/ss-master-99/3.jpg"
     ],
     "specifications": [
       {
@@ -271,6 +270,76 @@
       {
         "label": "Best For",
         "value": "Serious training, club cricket, and match play"
+      }
+    ]
+  },
+  {
+    "id": "bat-olympus-no-2-leather",
+    "slug": "olympus-no-2-leather-bat",
+    "name": "Olympus No. 2 Leather Bat",
+    "category": "bats",
+    "price": 1999,
+    "displayPrice": "MRP Rs. 1,999",
+    "tagline": "Dependable Olympus leather bat for everyday cricket practice.",
+    "shortDescription": "Olympus No. 2 leather bat with a balanced pickup for training and club play.",
+    "description": "The Olympus No. 2 Leather Bat is designed for regular leather-ball practice, academy sessions, and club cricket. Its balanced profile offers a comfortable pickup and reliable control at an accessible price.",
+    "featured": false,
+    "images": [
+      "/products/bats/leather-ball/1.jpg",
+      "/products/bats/leather-ball/2.jpg",
+      "/products/bats/leather-ball/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Olympus No. 2"
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 1,999"
+      },
+      {
+        "label": "Best For",
+        "value": "Leather-ball training and club cricket"
+      }
+    ]
+  },
+  {
+    "id": "bat-olympus-no-5-leather",
+    "slug": "olympus-no-5-leather-bat",
+    "name": "Olympus 5 No. Leather Bat",
+    "category": "bats",
+    "price": 2599,
+    "displayPrice": "MRP Rs. 2,599",
+    "tagline": "Balanced Olympus leather bat for confident practice and club cricket.",
+    "shortDescription": "Olympus 5 No. leather bat with dependable pickup and controlled stroke play.",
+    "description": "The Olympus 5 No. Leather Bat is built for regular leather-ball practice, academy sessions, and club cricket. Its balanced profile gives players a comfortable pickup and reliable control through everyday play.",
+    "featured": false,
+    "images": [
+      "/products/bats/olympus-no-5/1.jpg",
+      "/products/bats/olympus-no-5/2.jpg",
+      "/products/bats/olympus-no-5/3.jpg"
+    ],
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Olympus 5 No."
+      },
+      {
+        "label": "Type",
+        "value": "Leather cricket bat"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 2,599"
+      },
+      {
+        "label": "Best For",
+        "value": "Leather-ball training and club cricket"
       }
     ]
   }

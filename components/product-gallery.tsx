@@ -16,7 +16,14 @@ export function ProductGallery({
     <div className="space-y-4">
       <div className="surface-strong overflow-hidden rounded-[32px] shadow-glow">
         <div className="relative aspect-[3/4] bg-black">
-          <Image src={activeImage} alt={name} fill className="object-contain p-2" />
+          <Image
+            src={activeImage}
+            alt={name}
+            fill
+            priority
+            sizes="(min-width: 1280px) 40vw, 100vw"
+            className="object-contain p-2"
+          />
         </div>
       </div>
 
@@ -44,6 +51,8 @@ export function ProductGallery({
                   src={image}
                   alt={`${name} preview ${index + 1}`}
                   fill
+                  loading={index < 3 ? "eager" : "lazy"}
+                  sizes="(min-width: 1280px) 13vw, (min-width: 768px) 20vw, 30vw"
                   className="object-contain p-1"
                 />
               </div>

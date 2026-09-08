@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { DISPLAY_PHONE, PHONE_NUMBER } from "@/lib/constants";
+import {
+  CITY,
+  DISPLAY_PHONE,
+  PHONE_NUMBER,
+  YOUTUBE_SUBSCRIBERS,
+  YOUTUBE_URL
+} from "@/lib/constants";
 
 export function HeroSection() {
   return (
@@ -73,6 +79,30 @@ export function HeroSection() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-12 grid border-y border-brand-500/20 py-6 text-center sm:grid-cols-2 lg:grid-cols-4 lg:text-left">
+          <div className="border-brand-500/15 px-5 py-3 sm:border-r">
+            <p className="text-base font-bold text-brand-300 sm:text-lg">Since 1985</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">{CITY}</p>
+          </div>
+          <div className="border-brand-500/15 px-5 py-3 lg:border-r">
+            <p className="text-base font-bold text-brand-300 sm:text-lg">Manufacturer &amp; Wholesaler</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">Worldwide shipping</p>
+          </div>
+          <div className="border-brand-500/15 px-5 py-3 sm:border-r lg:border-r">
+            <p className="text-base font-bold text-brand-300 sm:text-lg">1 Lac+ customers</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">Trusted across India</p>
+          </div>
+          <a
+            href={YOUTUBE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="px-5 py-3 transition hover:bg-white/5"
+          >
+            <p className="text-base font-bold text-brand-300 sm:text-lg">{YOUTUBE_SUBSCRIBERS} subscribers</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">Watch on YouTube</p>
+          </a>
         </div>
       </div>
     </section>

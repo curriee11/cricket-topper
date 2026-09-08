@@ -1,5 +1,6 @@
 import {
   ADDRESS,
+  ADDITIONAL_PHONE_NUMBERS,
   BUSINESS_HOURS,
   CITY,
   COMPANY_NAME,
@@ -26,10 +27,10 @@ const reviews = [
 
 export function BusinessHighlights() {
   return (
-    <section className="bg-black py-16">
+    <section id="about" className="bg-black py-16">
       <div className="container-shell">
         <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-          <div className="surface rounded-[32px] p-6 shadow-luxe sm:p-8">
+          <div id="contact" className="surface rounded-[32px] p-6 shadow-luxe sm:p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
               Visit The Store
             </p>
@@ -75,9 +76,23 @@ export function BusinessHighlights() {
                   <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                     Phone
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">
-                    {DISPLAY_PHONE}
-                  </p>
+                  <div className="mt-2 space-y-1 text-sm leading-6">
+                    <a
+                      href={`tel:${DISPLAY_PHONE.replace(/\s+/g, "")}`}
+                      className="block text-slate-700 transition hover:text-brand-600"
+                    >
+                      {DISPLAY_PHONE}
+                    </a>
+                    {ADDITIONAL_PHONE_NUMBERS.map((phone) => (
+                      <a
+                        key={phone.href}
+                        href={phone.href}
+                        className="block text-slate-700 transition hover:text-brand-600"
+                      >
+                        {phone.display}
+                      </a>
+                    ))}
+                  </div>
                 </div>
                 <div className="rounded-2xl border border-brand-500/15 bg-white/80 p-4">
                   <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
