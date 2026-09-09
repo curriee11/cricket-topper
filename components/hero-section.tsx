@@ -20,8 +20,8 @@ export function HeroSection() {
             </h1>
             <div className="mt-5 h-px w-32 bg-gradient-to-r from-brand-500 via-brand-300 to-transparent" />
             <p className="mt-6 max-w-2xl text-base leading-7 text-stone-300 sm:text-lg">
-              Explore premium bats, gloves, and complete kits in a fast, mobile-first
-              catalogue built to turn browsing into direct phone and WhatsApp enquiries.
+              Explore cricket bats, protective accessories, kit essentials, and nets in a
+              fast, mobile-first catalogue built for direct phone and WhatsApp enquiries.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

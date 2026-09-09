@@ -1,15 +1,21 @@
 import ballsData from "@/data/products/balls.json";
 import batsData from "@/data/products/bats.json";
 import glovesData from "@/data/products/gloves.json";
+import guardsData from "@/data/products/guards.json";
+import helmetsData from "@/data/products/helmets.json";
 import kitsData from "@/data/products/kits.json";
 import netsData from "@/data/products/nets.json";
 import padsData from "@/data/products/pads.json";
 import turfData from "@/data/products/turf.json";
 import type { Product, ProductCategory } from "@/lib/types";
 
+const accessoryCategories: ProductCategory[] = ["gloves", "pads", "kits", "helmets", "guards"];
+
 export const products = [
   ...batsData,
   ...glovesData,
+  ...helmetsData,
+  ...guardsData,
   ...padsData,
   ...kitsData,
   ...netsData,
@@ -43,9 +49,19 @@ export const categories: {
     description: "Complete bundles for academy players, clubs, and touring squads."
   },
   {
+    id: "helmets",
+    name: "Helmets",
+    description: "Cricket helmets built for dependable head protection and match confidence."
+  },
+  {
+    id: "guards",
+    name: "Guards",
+    description: "Essential cricket guards for comfortable protection during every session."
+  },
+  {
     id: "nets",
     name: "Nets",
-    description: "Cricket, volleyball, and football net solutions for training spaces."
+    description: "Cricket practice and facility net solutions for training spaces."
   },
   {
     id: "turf",
@@ -89,7 +105,12 @@ export function filterProducts({
   const normalizedQuery = query?.trim().toLowerCase();
 
   return products.filter((product) => {
-    const matchesCategory = !category || category === "all" || product.category === category;
+    const matchesCategory =
+      !category ||
+      category === "all" ||
+      (category === "accessories"
+        ? accessoryCategories.includes(product.category)
+        : product.category === category);
     const matchesPrice = !maxPrice || product.price <= maxPrice;
     const matchesQuery =
       !normalizedQuery ||

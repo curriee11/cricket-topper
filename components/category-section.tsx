@@ -11,7 +11,7 @@ export function CategorySection() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
               Categories
             </p>
-            <h2 className="mt-3 text-3xl font-semibold text-white">Shop by game role</h2>
+            <h2 className="mt-3 text-3xl font-semibold text-white">Shop cricket essentials</h2>
           </div>
           <Link href="/products" className="hidden text-sm text-stone-300 transition hover:text-brand-300 md:block">
             View all equipment

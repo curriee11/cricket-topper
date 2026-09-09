@@ -1,4 +1,4 @@
-export type ProductCategory = "bats" | "gloves" | "pads" | "kits" | "nets" | "turf" | "balls";
+export type ProductCategory = "bats" | "gloves" | "pads" | "kits" | "helmets" | "guards" | "nets" | "turf" | "balls";
 
 export type Product = {
   id: string;

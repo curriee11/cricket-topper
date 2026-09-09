@@ -17,6 +17,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/products`,
       lastModified: new Date()
     },
+    {
+      url: `${baseUrl}/institutions`,
+      lastModified: new Date()
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date()
+    },
+    {
+      url: `${baseUrl}/projects`,
+      lastModified: new Date()
+    },
     ...productEntries
   ];
 }

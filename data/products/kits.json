@@ -66,5 +66,28 @@
         "value": "Competitive and touring players"
       }
     ]
+  },
+  {
+    "id": "kit-model-wala-bag",
+    "slug": "model-wala-kit-bag",
+    "name": "Model Wala Kit Bag",
+    "category": "kits",
+    "price": 1200,
+    "displayPrice": "MRP Rs. 1,200",
+    "tagline": "Practical cricket kit bag for carrying your everyday gear.",
+    "shortDescription": "Model Wala kit bag with space for bats, accessories, and training essentials.",
+    "description": "The Model Wala Kit Bag is made for players who need a practical way to carry cricket bats, protective accessories, and everyday training gear.",
+    "featured": false,
+    "images": [
+      "/products/kits/model-wala/1.jpg",
+      "/products/kits/model-wala/2.jpg",
+      "/products/kits/model-wala/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Model", "value": "Model Wala" },
+      { "label": "Type", "value": "Cricket kit bag" },
+      { "label": "MRP", "value": "Rs. 1,200" },
+      { "label": "Best For", "value": "Daily training and match travel" }
+    ]
   }
 ]

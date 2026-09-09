@@ -66,5 +66,28 @@
         "value": "Match and advanced training use"
       }
     ]
+  },
+  {
+    "id": "glove-pro-batting",
+    "slug": "pro-batting-gloves",
+    "name": "Pro Batting Gloves",
+    "category": "gloves",
+    "price": 2999,
+    "displayPrice": "MRP Rs. 2,999",
+    "tagline": "Pro batting gloves built for secure grip and comfortable protection.",
+    "shortDescription": "Pro model batting gloves with flexible finger protection and a confident fit.",
+    "description": "The Pro Batting Gloves are designed for players who want reliable hand protection, comfortable movement, and a secure grip through long batting sessions.",
+    "featured": false,
+    "images": [
+      "/products/gloves/pro/1.jpg",
+      "/products/gloves/pro/2.jpg",
+      "/products/gloves/pro/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Model", "value": "Pro" },
+      { "label": "Type", "value": "Batting gloves" },
+      { "label": "MRP", "value": "Rs. 2,999" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
   }
 ]

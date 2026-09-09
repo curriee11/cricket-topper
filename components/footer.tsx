@@ -42,8 +42,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-6 max-w-md text-sm leading-6 text-blue-50/75">
-            Premium sports goods store in {CITY} focused on fast assistance, quality
-            gear, and direct phone or WhatsApp enquiries.
+            Cricket bats, accessories, kit essentials, and nets in {CITY}, supported by
+            fast assistance and direct phone or WhatsApp enquiries.
           </p>
           <div className="mt-6 border-t border-brand-500/15 pt-4">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-300">

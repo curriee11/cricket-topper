@@ -1,36 +1,48 @@
 [
   {
-    "id": "pads-pro-guard",
-    "slug": "pro-guard-batting-pads",
-    "name": "Pro Guard Batting Pads",
+    "id": "pad-bravo-batting",
+    "slug": "bravo-batting-pad",
+    "name": "Bravo Batting Pad",
     "category": "pads",
-    "price": 7499,
-    "tagline": "Lightweight batting pads with balanced protection and comfortable movement.",
-    "shortDescription": "Premium cricket batting pads built for match play and advanced training.",
-    "description": "Pro Guard Batting Pads are built for players who want reliable protection without a bulky feel. The shape supports movement between the wickets while high-density foam and reinforced knee protection help absorb impact in training and matches.",
+    "price": 3999,
+    "displayPrice": "MRP Rs. 3,999",
+    "tagline": "Top-quality batting pad built for confident movement and match protection.",
+    "shortDescription": "Bravo batting pad with a comfortable fit and dependable impact protection.",
+    "description": "The Bravo Batting Pad is designed for players who want top-quality protection with a comfortable feel during training and match play.",
     "featured": false,
     "images": [
-      "/products/pads/pro-guard/main.svg",
-      "/products/pads/pro-guard/side.svg",
-      "/products/pads/pro-guard/detail.svg"
+      "/products/pads/bravo/1.jpg",
+      "/products/pads/bravo/2.jpg",
+      "/products/pads/bravo/3.jpg"
     ],
     "specifications": [
-      {
-        "label": "Construction",
-        "value": "Lightweight high-density foam protection"
-      },
-      {
-        "label": "Finish",
-        "value": "Premium PU facing with reinforced instep"
-      },
-      {
-        "label": "Fit",
-        "value": "Right and left-handed batting options"
-      },
-      {
-        "label": "Best For",
-        "value": "Club matches and advanced training"
-      }
+      { "label": "Model", "value": "Bravo" },
+      { "label": "Quality", "value": "Top Quality" },
+      { "label": "MRP", "value": "Rs. 3,999" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "pad-thigh-combo",
+    "slug": "thigh-pad-combo",
+    "name": "Thigh Pad Combo",
+    "category": "pads",
+    "price": 1299,
+    "displayPrice": "MRP Rs. 1,299",
+    "tagline": "Comfortable thigh protection for confident batting sessions.",
+    "shortDescription": "Thigh pad combo designed for flexible movement and essential protection.",
+    "description": "The Thigh Pad Combo gives batters lightweight protection around the thigh while keeping movement comfortable during nets, training, and matches.",
+    "featured": false,
+    "images": [
+      "/products/pads/thigh-combo/1.jpg",
+      "/products/pads/thigh-combo/2.jpg",
+      "/products/pads/thigh-combo/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Model", "value": "Thigh Combo" },
+      { "label": "Type", "value": "Cricket thigh protection" },
+      { "label": "MRP", "value": "Rs. 1,299" },
+      { "label": "Best For", "value": "Batting practice and match play" }
     ]
   }
 ]

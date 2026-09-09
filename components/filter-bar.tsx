@@ -14,6 +14,7 @@ const priceRanges = [
 
 const categoryOptions = [
   { label: "All Categories", value: "all" },
+  { label: "Accessories", value: "accessories" },
   ...productCategories.map((category) => ({
     label: category.name,
     value: category.id

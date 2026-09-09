@@ -6,13 +6,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { COMPANY_NAME, PHONE_NUMBER, WHATSAPP_NUMBER } from "@/lib/constants";
 
-const shopCategories = [
-  { label: "Bats", value: "bats" },
-  { label: "Gloves", value: "gloves" },
-  { label: "Pads", value: "pads" },
-  { label: "Kits", value: "kits" }
-];
-
 function SearchIcon() {
   return (
     <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
@@ -100,7 +93,7 @@ export function Navbar() {
 
   return (
     <header className={`sticky top-0 z-50 border-b border-brand-500/20 bg-black/90 transition-all duration-300 ${scrolled ? "backdrop-blur-md shadow-[0_10px_32px_rgba(0,0,0,0.32)]" : "shadow-[0_8px_24px_rgba(212,175,55,0.06)]"}`}>
-      <div className={`container-shell grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 transition-all duration-300 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] ${scrolled ? "py-3" : "py-4"}`}>
+      <div className="container-shell grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-5 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
         <div className="flex items-center gap-3 justify-self-start">
           <Link href="/" className="flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-brand-500/30 bg-black p-1.5 shadow-glow">
@@ -125,15 +118,27 @@ export function Navbar() {
           <Link href="/" className="text-sm text-stone-300 transition hover:text-brand-300">
             Home
           </Link>
-          {shopCategories.map((category) => (
-            <Link
-              key={category.value}
-              href={`/products?category=${category.value}`}
-              className="text-sm text-stone-300 transition hover:text-brand-300"
-            >
-              {category.label}
-            </Link>
-          ))}
+          <Link href="/products" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Products
+          </Link>
+          <Link href="/products?category=bats" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Bats
+          </Link>
+          <Link href="/products?category=accessories" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Accessories
+          </Link>
+          <Link href="/products?category=nets" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Nets
+          </Link>
+          <Link href="/institutions" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Institutions We Serve
+          </Link>
+          <Link href="/about" className="text-sm text-stone-300 transition hover:text-brand-300">
+            About Us
+          </Link>
+          <Link href="/projects" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Our Projects
+          </Link>
         </nav>
 
         <div className="flex items-center justify-end gap-2 lg:gap-3" ref={searchRef}>
@@ -211,25 +216,26 @@ export function Navbar() {
                 Home
               </Link>
               <Link href="/products" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Shop
+                Products
               </Link>
-            </div>
-
-            <div className="rounded-3xl border border-brand-500/15 bg-white/5 p-3">
-              <p className="px-3 pb-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">
-                Categories
-              </p>
-              <div className="grid grid-cols-2 gap-2">
-                {shopCategories.map((category) => (
-                  <Link
-                    key={category.value}
-                    href={`/products?category=${category.value}`}
-                    className="rounded-2xl border border-brand-500/15 px-4 py-3 text-sm text-stone-200 transition hover:border-brand-500/35 hover:text-brand-300"
-                  >
-                    {category.label}
-                  </Link>
-                ))}
-              </div>
+              <Link href="/products?category=bats" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Bats
+              </Link>
+              <Link href="/products?category=accessories" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Accessories
+              </Link>
+              <Link href="/products?category=nets" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Nets
+              </Link>
+              <Link href="/institutions" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Institutions We Serve
+              </Link>
+              <Link href="/about" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                About Us
+              </Link>
+              <Link href="/projects" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Our Projects
+              </Link>
             </div>
 
             <div className="flex gap-3">
