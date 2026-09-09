@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { institutions } from "@/lib/institutions";
+import { projects } from "@/lib/institutions";
 
 export const metadata: Metadata = {
   title: "Our Projects",
@@ -27,22 +27,32 @@ export default function ProjectsPage() {
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
-          {institutions.map((institution, index) => (
+          {projects.map((project, index) => (
             <article
-              key={institution.name}
+              key={project.name}
               className="surface-strong rounded-2xl border-brand-500/20 p-6 shadow-glow transition hover:-translate-y-1 hover:border-brand-500/45"
             >
               <p className="text-sm font-semibold tracking-[0.18em] text-brand-300">
                 PROJECT 0{index + 1}
               </p>
               <h2 className="mt-8 text-2xl font-semibold leading-8 text-white">
-                {institution.name}
+                {project.name}
               </h2>
               <div className="mt-6 border-t border-brand-500/15 pt-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Scope
                 </p>
-                <p className="mt-2 text-sm text-stone-300">{institution.detail}</p>
+                <p className="mt-2 text-sm text-stone-300">{project.detail}</p>
+                {"url" in project ? (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-flex text-sm font-semibold text-brand-300 transition hover:text-brand-200"
+                  >
+                    View project <span aria-hidden="true">↗</span>
+                  </a>
+                ) : null}
               </div>
             </article>
           ))}

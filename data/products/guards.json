@@ -11,9 +11,7 @@
     "description": "The Cricket Arm Guard provides lightweight protection and comfortable movement for batters during nets, training, and match play.",
     "featured": false,
     "images": [
-      "/products/guards/arm/1.jpg",
-      "/products/guards/arm/2.jpg",
-      "/products/guards/arm/3.jpg"
+      "/products/guards/arm/1.jpeg"
     ],
     "specifications": [
       { "label": "Type", "value": "Arm guard" },
@@ -34,13 +32,78 @@
     "description": "The Cricket Abdominal Guard provides essential protection and a practical fit for players during regular cricket training and match sessions.",
     "featured": false,
     "images": [
-      "/products/guards/abdominal/1.jpg",
-      "/products/guards/abdominal/2.jpg",
-      "/products/guards/abdominal/3.jpg"
+      "/products/guards/abdominal/1.jpeg"
     ],
     "specifications": [
       { "label": "Type", "value": "Abdominal guard" },
       { "label": "MRP", "value": "Rs. 149" },
+      { "label": "Use", "value": "Cricket protection" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "guard-arm-399",
+    "slug": "cricket-arm-guard-399",
+    "name": "Cricket Arm Guard",
+    "category": "guards",
+    "price": 399,
+    "displayPrice": "MRP Rs. 399",
+    "tagline": "Lightweight arm protection for confident batting sessions.",
+    "shortDescription": "Comfortable arm guard for essential protection during cricket practice and matches.",
+    "description": "The Cricket Arm Guard provides lightweight protection and comfortable movement for batters during nets, training, and match play.",
+    "featured": false,
+    "images": [
+      "/products/guards/arm-399/1.jpg",
+      "/products/guards/arm-399/2.jpg",
+      "/products/guards/arm-399/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Arm guard" },
+      { "label": "MRP", "value": "Rs. 399" },
+      { "label": "Fit", "value": "Flexible batting protection" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "guard-abdominal-elastic",
+    "slug": "elastic-abdominal-guard",
+    "name": "Elastic Abdominal Guard",
+    "category": "guards",
+    "price": 230,
+    "displayPrice": "MRP Rs. 230",
+    "tagline": "Practical lower-body protection with a comfortable elastic fit.",
+    "shortDescription": "Elastic abdominal guard for dependable everyday cricket protection.",
+    "description": "The Elastic Abdominal Guard is designed for a comfortable fit and essential protection during nets, training, and matches.",
+    "featured": false,
+    "images": [
+      "/products/guards/abdominal-elastic/1.jpg",
+      "/products/guards/abdominal-elastic/2.jpg"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Abdominal guard" },
+      { "label": "Fit", "value": "Elastic" },
+      { "label": "MRP", "value": "Rs. 230" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "guard-abdominal-basic",
+    "slug": "basic-abdominal-guard",
+    "name": "Abdominal Guard",
+    "category": "guards",
+    "price": 119,
+    "displayPrice": "MRP Rs. 119",
+    "tagline": "Essential cricket protection for regular practice sessions.",
+    "shortDescription": "Practical abdominal guard for everyday nets and cricket training.",
+    "description": "The Abdominal Guard provides essential protection for players during regular cricket practice and match sessions.",
+    "featured": false,
+    "images": [
+      "/products/guards/abdominal-basic/1.jpg",
+      "/products/guards/abdominal-basic/2.jpg"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Abdominal guard" },
+      { "label": "MRP", "value": "Rs. 119" },
       { "label": "Use", "value": "Cricket protection" },
       { "label": "Best For", "value": "Training and match play" }
     ]

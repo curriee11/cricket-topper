@@ -44,5 +44,74 @@
       { "label": "MRP", "value": "Rs. 1,299" },
       { "label": "Best For", "value": "Batting practice and match play" }
     ]
+  },
+  {
+    "id": "pad-shield-batting",
+    "slug": "shield-batting-pad",
+    "name": "Shield Batting Pad",
+    "category": "pads",
+    "price": 3299,
+    "displayPrice": "MRP Rs. 3,299",
+    "tagline": "Comfortable batting protection for confident movement at the crease.",
+    "shortDescription": "Shield model batting pad with dependable impact protection and a secure fit.",
+    "description": "The Shield Batting Pad is designed to provide dependable protection and comfortable movement through practice sessions and matches.",
+    "featured": false,
+    "images": [
+      "/products/pads/shield/1.jpg",
+      "/products/pads/shield/2.jpg",
+      "/products/pads/shield/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Model", "value": "Shield" },
+      { "label": "Type", "value": "Batting pad" },
+      { "label": "MRP", "value": "Rs. 3,299" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "pad-thigh-standard",
+    "slug": "standard-thigh-pad",
+    "name": "Thigh Pad",
+    "category": "pads",
+    "price": 899,
+    "displayPrice": "MRP Rs. 899",
+    "tagline": "Lightweight thigh protection for comfortable batting sessions.",
+    "shortDescription": "Thigh pad designed for essential protection and flexible movement.",
+    "description": "The Thigh Pad provides lightweight protection for regular nets, training, and match play while keeping movement comfortable.",
+    "featured": false,
+    "images": [
+      "/products/pads/thigh-pad/1.jpg",
+      "/products/pads/thigh-pad/2.jpg",
+      "/products/pads/thigh-pad/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Thigh pad" },
+      { "label": "MRP", "value": "Rs. 899" },
+      { "label": "Use", "value": "Cricket batting protection" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
+  },
+  {
+    "id": "pad-batting-standard",
+    "slug": "cricket-batting-pad-standard",
+    "name": "Cricket Batting Pad",
+    "category": "pads",
+    "price": 1999,
+    "displayPrice": "MRP Rs. 1,999",
+    "tagline": "Reliable batting protection for everyday cricket use.",
+    "shortDescription": "Comfortable cricket batting pad for practice sessions and matches.",
+    "description": "The Cricket Batting Pad is designed for practical protection, comfortable movement, and dependable everyday use at the crease.",
+    "featured": false,
+    "images": [
+      "/products/pads/batting-standard/1.jpg",
+      "/products/pads/batting-standard/2.jpg",
+      "/products/pads/batting-standard/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Batting pad" },
+      { "label": "MRP", "value": "Rs. 1,999" },
+      { "label": "Use", "value": "Cricket protection" },
+      { "label": "Best For", "value": "Training and match play" }
+    ]
   }
 ]

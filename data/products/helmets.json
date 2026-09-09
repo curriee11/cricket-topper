@@ -11,9 +11,9 @@
     "description": "The Shrey Cricket Helmet is designed for players who want top-quality protection, a comfortable fit, and confidence against pace during nets and matches.",
     "featured": false,
     "images": [
-      "/products/helmets/shrey/1.jpg",
-      "/products/helmets/shrey/2.jpg",
-      "/products/helmets/shrey/3.jpg"
+      "/products/helmets/shrey/1.jpeg",
+      "/products/helmets/shrey/2.jpeg",
+      "/products/helmets/shrey/3.jpeg"
     ],
     "specifications": [
       { "label": "Brand", "value": "Shrey" },
@@ -34,15 +34,38 @@
     "description": "The MRF Cricket Helmet is made for players who need dependable everyday head protection for nets, practice sessions, and match play.",
     "featured": false,
     "images": [
-      "/products/helmets/mrf/1.jpg",
-      "/products/helmets/mrf/2.jpg",
-      "/products/helmets/mrf/3.jpg"
+      "/products/helmets/mrf/1.jpeg",
+      "/products/helmets/mrf/2.jpeg",
+      "/products/helmets/mrf/3.jpeg"
     ],
     "specifications": [
       { "label": "Brand", "value": "MRF" },
       { "label": "Type", "value": "Cricket helmet" },
       { "label": "MRP", "value": "Rs. 1,190" },
       { "label": "Best For", "value": "Practice and match use" }
+    ]
+  },
+  {
+    "id": "helmet-yonekr",
+    "slug": "yonekr-cricket-helmet",
+    "name": "Yonekr Cricket Helmet",
+    "category": "helmets",
+    "price": 1045,
+    "displayPrice": "MRP Rs. 1,045",
+    "tagline": "Practical cricket helmet protection for training and match play.",
+    "shortDescription": "Yonekr cricket helmet with a comfortable fit and dependable head protection.",
+    "description": "The Yonekr Cricket Helmet is designed for players who need comfortable, practical head protection during nets, training, and matches.",
+    "featured": false,
+    "images": [
+      "/products/helmets/yonekr/1.jpg",
+      "/products/helmets/yonekr/2.jpg",
+      "/products/helmets/yonekr/3.jpg"
+    ],
+    "specifications": [
+      { "label": "Brand", "value": "Yonekr" },
+      { "label": "Type", "value": "Cricket helmet" },
+      { "label": "MRP", "value": "Rs. 1,045" },
+      { "label": "Best For", "value": "Training and match play" }
     ]
   }
 ]
