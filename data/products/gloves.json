@@ -33,9 +33,8 @@
     "description": "The Sixer Batting Gloves are designed for comfortable movement, secure grip, and reliable protection during cricket practice and match play.",
     "featured": false,
     "images": [
-      "/products/gloves/sixer/1.jpg",
-      "/products/gloves/sixer/2.jpg",
-      "/products/gloves/sixer/3.jpg"
+      "/products/gloves/sixer/1.jpeg",
+      "/products/gloves/sixer/2.jpeg"
     ],
     "specifications": [
       { "label": "Model", "value": "Sixer" },
@@ -56,9 +55,8 @@
     "description": "The Pro 700 Batting Gloves provide a comfortable fit and dependable protection for regular nets, training, and match use.",
     "featured": false,
     "images": [
-      "/products/gloves/pro-700/1.jpg",
-      "/products/gloves/pro-700/2.jpg",
-      "/products/gloves/pro-700/3.jpg"
+      "/products/gloves/pro-700/1.jpeg",
+      "/products/gloves/pro-700/2.jpeg"
     ],
     "specifications": [
       { "label": "Model", "value": "Pro 700" },

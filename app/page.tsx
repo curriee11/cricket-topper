@@ -9,8 +9,8 @@ export default function HomePage() {
     <>
       <HeroSection />
       <FeaturedProducts />
-      <BusinessHighlights />
       <InstitutionsPreview />
+      <BusinessHighlights />
       <CategorySection />
     </>
   );

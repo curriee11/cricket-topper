@@ -46,23 +46,22 @@
     ]
   },
   {
-    "id": "helmet-yonekr",
-    "slug": "yonekr-cricket-helmet",
-    "name": "Yonekr Cricket Helmet",
+    "id": "helmet-yonker",
+    "slug": "yonker-cricket-helmet",
+    "name": "Yonker Cricket Helmet",
     "category": "helmets",
     "price": 1045,
     "displayPrice": "MRP Rs. 1,045",
     "tagline": "Practical cricket helmet protection for training and match play.",
-    "shortDescription": "Yonekr cricket helmet with a comfortable fit and dependable head protection.",
-    "description": "The Yonekr Cricket Helmet is designed for players who need comfortable, practical head protection during nets, training, and matches.",
+    "shortDescription": "Yonker cricket helmet with a comfortable fit and dependable head protection.",
+    "description": "The Yonker Cricket Helmet is designed for players who need comfortable, practical head protection during nets, training, and matches.",
     "featured": false,
     "images": [
-      "/products/helmets/yonekr/1.jpg",
-      "/products/helmets/yonekr/2.jpg",
-      "/products/helmets/yonekr/3.jpg"
+      "/products/helmets/yonker/1.jpeg",
+      "/products/helmets/yonker/2.jpeg"
     ],
     "specifications": [
-      { "label": "Brand", "value": "Yonekr" },
+      { "label": "Brand", "value": "Yonker" },
       { "label": "Type", "value": "Cricket helmet" },
       { "label": "MRP", "value": "Rs. 1,045" },
       { "label": "Best For", "value": "Training and match play" }

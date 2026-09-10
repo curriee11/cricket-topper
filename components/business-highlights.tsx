@@ -1,5 +1,4 @@
 import {
-  ADDRESS,
   ADDITIONAL_PHONE_NUMBERS,
   BUSINESS_HOURS,
   CITY,
@@ -27,10 +26,10 @@ const reviews = [
 
 export function BusinessHighlights() {
   return (
-    <section id="about" className="bg-black py-16">
+    <section id="about" className="bg-black py-20">
       <div className="container-shell">
-        <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-          <div id="contact" className="surface rounded-[32px] p-6 shadow-luxe sm:p-8">
+        <div className="grid items-start gap-10 xl:grid-cols-[0.95fr_1.05fr]">
+          <div id="contact" className="surface rounded-2xl p-7 shadow-luxe sm:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
               Visit The Store
             </p>
@@ -38,41 +37,30 @@ export function BusinessHighlights() {
               {COMPANY_NAME}
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700">
-              We at cricket topper manufacture world class carrom boards,
-              cricket bat, cricket accessories, football, Badminton rackets,
-              sports nets for all games, sports wears like track suit, tshirts,
-              lower and shorts. Along with that, we are authorized Distributors
-              for SS TON Cricket, MRF Cricket bats, Adidas Cricket, Nivia
-              products, Garware Sportiva sports nets.
+              Cricket equipment, accessories, sports nets, and direct support from
+              our Jalandhar store.
             </p>
-            <p className="mt-4 text-sm font-medium leading-7 text-slate-600">
+            <p className="mt-6 border-t border-brand-500/15 pt-5 text-sm font-medium leading-7 text-slate-600">
               Since 1985 · Jalandhar, Punjab
               <br />
               Manufacturer &amp; Wholesaler · Worldwide Shipping
               <br />1 Lac+ Satisfied Customers
             </p>
-            <div className="mt-6 rounded-2xl border border-brand-500/15 bg-white/80 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-500">
-                Our Story
-              </p>
-              <p className="mt-3 text-sm leading-7 text-slate-700">
-                Since 1985, Cricket Topper has grown into a trusted manufacturer
-                and wholesaler serving cricketers, academies, schools, clubs, and
-                sports facilities with quality equipment and dependable support.
-              </p>
-            </div>
-
-            <div className="mt-6 grid gap-4">
-              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+            <div className="mt-8 grid gap-4">
+              <div className="rounded-xl border border-brand-500/15 bg-brand-50/60 p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Address
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-700">
-                  {ADDRESS}
+                  Near WX-3, Titu Medical,
+                  <br />
+                  Basti Nau, J.P. Nagar,
+                  <br />
+                  Jalandhar, Punjab - 144002
                 </p>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-brand-500/15 bg-white/80 p-4">
+                <div className="rounded-xl border border-brand-500/15 bg-white/80 p-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                     Phone
                   </p>
@@ -94,7 +82,7 @@ export function BusinessHighlights() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-2xl border border-brand-500/15 bg-white/80 p-4">
+                <div className="rounded-xl border border-brand-500/15 bg-white/80 p-5">
                   <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                     Hours
                   </p>
@@ -106,7 +94,7 @@ export function BusinessHighlights() {
             </div>
           </div>
 
-          <div className="surface rounded-[32px] p-6 shadow-luxe sm:p-8">
+          <div className="surface rounded-2xl p-7 shadow-luxe sm:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
               Trusted By Local Players
             </p>
@@ -122,8 +110,8 @@ export function BusinessHighlights() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+              <div className="rounded-xl border border-brand-500/15 bg-brand-50/60 p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Experience
                 </p>
@@ -131,7 +119,7 @@ export function BusinessHighlights() {
                   Since 1985
                 </p>
               </div>
-              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+              <div className="rounded-xl border border-brand-500/15 bg-brand-50/60 p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Business Type
                 </p>
@@ -139,7 +127,7 @@ export function BusinessHighlights() {
                   Manufacturer & Trader
                 </p>
               </div>
-              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+              <div className="rounded-xl border border-brand-500/15 bg-brand-50/60 p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Speciality
                 </p>
@@ -147,7 +135,7 @@ export function BusinessHighlights() {
                   Bats, Nets, Turf & Balls
                 </p>
               </div>
-              <div className="rounded-2xl border border-brand-500/15 bg-brand-50/60 p-4">
+              <div className="rounded-xl border border-brand-500/15 bg-brand-50/60 p-5">
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   YouTube Community
                 </p>
@@ -162,7 +150,7 @@ export function BusinessHighlights() {
               {reviews.map((review) => (
                 <div
                   key={review.author}
-                  className="rounded-2xl border border-brand-500/15 bg-white/80 p-4"
+                  className="rounded-xl border border-brand-500/15 bg-white/80 p-5"
                 >
                   <p className="text-sm leading-6 text-slate-700">
                     "{review.quote}"

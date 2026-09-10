@@ -1,39 +1,5 @@
 [
   {
-    "id": "turf-cricket-pitch",
-    "slug": "astro-turf-cricket-pitch-roll",
-    "name": "Astro Turf Cricket Pitch Roll",
-    "category": "turf",
-    "price": 32999,
-    "tagline": "Practice pitch surface with true bounce and durable turf backing.",
-    "shortDescription": "Astro turf cricket pitch roll ideal for academies, schools, and training centers.",
-    "description": "The Astro Turf Cricket Pitch Roll creates a consistent training wicket for bowlers and batters. It is designed for repeated use on concrete or prepared surfaces, offering dependable grip, rebound, and long-term durability for academy practice environments.",
-    "featured": true,
-    "images": [
-      "/products/turf/astro-pitch/main.svg",
-      "/products/turf/astro-pitch/detail.svg",
-      "/products/turf/astro-pitch/roll.svg"
-    ],
-    "specifications": [
-      {
-        "label": "Surface",
-        "value": "High-density astro turf"
-      },
-      {
-        "label": "Use Case",
-        "value": "Portable and fixed cricket practice pitches"
-      },
-      {
-        "label": "Backing",
-        "value": "Reinforced non-slip base"
-      },
-      {
-        "label": "Best For",
-        "value": "Academies, schools, and clubs"
-      }
-    ]
-  },
-  {
     "id": "turf-infill-grass",
     "slug": "artificial-infill-field-grass",
     "name": "Artificial Infill Field Grass",

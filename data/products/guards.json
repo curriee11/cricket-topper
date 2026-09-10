@@ -53,9 +53,7 @@
     "description": "The Cricket Arm Guard provides lightweight protection and comfortable movement for batters during nets, training, and match play.",
     "featured": false,
     "images": [
-      "/products/guards/arm-399/1.jpg",
-      "/products/guards/arm-399/2.jpg",
-      "/products/guards/arm-399/3.jpg"
+      "/products/guards/arm-399/1.jpeg"
     ],
     "specifications": [
       { "label": "Type", "value": "Arm guard" },
@@ -76,8 +74,7 @@
     "description": "The Elastic Abdominal Guard is designed for a comfortable fit and essential protection during nets, training, and matches.",
     "featured": false,
     "images": [
-      "/products/guards/abdominal-elastic/1.jpg",
-      "/products/guards/abdominal-elastic/2.jpg"
+      "/products/guards/abdominal-elastic/1.jpeg"
     ],
     "specifications": [
       { "label": "Type", "value": "Abdominal guard" },
@@ -98,8 +95,7 @@
     "description": "The Abdominal Guard provides essential protection for players during regular cricket practice and match sessions.",
     "featured": false,
     "images": [
-      "/products/guards/abdominal-basic/1.jpg",
-      "/products/guards/abdominal-basic/2.jpg"
+      "/products/guards/abdominal-basic/1.jpeg"
     ],
     "specifications": [
       { "label": "Type", "value": "Abdominal guard" },
