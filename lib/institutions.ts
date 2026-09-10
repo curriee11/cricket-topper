@@ -14,13 +14,9 @@ export const institutions = [
   {
     name: "IIIT Manipur",
     detail: "Sports goods and net supply"
-  }
-] as const;
-
-export const projects = [
+  },
   {
-    name: "360 Box Cricket Project, Parbhani, Maharashtra",
-    detail: "Box cricket sports net project",
-    url: "https://www.youtube.com/shorts/pkUAYmRPkms"
+    name: "KV Jalandhar",
+    detail: "Sports goods and net supply"
   }
 ] as const;

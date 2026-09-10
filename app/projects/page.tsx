@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { projects } from "@/lib/institutions";
+import { ProjectImage } from "@/components/project-image";
+import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Our Projects",
@@ -18,11 +19,10 @@ export default function ProjectsPage() {
             Our Projects
           </p>
           <h1 className="mt-3 text-4xl font-semibold text-white sm:text-6xl">
-            Sports supply for serious facilities.
+            Sports solutions for every level.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300 sm:text-lg">
-            From cricket equipment to sports nets, we support institutions and
-            academies with practical supply solutions for training and play.
+            From cricket equipment to sports nets, we provide practical solutions for players, clubs, institutions, academies, and sports facilities.
           </p>
         </div>
 
@@ -32,6 +32,7 @@ export default function ProjectsPage() {
               key={project.name}
               className="surface-strong rounded-2xl border-brand-500/20 p-6 shadow-glow transition hover:-translate-y-1 hover:border-brand-500/45"
             >
+              {"image" in project ? <ProjectImage src={project.image} alt={project.name} /> : null}
               <p className="text-sm font-semibold tracking-[0.18em] text-brand-300">
                 PROJECT 0{index + 1}
               </p>

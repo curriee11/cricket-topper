@@ -130,8 +130,8 @@ export function Navbar() {
           <Link href="/products?category=nets" className="text-sm text-stone-300 transition hover:text-brand-300">
             Nets
           </Link>
-          <Link href="/institutions" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Institutions We Serve
+          <Link href="/guides" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Guides
           </Link>
           <Link href="/about" className="text-sm text-stone-300 transition hover:text-brand-300">
             About Us
@@ -227,8 +227,8 @@ export function Navbar() {
               <Link href="/products?category=nets" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
                 Nets
               </Link>
-              <Link href="/institutions" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Institutions We Serve
+              <Link href="/guides" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Guides
               </Link>
               <Link href="/about" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
                 About Us
