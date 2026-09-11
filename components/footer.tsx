@@ -6,6 +6,7 @@ import {
   BUSINESS_HOURS,
   CITY,
   COMPANY_NAME,
+  DEALER_EMAIL,
   DISPLAY_PHONE,
   FACEBOOK_URL,
   PHONE_NUMBER,
@@ -125,6 +126,12 @@ export function Footer() {
             <div className="mt-4 border-t border-brand-500/15 pt-3">
               <p>{BUSINESS_HOURS}</p>
             </div>
+            <a
+              href={`mailto:${DEALER_EMAIL}`}
+              className="mt-3 block transition hover:text-brand-300"
+            >
+              {DEALER_EMAIL}
+            </a>
           </div>
         </div>
       </div>

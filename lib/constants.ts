@@ -7,6 +7,7 @@ export const ADDITIONAL_PHONE_NUMBERS = [
 ];
 export const WHATSAPP_NUMBER = "9186999 10568";
 export const YOUTUBE_URL = "https://www.youtube.com/@cricket_topper";
+export const DEALER_EMAIL = "dealer@crickettopper.com";
 export const YOUTUBE_SUBSCRIBERS = "5.5K+";
 export const FACEBOOK_URL = "https://www.facebook.com/crickettopper1305/";
 export const ADDRESS =

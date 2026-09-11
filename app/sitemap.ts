@@ -29,6 +29,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/guides`,
       lastModified: new Date()
     },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date()
+    },
     ...productEntries
   ];
 }

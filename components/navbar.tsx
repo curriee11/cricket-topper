@@ -133,6 +133,9 @@ export function Navbar() {
           <Link href="/guides" className="text-sm text-stone-300 transition hover:text-brand-300">
             Guides
           </Link>
+          <Link href="/contact" className="text-sm text-stone-300 transition hover:text-brand-300">
+            Contact
+          </Link>
           <Link href="/about" className="text-sm text-stone-300 transition hover:text-brand-300">
             About Us
           </Link>
@@ -229,6 +232,9 @@ export function Navbar() {
               </Link>
               <Link href="/guides" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
                 Guides
+              </Link>
+              <Link href="/contact" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
+                Contact
               </Link>
               <Link href="/about" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
                 About Us

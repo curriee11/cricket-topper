@@ -1,2 +1,21 @@
 [
+
+  {
+    "id": "kit-middle-quality-bag",
+    "slug": "middle-quality-kit-bag",
+    "name": "Middle Quality Kit Bag",
+    "category": "kits",
+    "price": 1000,
+    "displayPrice": "MRP Rs. 1,000",
+    "tagline": "A practical kit bag for everyday cricket equipment.",
+    "shortDescription": "Middle quality kit bag for carrying bats, accessories, and training essentials.",
+    "description": "The Middle Quality Kit Bag offers a practical option for players who need everyday storage for cricket equipment and accessories.",
+    "featured": false,
+    "images": ["/products/kits/middle-quality/1.jpeg", "/products/kits/middle-quality/2.jpeg", "/products/kits/middle-quality/3.jpeg"],
+    "specifications": [
+      { "label": "Quality", "value": "Middle quality" },
+      { "label": "Type", "value": "Cricket kit bag" },
+      { "label": "MRP", "value": "Rs. 1,000" }
+    ]
+  }
 ]
