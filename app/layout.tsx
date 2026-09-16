@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import {
@@ -89,7 +90,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Navbar />
+        <Suspense fallback={null}>
+          <Navbar />
+        </Suspense>
         <main>{children}</main>
         <Footer />
       </body>
