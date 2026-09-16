@@ -3,8 +3,20 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { COMPANY_NAME, PHONE_NUMBER, WHATSAPP_NUMBER } from "@/lib/constants";
+
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/products", label: "Products" },
+  { href: "/products?category=bats", label: "Bats" },
+  { href: "/products?category=accessories", label: "Accessories" },
+  { href: "/products?category=nets", label: "Nets" },
+  { href: "/guides", label: "Guides" },
+  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "About Us" },
+  { href: "/projects", label: "Our Projects" }
+];
 
 function SearchIcon() {
   return (
@@ -45,12 +57,16 @@ function MenuIcon({ open }: { open: boolean }) {
 
 export function Navbar() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [navigatingTo, setNavigatingTo] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
   const searchRef = useRef<HTMLDivElement | null>(null);
+  const searchString = searchParams.toString();
+  const currentHref = `${pathname}${searchString ? `?${searchString}` : ""}`;
 
   useEffect(() => {
     function onScroll() {
@@ -76,7 +92,8 @@ export function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
     setSearchOpen(false);
-  }, [pathname]);
+    setNavigatingTo(null);
+  }, [pathname, searchString]);
 
   const whatsappUrl = useMemo(
     () => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi, I want to know more about your products.")}`,
@@ -86,16 +103,73 @@ export function Navbar() {
   function submitSearch(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const query = searchValue.trim();
-    router.push(`/products${query ? `?query=${encodeURIComponent(query)}` : ""}`);
+    const nextHref = `/products${query ? `?query=${encodeURIComponent(query)}` : ""}`;
+    setNavigatingTo(nextHref);
+    router.push(nextHref);
     setSearchOpen(false);
     setMobileOpen(false);
   }
 
+  function navLinkClasses({
+    active,
+    mobile,
+    pending
+  }: {
+    active: boolean;
+    mobile?: boolean;
+    pending: boolean;
+  }) {
+    if (mobile) {
+      return `block rounded-2xl px-4 py-3 text-sm transition ${
+        pending
+          ? "bg-brand-500 text-black"
+          : active
+            ? "bg-brand-500/15 text-brand-300"
+            : "text-stone-200 hover:bg-white/5 hover:text-brand-300"
+      }`;
+    }
+
+    return `text-sm underline-offset-8 decoration-2 transition ${
+      pending
+        ? "text-brand-300 underline decoration-brand-400"
+        : active
+          ? "text-brand-300 underline decoration-brand-500/70"
+          : "text-stone-300 decoration-transparent hover:text-brand-300"
+    }`;
+  }
+
+  function renderNavLink(item: (typeof navItems)[number], mobile = false) {
+    const active = currentHref === item.href;
+    const pending = navigatingTo === item.href;
+
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        aria-current={active ? "page" : undefined}
+        aria-busy={pending ? true : undefined}
+        className={navLinkClasses({ active, mobile, pending })}
+        onClick={() => {
+          if (!active) {
+            setNavigatingTo(item.href);
+          }
+        }}
+      >
+        {item.label}
+      </Link>
+    );
+  }
+
   return (
     <header className={`sticky top-0 z-50 border-b border-brand-500/20 bg-black/90 transition-all duration-300 ${scrolled ? "backdrop-blur-md shadow-[0_10px_32px_rgba(0,0,0,0.32)]" : "shadow-[0_8px_24px_rgba(212,175,55,0.06)]"}`}>
+      {navigatingTo ? (
+        <div className="absolute inset-x-0 top-0 h-0.5 overflow-hidden bg-brand-500/15">
+          <div className="h-full w-1/2 animate-pulse bg-brand-400 shadow-[0_0_18px_rgba(212,175,55,0.65)]" />
+        </div>
+      ) : null}
       <div className="container-shell grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-5 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
         <div className="flex items-center gap-3 justify-self-start">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3" onClick={() => currentHref !== "/" && setNavigatingTo("/")}>
             <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-brand-500/30 bg-black p-1.5 shadow-glow">
               <Image
                 src="/logo.jpg"
@@ -115,33 +189,7 @@ export function Navbar() {
         </div>
 
         <nav className="hidden items-center justify-center gap-7 lg:flex">
-          <Link href="/" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Home
-          </Link>
-          <Link href="/products" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Products
-          </Link>
-          <Link href="/products?category=bats" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Bats
-          </Link>
-          <Link href="/products?category=accessories" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Accessories
-          </Link>
-          <Link href="/products?category=nets" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Nets
-          </Link>
-          <Link href="/guides" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Guides
-          </Link>
-          <Link href="/contact" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Contact
-          </Link>
-          <Link href="/about" className="text-sm text-stone-300 transition hover:text-brand-300">
-            About Us
-          </Link>
-          <Link href="/projects" className="text-sm text-stone-300 transition hover:text-brand-300">
-            Our Projects
-          </Link>
+          {navItems.map((item) => renderNavLink(item))}
         </nav>
 
         <div className="flex items-center justify-end gap-2 lg:gap-3" ref={searchRef}>
@@ -215,33 +263,7 @@ export function Navbar() {
             </form>
 
             <div className="space-y-2">
-              <Link href="/" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Home
-              </Link>
-              <Link href="/products" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Products
-              </Link>
-              <Link href="/products?category=bats" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Bats
-              </Link>
-              <Link href="/products?category=accessories" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Accessories
-              </Link>
-              <Link href="/products?category=nets" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Nets
-              </Link>
-              <Link href="/guides" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Guides
-              </Link>
-              <Link href="/contact" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Contact
-              </Link>
-              <Link href="/about" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                About Us
-              </Link>
-              <Link href="/projects" className="block rounded-2xl px-4 py-3 text-sm text-stone-200 transition hover:bg-white/5 hover:text-brand-300">
-                Our Projects
-              </Link>
+              {navItems.map((item) => renderNavLink(item, true))}
             </div>
 
             <div className="flex gap-3">

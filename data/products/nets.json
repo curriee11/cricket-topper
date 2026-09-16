@@ -1,199 +1,90 @@
 [
   {
-    "id": "net-cricket-pro",
-    "slug": "pro-practice-cricket-net",
-    "name": "Pro Practice Cricket Net",
+    "id": "net-knotless-hdpe-3mm",
+    "slug": "knotless-cricket-net-3mm-hdpe",
+    "name": "Knotless Cricket Net 3mm HDPE",
     "category": "nets",
-    "price": 12499,
-    "tagline": "Heavy-duty netting for academy lanes and backyard practice bays.",
-    "shortDescription": "UV-stabilized cricket net built for regular bowling and batting practice.",
-    "description": "The Pro Practice Cricket Net is designed for clubs, academies, schools, and serious home setups. Its reinforced mesh construction handles repeated impact from leather balls while staying easy to mount for net lanes and enclosed practice areas.",
+    "price": 22,
+    "tagline": "Knotless cricket net made from Garware full virgin HDPE.",
+    "shortDescription": "3mm knotless Garware HDPE cricket net with UV protection and weather-proof build.",
+    "description": "The Knotless Cricket Net is built for long-lasting cricket practice spaces, academies, clubs, schools, and grounds. It uses Garware full virgin HDPE with UV protection and weather-proof construction for dependable outdoor use.",
     "featured": false,
     "images": [
-      "/products/nets/shared/main.svg",
-      "/products/nets/shared/detail.svg",
-      "/products/nets/shared/install.svg"
+      "/products/nets/sports-nets-general/1.png"
     ],
     "specifications": [
-      {
-        "label": "Material",
-        "value": "HDPE knotless netting"
-      },
-      {
-        "label": "Use Case",
-        "value": "Cricket practice lanes and backyard setups"
-      },
-      {
-        "label": "Finish",
-        "value": "UV-treated outdoor durability"
-      },
-      {
-        "label": "Sizes",
-        "value": "Custom dimensions available"
-      }
-    ]
+      { "label": "Net Type", "value": "Knotless Net" },
+      { "label": "Thickness", "value": "3 mm" },
+      { "label": "Make", "value": "Garware full virgin HDPE" },
+      { "label": "Protection", "value": "UV protected and weather proof" },
+      { "label": "Price", "value": "Rs. 22 per sq ft" }
+    ],
+    "displayPrice": "Rs. 22/sq ft"
   },
   {
-    "id": "net-multi-sport",
-    "slug": "multi-sport-goal-and-volleyball-net",
-    "name": "Multi-Sport Goal & Volleyball Net",
+    "id": "net-braided-hdpe-2-75mm",
+    "slug": "braided-cricket-net-2-75mm-hdpe",
+    "name": "Braided Cricket Net 2.75mm HDPE",
     "category": "nets",
-    "price": 8999,
-    "tagline": "Versatile net setup for football goals, volleyball courts, and training grounds.",
-    "shortDescription": "Durable multi-sport net solution for football and volleyball installations.",
-    "description": "This multi-sport net package is suited for schools, clubs, grounds, and indoor or outdoor facilities needing dependable football goal nets or volleyball court nets. It offers strong mesh retention, clean finish quality, and long-term outdoor use.",
+    "price": 20,
+    "tagline": "Braided cricket net made from Garware full virgin HDPE.",
+    "shortDescription": "2.75mm braided Garware HDPE cricket net for durable practice installations.",
+    "description": "The Braided Cricket Net is designed for regular cricket training setups where strength, weather resistance, and clean installation matter. It is made from Garware full virgin HDPE with UV protection.",
     "featured": false,
     "images": [
-      "/products/nets/shared/main.svg",
-      "/products/nets/shared/detail.svg",
-      "/products/nets/shared/install.svg"
+      "/products/nets/sports-nets-general/2.png"
     ],
     "specifications": [
-      {
-        "label": "Sports",
-        "value": "Football and volleyball"
-      },
-      {
-        "label": "Material",
-        "value": "High-strength braided synthetic net"
-      },
-      {
-        "label": "Installation",
-        "value": "Ground and post mounting options"
-      },
-      {
-        "label": "Best For",
-        "value": "Schools, clubs, and sports complexes"
-      }
-    ]
+      { "label": "Net Type", "value": "Braided Net" },
+      { "label": "Thickness", "value": "2.75 mm" },
+      { "label": "Make", "value": "Garware full virgin HDPE" },
+      { "label": "Protection", "value": "UV protected and weather proof" },
+      { "label": "Price", "value": "Rs. 20 per sq ft" }
+    ],
+    "displayPrice": "Rs. 20/sq ft"
   },
   {
-    "id": "net-volleyball-black-nylon",
-    "slug": "black-nylon-volleyball-net",
-    "name": "Black Nylon Volleyball Net",
+    "id": "net-twisted-roof-hdpe-1-75mm",
+    "slug": "twisted-roof-cricket-net-1-75mm-hdpe",
+    "name": "Twisted Roof Cricket Net 1.75mm HDPE",
     "category": "nets",
-    "price": 5,
-    "tagline": "Tournament-style nylon volleyball net supplied by square foot for custom sizing.",
-    "shortDescription": "Black nylon volleyball net with 0.9 mm thickness and 30 x 5 ft standard size.",
-    "description": "This Black Nylon Volleyball Net is designed for schools, clubs, grounds, and training setups that need a dependable and durable volleyball net. It is supplied with a minimum order quantity of 50 sq ft and suits both standard court installations and custom sports projects.",
+    "price": 14,
+    "tagline": "Twisted cricket net made for roof coverage and overhead protection.",
+    "shortDescription": "1.75mm twisted Garware HDPE cricket net made for roof and top-cover applications.",
+    "description": "The Twisted Roof Cricket Net is made for roof coverage in cricket practice areas and training enclosures. It uses Garware full virgin HDPE with UV protection and weather-proof construction.",
     "featured": false,
     "images": [
-      "/products/nets/shared/main.svg",
-      "/products/nets/shared/detail.svg",
-      "/products/nets/shared/install.svg"
+      "/products/nets/sports-nets-general/3.png"
     ],
     "specifications": [
-      {
-        "label": "Price",
-        "value": "Rs. 5 per sq ft"
-      },
-      {
-        "label": "Minimum Order",
-        "value": "50 sq ft"
-      },
-      {
-        "label": "Material",
-        "value": "Nylon"
-      },
-      {
-        "label": "Color",
-        "value": "Black"
-      },
-      {
-        "label": "Size",
-        "value": "30 x 5 Feet (L x W)"
-      },
-      {
-        "label": "Thickness",
-        "value": "0.9 mm"
-      },
-      {
-        "label": "Net Type",
-        "value": "Volleyball Net"
-      }
+      { "label": "Net Type", "value": "Twisted Net made for roof" },
+      { "label": "Thickness", "value": "1.75 mm" },
+      { "label": "Make", "value": "Garware full virgin HDPE" },
+      { "label": "Protection", "value": "UV protected and weather proof" },
+      { "label": "Price", "value": "Rs. 14 per sq ft" }
     ],
-    "displayPrice": "â‚¹ 5/sq ft"
+    "displayPrice": "Rs. 14/sq ft"
   },
   {
-    "id": "net-badminton-violet-nylon",
-    "slug": "violet-nylon-badminton-net",
-    "name": "Violet Nylon Badminton Net",
+    "id": "net-twisted-gujrati-nylon-2-5mm",
+    "slug": "twisted-cricket-net-2-5mm-gujrati-nylon",
+    "name": "Twisted Cricket Net 2.5mm Gujrati Nylon",
     "category": "nets",
-    "price": 4,
-    "tagline": "Violet nylon badminton net for courts, schools, and indoor sports setups.",
-    "shortDescription": "Violet nylon badminton net with 24 x 2.5 ft size and durable court-ready build.",
-    "description": "This Violet Nylon Badminton Net is designed for badminton courts, schools, academies, and multi-sport facilities. With a minimum order quantity of 100 sq ft, it suits custom net supply requirements and regular court use with dependable nylon strength.",
+    "price": 15,
+    "tagline": "Twisted Gujrati nylon cricket net for daily practice setups.",
+    "shortDescription": "2.5mm twisted Gujrati virgin nylon cricket net with UV protection and semi weather-proof finish.",
+    "description": "The Twisted Cricket Net 2.5mm is a Gujrati virgin nylon net for everyday cricket practice spaces, academies, and club installations. It offers UV protection with a semi weather-proof finish.",
     "featured": false,
     "images": [
-      "/products/nets/shared/main.svg",
-      "/products/nets/shared/detail.svg",
-      "/products/nets/shared/install.svg"
+      "/products/nets/sports-nets-general/4.png"
     ],
     "specifications": [
-      {
-        "label": "Price",
-        "value": "Rs. 4 per sq ft"
-      },
-      {
-        "label": "Minimum Order",
-        "value": "100 sq ft"
-      },
-      {
-        "label": "Material",
-        "value": "Nylon"
-      },
-      {
-        "label": "Color",
-        "value": "Violet"
-      },
-      {
-        "label": "Size",
-        "value": "24 x 2.5 Feet (L x W)"
-      },
-      {
-        "label": "Thickness",
-        "value": "10 mm"
-      },
-      {
-        "label": "Net Type",
-        "value": "Badminton Net"
-      }
+      { "label": "Net Type", "value": "Twisted Net" },
+      { "label": "Thickness", "value": "2.5 mm" },
+      { "label": "Make", "value": "Gujrati virgin nylon" },
+      { "label": "Protection", "value": "UV protected and semi weather proof" },
+      { "label": "Price", "value": "Rs. 15 per sq ft" }
     ],
-    "displayPrice": "â‚¹ 4/sq ft"
-  },
-  {
-    "id": "net-sports-general",
-    "slug": "sports-nets-general",
-    "name": "Sports Nets",
-    "category": "nets",
-    "price": 500,
-    "tagline": "General sports net supply for cricket and custom ground requirements.",
-    "shortDescription": "General sports net supply for cricket and related training installations.",
-    "description": "Our Sports Nets range supports cricket and other training applications for clubs, schools, academies, and sports grounds. This product is suitable when clients need general net supply with a simple, durable setup for daily use.",
-    "featured": false,
-    "images": [
-      "/products/nets/shared/main.svg",
-      "/products/nets/shared/detail.svg",
-      "/products/nets/shared/install.svg"
-    ],
-    "specifications": [
-      {
-        "label": "Price",
-        "value": "Rs. 500 per piece"
-      },
-      {
-        "label": "Net Type",
-        "value": "Cricket Net"
-      },
-      {
-        "label": "Use Case",
-        "value": "General sports and training net supply"
-      },
-      {
-        "label": "Best For",
-        "value": "Clubs, schools, academies, and grounds"
-      }
-    ],
-    "displayPrice": "â‚¹ 500/Piece"
+    "displayPrice": "Rs. 15/sq ft"
   }
 ]

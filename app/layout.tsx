@@ -72,7 +72,7 @@ export default function RootLayout({
         "Saturday",
         "Sunday"
       ],
-      opens: "09:00",
+      opens: "09:30",
       closes: "19:30"
     },
     aggregateRating: {

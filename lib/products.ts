@@ -83,6 +83,32 @@ export function getFeaturedProducts() {
   return products.filter((product) => product.featured);
 }
 
+export function getPopularProductGroups() {
+  return [
+    {
+      id: "bats",
+      title: "Popular Cricket Bats",
+      description: "Leather-ball and tennis-ball bats customers ask for first.",
+      products: products
+        .filter((product) => product.category === "bats")
+        .filter((product) => product.featured || product.price <= 3999)
+        .slice(0, 8)
+    },
+    {
+      id: "nets",
+      title: "Popular Cricket Nets",
+      description: "Practice net solutions for academies, clubs, schools, and grounds.",
+      products: products.filter((product) => product.category === "nets")
+    },
+    {
+      id: "turf",
+      title: "Popular Turf & Pitch",
+      description: "Artificial grass and pitch surface products for training spaces.",
+      products: products.filter((product) => product.category === "turf")
+    }
+  ];
+}
+
 export function getProductBySlug(slug: string) {
   return products.find((product) => product.slug === slug);
 }

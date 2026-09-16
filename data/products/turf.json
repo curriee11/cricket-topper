@@ -1,36 +1,110 @@
 [
   {
-    "id": "turf-infill-grass",
-    "slug": "artificial-infill-field-grass",
-    "name": "Artificial Infill Field Grass",
+    "id": "turf-landscape-grass-40mm",
+    "slug": "landscape-grass-40mm-vietnamese",
+    "name": "Landscape Grass",
     "category": "turf",
-    "price": 45999,
-    "tagline": "Artificial sports grass for training grounds and multi-use playing surfaces.",
-    "shortDescription": "Infill-ready artificial field grass for sports flooring and outdoor installations.",
-    "description": "Artificial Infill Field Grass is built for sports spaces that need resilient, low-maintenance surfaces. It works well for cricket practice zones, football grounds, and multi-sport facilities where durability, drainage, and a professional look are important.",
+    "price": 90,
+    "tagline": "40mm Vietnamese artificial landscape grass with PU backing.",
+    "shortDescription": "40mm Vietnamese landscape grass with 6000 Detex, PU backing, and non-infill construction.",
+    "description": "40 mm Vietnamese artificial landscape grass with 6000 Detex and PU backing. A basic, non-infill turf suitable for landscaping and decorative applications.",
     "featured": false,
     "images": [
-      "/products/turf/artificial-grass/main.svg",
-      "/products/turf/artificial-grass/detail.svg",
-      "/products/turf/artificial-grass/roll.svg"
+      "/products/turf/landscape-grass/1.png"
     ],
     "specifications": [
-      {
-        "label": "Type",
-        "value": "Artificial infill field grass"
-      },
-      {
-        "label": "Usage",
-        "value": "Sports grounds, turf zones, and training areas"
-      },
-      {
-        "label": "Drainage",
-        "value": "Perforated backing for outdoor use"
-      },
-      {
-        "label": "Finish",
-        "value": "Dense pile with infill compatibility"
-      }
-    ]
+      { "label": "Category", "value": "Landscape / Artificial Grass" },
+      { "label": "Thickness", "value": "40 mm" },
+      { "label": "Make", "value": "Vietnamese" },
+      { "label": "Detex", "value": "6000" },
+      { "label": "Type", "value": "Basic Grass" },
+      { "label": "Backing", "value": "PU Backing" },
+      { "label": "Infill", "value": "Non-Infill" },
+      { "label": "Availability", "value": "Available Now" },
+      { "label": "MRP", "value": "Rs. 90 per sq ft" }
+    ],
+    "displayPrice": "Rs. 90/sq ft"
+  },
+  {
+    "id": "turf-football-libre-50mm",
+    "slug": "football-turf-50mm-fifa-approved-libre",
+    "name": "Football Turf",
+    "category": "turf",
+    "price": 130,
+    "tagline": "50mm FIFA Approved football turf made in Vietnam.",
+    "shortDescription": "FIFA Approved 50mm Vietnamese football turf with 16000 Detex, PU backing, and infill construction.",
+    "description": "50 mm FIFA Approved football turf made in Vietnam, featuring 16000 Detex, PU backing and an infill turf construction. Model: Libre.",
+    "featured": false,
+    "images": [
+      "/products/turf/football-turf/1.png"
+    ],
+    "specifications": [
+      { "label": "Category", "value": "Football Turf" },
+      { "label": "Thickness", "value": "50 mm" },
+      { "label": "Make", "value": "Vietnamese" },
+      { "label": "Detex", "value": "16000" },
+      { "label": "Type", "value": "Infill Turf" },
+      { "label": "Backing", "value": "PU Backing" },
+      { "label": "Model", "value": "Libre" },
+      { "label": "Certification", "value": "FIFA Approved" },
+      { "label": "Availability", "value": "Available Now" },
+      { "label": "MRP", "value": "Rs. 130 per sq ft" }
+    ],
+    "displayPrice": "Rs. 130/sq ft"
+  },
+  {
+    "id": "turf-multisport-superturf-15mm",
+    "slug": "multisport-turf-15mm-superturf",
+    "name": "Multisport Turf",
+    "category": "turf",
+    "price": 110,
+    "tagline": "15mm Vietnamese multisport turf in the Superturf model.",
+    "shortDescription": "Bestseller 15mm Vietnamese multisport turf with 7600 Detex, latex backing, and non-infill construction.",
+    "description": "15 mm Vietnamese multisport turf with 7600 Detex and latex backing. Superturf model with non-infill construction, designed for multisport applications.",
+    "featured": true,
+    "images": [
+      "/products/turf/multisport-turf/1.png"
+    ],
+    "specifications": [
+      { "label": "Category", "value": "Multisport Turf" },
+      { "label": "Thickness", "value": "15 mm" },
+      { "label": "Make", "value": "Vietnamese" },
+      { "label": "Detex", "value": "7600" },
+      { "label": "Type", "value": "Non-Infill Turf" },
+      { "label": "Backing", "value": "Latex Backing" },
+      { "label": "Model", "value": "Superturf" },
+      { "label": "Highlight", "value": "Bestseller" },
+      { "label": "Availability", "value": "Available Now" },
+      { "label": "MRP", "value": "Rs. 110 per sq ft" }
+    ],
+    "displayPrice": "Rs. 110/sq ft"
+  },
+  {
+    "id": "turf-sports-grass-ultra-soft-35mm",
+    "slug": "sports-grass-35mm-ultra-soft",
+    "name": "Sports Grass",
+    "category": "turf",
+    "price": 85,
+    "tagline": "35mm Vietnamese cushion grass with an ultra-soft feel.",
+    "shortDescription": "35mm Vietnamese cushion grass with 8000 Detex, latex backing, and non-infill turf construction.",
+    "description": "35 mm Vietnamese cushion grass featuring 8000 Detex, latex backing and non-infill turf construction. Ultra Soft model designed for applications where a softer grass surface is preferred.",
+    "featured": false,
+    "images": [
+      "/products/turf/sports-grass/1.png"
+    ],
+    "specifications": [
+      { "label": "Product Name", "value": "Soft Grass" },
+      { "label": "Category", "value": "Sports Grass" },
+      { "label": "Thickness", "value": "35 mm" },
+      { "label": "Make", "value": "Vietnamese" },
+      { "label": "Detex", "value": "8000" },
+      { "label": "Type", "value": "Non-Infill Turf" },
+      { "label": "Backing", "value": "Latex Backing" },
+      { "label": "Grass Type", "value": "Cushion Grass" },
+      { "label": "Model", "value": "Ultra Soft" },
+      { "label": "Availability", "value": "Available Now" },
+      { "label": "MRP", "value": "Rs. 85 per sq ft" }
+    ],
+    "displayPrice": "Rs. 85/sq ft"
   }
 ]

@@ -16,27 +16,22 @@ export default function GuidesPage({ searchParams }: GuidesPageProps) {
   const filteredVideos = activeCategory === "all" ? videos : videos.filter((video) => video.categoryIds.some((categoryId) => categoryId === activeCategory));
   const featuredVideo = videos.find((video) => video.featured);
   const libraryVideos = filteredVideos.filter((video) => video.id !== featuredVideo?.id);
+  const categoryDescriptions: Record<string, string> = {
+    turf: "Turf setup, box cricket planning, and surface selection.",
+    nets: "Cricket net sizing, installation, and practice setup basics.",
+    bats: "Bat buying, willow choices, and player-ready profiles.",
+    accessories: "Useful add-ons including sportswear and cricket essentials.",
+    projects: "Sports infrastructure and ground project guidance.",
+    business: "Cost, investment, profit, and planning decisions."
+  };
+  const visibleCategories = guideCategories.filter((category) => category.id !== "all");
 
   return (
     <main className="relative overflow-hidden bg-black pb-20 pt-12 sm:pt-16">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.14),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(29,59,114,0.2),transparent_32%)]" />
       <div className="container-shell relative">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">Cricket Topper Guides</p>
-          <h1 className="mt-3 text-4xl font-semibold text-white sm:text-6xl">Learn more before you choose.</h1>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300 sm:text-lg">Practical advice for cricket equipment, turf projects, net installations, and sports infrastructure planning.</p>
-        </div>
-
-        <nav className="mt-8 flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Guide categories">
-          {guideCategories.map((category) => (
-            <Link key={category.id} href={category.id === "all" ? "/guides" : `/guides?category=${category.id}`} className={`shrink-0 rounded-full border px-4 py-2.5 text-sm font-medium transition ${activeCategory === category.id ? "border-brand-500 bg-brand-500 text-black" : "border-brand-500/25 text-stone-300 hover:border-brand-500/50 hover:text-brand-300"}`}>
-              {category.label}
-            </Link>
-          ))}
-        </nav>
-
         {activeCategory === "all" && featuredVideo ? (
-          <section className="mt-10 grid overflow-hidden rounded-2xl border border-brand-500/25 bg-white/[0.04] lg:grid-cols-[1.2fr_0.8fr]">
+          <section className="grid overflow-hidden rounded-2xl border border-brand-500/25 bg-white/[0.04] lg:grid-cols-[1.2fr_0.8fr]">
             <div className="relative aspect-video bg-black lg:aspect-auto">
               <img src={`https://i.ytimg.com/vi/${featuredVideo.id}/hqdefault.jpg`} alt={featuredVideo.title} className="h-full w-full object-cover" />
               <a href={featuredVideo.url} target="_blank" rel="noreferrer" className="absolute inset-0 flex items-center justify-center bg-black/10 transition hover:bg-black/25" aria-label={`Watch ${featuredVideo.title}`}>
@@ -51,6 +46,51 @@ export default function GuidesPage({ searchParams }: GuidesPageProps) {
             </div>
           </section>
         ) : null}
+
+        <section className="mt-12">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">Guide Categories</p>
+              <h2 className="mt-2 text-2xl font-semibold text-white sm:text-3xl">Find the right advice faster.</h2>
+            </div>
+            {activeCategory !== "all" ? (
+              <Link href="/guides" className="hidden text-sm font-medium text-stone-400 transition hover:text-brand-300 sm:block">
+                View all guides
+              </Link>
+            ) : null}
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {visibleCategories.map((category) => {
+              const videoCount = videos.filter((video) =>
+                video.categoryIds.some((categoryId) => categoryId === category.id)
+              ).length;
+              const isActive = activeCategory === category.id;
+
+              return (
+                <Link
+                  key={category.id}
+                  href={`/guides?category=${category.id}`}
+                  className={`rounded-2xl border p-5 transition hover:-translate-y-0.5 ${
+                    isActive
+                      ? "border-brand-500 bg-brand-500 text-black"
+                      : "border-brand-500/18 bg-white/[0.04] text-white hover:border-brand-500/40 hover:bg-white/[0.07]"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-lg font-semibold">{category.label}</h3>
+                    <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${isActive ? "bg-black/12 text-black" : "bg-brand-500/12 text-brand-300"}`}>
+                      {videoCount}
+                    </span>
+                  </div>
+                  <p className={`mt-3 text-sm leading-6 ${isActive ? "text-black/75" : "text-stone-400"}`}>
+                    {categoryDescriptions[category.id]}
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
 
         <section className="mt-12">
           <div className="flex items-end justify-between gap-4">

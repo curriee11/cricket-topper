@@ -8,6 +8,12 @@ export const guideCategories = [
   { id: "business", label: "Business & Planning" }
 ] as const;
 
+export const boxCricketPlaylist = {
+  title: "Box Cricket Project Series",
+  description: "Watch the complete playlist covering turf planning, construction, nets, costs, and setup decisions.",
+  url: "https://www.youtube.com/playlist?list=PLw-xdL1tL8IY0UD2eTWLFZQYRCztScDLI"
+} as const;
+
 export const videos = [
   {
     id: "nRo3herfsOY",
