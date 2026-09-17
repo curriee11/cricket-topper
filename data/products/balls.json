@@ -1,2 +1,169 @@
 [
+  {
+    "id": "ball-topper-club",
+    "slug": "topper-club-cricket-ball",
+    "name": "Topper Club Cricket Ball",
+    "category": "balls",
+    "price": 599,
+    "displayPrice": "MRP Rs. 599 per pc",
+    "tagline": "Indian leather cricket ball designed for club and practice cricket.",
+    "shortDescription": "Topper Club Indian leather ball with 76 stitches and 156 gms weight.",
+    "description": "Topper Club Indian Leather Cricket Ball with 76 stitches and 156 gms weight, designed for club and practice cricket.",
+    "featured": false,
+    "images": [
+      "/products/balls/topper-club-cricket-ball/1.png"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Indian Leather"
+      },
+      {
+        "label": "Make",
+        "value": "Topper"
+      },
+      {
+        "label": "Stitches",
+        "value": "76"
+      },
+      {
+        "label": "Weight",
+        "value": "156 gms"
+      },
+      {
+        "label": "Size",
+        "value": "5.5 oz"
+      },
+      {
+        "label": "Recommended",
+        "value": "20 Overs Ball"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 599 per pc"
+      },
+      {
+        "label": "Availability",
+        "value": "Available Now"
+      }
+    ]
+  },
+  {
+    "id": "ball-topper-match",
+    "slug": "topper-match-cricket-ball",
+    "name": "Topper Match Cricket Ball",
+    "category": "balls",
+    "price": 800,
+    "displayPrice": "MRP Rs. 800 per pc",
+    "tagline": "Semi English leather cricket ball suitable for 40-50 overs cricket.",
+    "shortDescription": "Topper Match semi English leather ball with shining latex finish.",
+    "description": "Topper Match Semi English Leather Cricket Ball with 76 stitches and 156 gms weight, suitable for 40-50 overs cricket.",
+    "featured": false,
+    "images": [
+      "/products/balls/topper-match-cricket-ball/1.png"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "Semi English Leather"
+      },
+      {
+        "label": "Make",
+        "value": "Topper"
+      },
+      {
+        "label": "Stitches",
+        "value": "76"
+      },
+      {
+        "label": "Weight",
+        "value": "156 gms"
+      },
+      {
+        "label": "Size",
+        "value": "5.5 oz"
+      },
+      {
+        "label": "Recommended",
+        "value": "40-50 Overs Ball"
+      },
+      {
+        "label": "Finish",
+        "value": "Shining Latex"
+      },
+      {
+        "label": "Colors",
+        "value": "Red & White"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 800 per pc"
+      },
+      {
+        "label": "Availability",
+        "value": "Available Now"
+      }
+    ]
+  },
+  {
+    "id": "ball-topper-test",
+    "slug": "topper-test-cricket-ball",
+    "name": "Topper Test Cricket Ball",
+    "category": "balls",
+    "price": 1100,
+    "displayPrice": "MRP Rs. 1,100 per pc",
+    "tagline": "English leather cricket ball designed for longer-format cricket.",
+    "shortDescription": "Topper Test English leather ball with 78 stitches and ICC regulation compliance.",
+    "description": "Topper Test English Leather Cricket Ball with 78 stitches and 156 gms weight, designed for longer-format cricket and made to conform to ICC regulations.",
+    "featured": false,
+    "images": [
+      "/products/balls/topper-test-cricket-ball/1.png"
+    ],
+    "specifications": [
+      {
+        "label": "Type",
+        "value": "English Leather"
+      },
+      {
+        "label": "Make",
+        "value": "Topper"
+      },
+      {
+        "label": "Stitches",
+        "value": "78"
+      },
+      {
+        "label": "Weight",
+        "value": "156 gms"
+      },
+      {
+        "label": "Size",
+        "value": "5.5 oz"
+      },
+      {
+        "label": "Recommended",
+        "value": "60-80 Overs Ball"
+      },
+      {
+        "label": "Finish",
+        "value": "Shining Latex"
+      },
+      {
+        "label": "Colors",
+        "value": "Red & White"
+      },
+      {
+        "label": "Compliance",
+        "value": "Confirming to ICC Regulations"
+      },
+      {
+        "label": "MRP",
+        "value": "Rs. 1,100 per pc"
+      },
+      {
+        "label": "Availability",
+        "value": "Available Now"
+      }
+    ]
+  }
 ]

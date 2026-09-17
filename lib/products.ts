@@ -10,6 +10,95 @@ import turfData from "@/data/products/turf.json";
 import type { Product, ProductCategory } from "@/lib/types";
 
 const accessoryCategories: ProductCategory[] = ["gloves", "pads", "kits", "helmets", "guards"];
+const identitySpecificationLabels = new Set([
+  "brand",
+  "grade",
+  "make",
+  "model",
+  "net type",
+  "quality",
+  "type",
+  "use",
+  "willow",
+  "wood"
+]);
+
+const categorySearchTerms: Record<ProductCategory, string[]> = {
+  bats: ["bat", "bats", "cricket bat", "cricket bats"],
+  gloves: ["glove", "gloves", "cricket glove", "cricket gloves"],
+  pads: ["pad", "pads", "batting pad", "batting pads", "cricket pad", "cricket pads"],
+  kits: ["kit", "kits", "kit bag", "kit bags", "cricket kit", "cricket kits"],
+  helmets: ["helmet", "helmets", "cricket helmet", "cricket helmets"],
+  guards: ["guard", "guards", "arm guard", "abdominal guard", "cricket guard", "cricket guards"],
+  nets: ["net", "nets", "cricket net", "cricket nets"],
+  turf: ["turf", "pitch", "grass", "artificial grass", "cricket pitch"],
+  balls: ["ball", "balls", "leather ball", "leather balls", "cricket ball", "cricket balls"]
+};
+
+function normalizeToken(token: string) {
+  const normalized = token.toLowerCase();
+
+  if (normalized.length > 4 && normalized.endsWith("ies")) {
+    return `${normalized.slice(0, -3)}y`;
+  }
+
+  if (normalized.length > 3 && normalized.endsWith("s") && !normalized.endsWith("ss")) {
+    return normalized.slice(0, -1);
+  }
+
+  return normalized;
+}
+
+function tokenize(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .match(/[a-z0-9]+/g)
+    ?.map(normalizeToken) ?? [];
+}
+
+function normalizePhrase(value: string) {
+  return tokenize(value).join(" ");
+}
+
+function getProductIdentityTerms(product: Product) {
+  const identityTerms = [
+    product.name,
+    product.slug.replace(/-/g, " "),
+    product.category,
+    ...categorySearchTerms[product.category]
+  ];
+
+  if (accessoryCategories.includes(product.category)) {
+    identityTerms.push("accessory", "accessories");
+  }
+
+  product.specifications.forEach((specification) => {
+    if (identitySpecificationLabels.has(specification.label.toLowerCase())) {
+      identityTerms.push(specification.value);
+    }
+  });
+
+  return identityTerms;
+}
+
+function productMatchesQuery(product: Product, query: string) {
+  const queryTokens = tokenize(query);
+
+  if (queryTokens.length === 0) {
+    return true;
+  }
+
+  const identityTerms = getProductIdentityTerms(product);
+  const searchableTokens = new Set(identityTerms.flatMap(tokenize));
+  const searchablePhrases = new Set(identityTerms.map(normalizePhrase).filter(Boolean));
+  const queryPhrase = queryTokens.join(" ");
+
+  return (
+    searchablePhrases.has(queryPhrase) ||
+    queryTokens.every((queryToken) => searchableTokens.has(queryToken))
+  );
+}
 
 export const products = [
   ...batsData,
@@ -128,7 +217,7 @@ export function filterProducts({
   maxPrice?: number;
   query?: string;
 }) {
-  const normalizedQuery = query?.trim().toLowerCase();
+  const normalizedQuery = query?.trim();
 
   return products.filter((product) => {
     const matchesCategory =
@@ -139,11 +228,7 @@ export function filterProducts({
         : product.category === category);
     const matchesPrice = !maxPrice || product.price <= maxPrice;
     const matchesQuery =
-      !normalizedQuery ||
-      [product.name, product.shortDescription, product.description, product.category]
-        .join(" ")
-        .toLowerCase()
-        .includes(normalizedQuery);
+      !normalizedQuery || productMatchesQuery(product, normalizedQuery);
 
     return matchesCategory && matchesPrice && matchesQuery;
   });

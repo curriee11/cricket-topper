@@ -18,11 +18,23 @@ const navItems = [
   { href: "/projects", label: "Our Projects" }
 ];
 
+const primaryDesktopNavItems = navItems.slice(0, 5);
+const midDesktopNavItems = navItems.slice(5, 7);
+const secondaryDesktopNavItems = navItems.slice(7);
+
 function SearchIcon() {
   return (
     <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
       <circle cx="9" cy="9" r="5.5" stroke="currentColor" strokeWidth="1.8" />
       <path d="M13.5 13.5L17 17" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" className="h-6 w-6" aria-hidden="true">
+      <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
     </svg>
   );
 }
@@ -61,10 +73,15 @@ export function Navbar() {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const [navigatingTo, setNavigatingTo] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
-  const searchRef = useRef<HTMLDivElement | null>(null);
+  const actionRef = useRef<HTMLDivElement | null>(null);
+  const desktopSearchAreaRef = useRef<HTMLDivElement | null>(null);
+  const desktopSearchInputRef = useRef<HTMLInputElement | null>(null);
+  const mobileSearchInputRef = useRef<HTMLInputElement | null>(null);
   const searchString = searchParams.toString();
   const currentHref = `${pathname}${searchString ? `?${searchString}` : ""}`;
 
@@ -80,25 +97,63 @@ export function Navbar() {
 
   useEffect(() => {
     function handlePointerDown(event: MouseEvent) {
-      if (!searchRef.current?.contains(event.target as Node)) {
-        setSearchOpen(false);
+      const target = event.target as Node;
+      if (!actionRef.current?.contains(target) && !desktopSearchAreaRef.current?.contains(target)) {
+        closeSearch();
+        setMoreOpen(false);
+      }
+    }
+
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        closeSearch();
+        setMoreOpen(false);
       }
     }
 
     document.addEventListener("mousedown", handlePointerDown);
-    return () => document.removeEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleEscape);
+    };
   }, []);
 
   useEffect(() => {
     setMobileOpen(false);
+    setMobileSearchOpen(false);
     setSearchOpen(false);
+    setMoreOpen(false);
     setNavigatingTo(null);
   }, [pathname, searchString]);
+
+  useEffect(() => {
+    setSearchValue(searchParams.get("query") ?? "");
+  }, [searchParams]);
+
+  useEffect(() => {
+    if (searchOpen) {
+      desktopSearchInputRef.current?.focus();
+    }
+  }, [searchOpen]);
+
+  useEffect(() => {
+    if (mobileSearchOpen) {
+      mobileSearchInputRef.current?.focus();
+    }
+  }, [mobileSearchOpen]);
 
   const whatsappUrl = useMemo(
     () => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi, I want to know more about your products.")}`,
     []
   );
+
+  function closeSearch() {
+    setSearchOpen(false);
+    setMobileSearchOpen(false);
+    setSearchValue("");
+  }
 
   function submitSearch(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -107,6 +162,7 @@ export function Navbar() {
     setNavigatingTo(nextHref);
     router.push(nextHref);
     setSearchOpen(false);
+    setMobileSearchOpen(false);
     setMobileOpen(false);
   }
 
@@ -138,7 +194,7 @@ export function Navbar() {
     }`;
   }
 
-  function renderNavLink(item: (typeof navItems)[number], mobile = false) {
+  function renderNavLink(item: (typeof navItems)[number], mobile = false, className = "") {
     const active = currentHref === item.href;
     const pending = navigatingTo === item.href;
 
@@ -148,15 +204,24 @@ export function Navbar() {
         href={item.href}
         aria-current={active ? "page" : undefined}
         aria-busy={pending ? true : undefined}
-        className={navLinkClasses({ active, mobile, pending })}
+        className={`${navLinkClasses({ active, mobile, pending })} ${className}`}
         onClick={() => {
           if (!active) {
             setNavigatingTo(item.href);
           }
+          setMoreOpen(false);
         }}
       >
         {item.label}
       </Link>
+    );
+  }
+
+  function renderMoreLink(item: (typeof navItems)[number], className = "") {
+    return renderNavLink(
+      item,
+      true,
+      `rounded-xl px-3 py-2.5 ${className}`
     );
   }
 
@@ -167,8 +232,8 @@ export function Navbar() {
           <div className="h-full w-1/2 animate-pulse bg-brand-400 shadow-[0_0_18px_rgba(212,175,55,0.65)]" />
         </div>
       ) : null}
-      <div className="container-shell grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-5 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
-        <div className="flex items-center gap-3 justify-self-start">
+      <div className="container-shell grid max-w-full grid-cols-[auto_minmax(0,1fr)] items-center gap-3 py-5 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:gap-5">
+        <div className="flex min-w-0 items-center gap-3 justify-self-start">
           <Link href="/" className="flex items-center gap-3" onClick={() => currentHref !== "/" && setNavigatingTo("/")}>
             <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-brand-500/30 bg-black p-1.5 shadow-glow">
               <Image
@@ -180,7 +245,7 @@ export function Navbar() {
                 priority
               />
             </span>
-            <div>
+            <div className={mobileSearchOpen ? "hidden sm:block" : ""}>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-300">
                 {COMPANY_NAME}
               </p>
@@ -188,37 +253,105 @@ export function Navbar() {
           </Link>
         </div>
 
-        <nav className="hidden items-center justify-center gap-7 lg:flex">
-          {navItems.map((item) => renderNavLink(item))}
-        </nav>
+        <div ref={desktopSearchAreaRef} className="relative hidden h-11 min-w-0 items-center lg:flex">
+          <nav
+            className={`flex min-w-0 flex-1 items-center justify-center gap-4 transition-[opacity,transform] duration-200 xl:gap-5 2xl:gap-7 ${
+              searchOpen ? "invisible pointer-events-none -translate-y-1 opacity-0" : "visible translate-y-0 opacity-100"
+            }`}
+            aria-hidden={searchOpen}
+          >
+            {primaryDesktopNavItems.map((item) => renderNavLink(item))}
+            {midDesktopNavItems.map((item) => renderNavLink(item, false, "hidden xl:inline-flex"))}
+            {secondaryDesktopNavItems.map((item) => renderNavLink(item, false, "hidden 2xl:inline-flex"))}
+          </nav>
 
-        <div className="flex items-center justify-end gap-2 lg:gap-3" ref={searchRef}>
-          <div className="hidden items-center gap-2 lg:flex">
+          <form
+            onSubmit={submitSearch}
+            className={`absolute inset-y-0 left-0 right-0 flex min-w-0 origin-center items-center gap-3 overflow-hidden transition-[max-width,opacity,transform] duration-200 ease-out ${
+              searchOpen ? "max-w-full scale-x-100 opacity-100" : "pointer-events-none max-w-0 scale-x-95 opacity-0"
+            }`}
+            aria-hidden={!searchOpen}
+          >
+            <div className="flex h-11 min-w-0 flex-1 items-center rounded-full border border-brand-500/25 bg-black/80 px-4 shadow-[0_0_18px_rgba(212,175,55,0.12)]">
+              <span className="shrink-0 text-stone-300">
+                <SearchIcon />
+              </span>
+              <input
+                ref={desktopSearchInputRef}
+                type="search"
+                value={searchValue}
+                onChange={(event) => setSearchValue(event.target.value)}
+                placeholder="Search bats, gloves, kits..."
+                disabled={!searchOpen}
+                className="ml-3 min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-stone-500"
+              />
+            </div>
             <button
               type="button"
-              onClick={() => setSearchOpen((current) => !current)}
+              onClick={closeSearch}
+              tabIndex={searchOpen ? undefined : -1}
+              className="flex h-11 w-12 shrink-0 cursor-pointer items-center justify-center rounded-full border border-brand-500/45 bg-brand-500/15 text-brand-300 shadow-[0_0_16px_rgba(212,175,55,0.14)] transition hover:border-brand-300 hover:bg-brand-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-brand-300/70 focus:ring-offset-2 focus:ring-offset-black"
+              aria-label="Close search and restore navigation"
+              title="Close search"
+            >
+              <CloseIcon />
+            </button>
+          </form>
+        </div>
+
+        <div className={`flex min-w-0 items-center justify-end gap-2 lg:gap-3 ${mobileSearchOpen ? "hidden lg:flex" : ""}`} ref={actionRef}>
+          <div className={searchOpen ? "hidden" : "relative hidden lg:flex"}>
+            <button
+              type="button"
+              onClick={() => setMoreOpen((current) => !current)}
+              className="flex h-11 items-center justify-center rounded-full border border-brand-500/20 bg-white/5 px-4 text-sm text-stone-200 transition hover:border-brand-500/35 hover:text-brand-300 2xl:hidden"
+              aria-label="Open more navigation"
+              aria-expanded={moreOpen}
+              aria-haspopup="menu"
+            >
+              More
+            </button>
+            {moreOpen ? (
+              <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-52 overflow-hidden rounded-2xl border border-brand-500/20 bg-black/95 p-2 shadow-[0_20px_45px_rgba(0,0,0,0.38)]" role="menu">
+                <div className="xl:hidden">
+                  {midDesktopNavItems.map((item) => renderMoreLink(item))}
+                </div>
+                <div className="2xl:hidden">
+                  {secondaryDesktopNavItems.map((item) => renderMoreLink(item))}
+                </div>
+              </div>
+            ) : null}
+          </div>
+
+          <div className={searchOpen ? "hidden" : "hidden min-w-0 items-center gap-2 lg:flex"}>
+            <button
+              type="button"
+              onClick={() => {
+                setSearchOpen(true);
+                setMoreOpen(false);
+              }}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-500/20 bg-white/5 text-stone-200 transition hover:border-brand-500/35 hover:text-brand-300"
               aria-label="Open search"
+              aria-expanded={searchOpen}
               title="Search products"
             >
               <SearchIcon />
             </button>
-            <form
-              onSubmit={submitSearch}
-              className={`overflow-hidden transition-all duration-300 ${searchOpen ? "w-64 opacity-100" : "w-0 opacity-0"}`}
-            >
-              <div className="flex items-center rounded-full border border-brand-500/20 bg-black/70 px-4 py-2.5">
-                <SearchIcon />
-                <input
-                  type="search"
-                  value={searchValue}
-                  onChange={(event) => setSearchValue(event.target.value)}
-                  placeholder="Search bats, gloves, kits..."
-                  className="ml-3 w-full bg-transparent text-sm text-white outline-none placeholder:text-stone-500"
-                />
-              </div>
-            </form>
           </div>
+
+          <button
+            type="button"
+            onClick={() => {
+              setMobileSearchOpen((current) => !current);
+              setMobileOpen(false);
+            }}
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-500/25 bg-white/5 text-stone-100 transition hover:border-brand-500/40 hover:text-brand-300 lg:hidden"
+            aria-label="Open search"
+            aria-expanded={mobileSearchOpen}
+            title="Search products"
+          >
+            <SearchIcon />
+          </button>
 
           <a
             href={`tel:${PHONE_NUMBER}`}
@@ -239,29 +372,54 @@ export function Navbar() {
           </a>
           <button
             type="button"
-            onClick={() => setMobileOpen((current) => !current)}
+            onClick={() => {
+              setMobileOpen((current) => !current);
+              setMobileSearchOpen(false);
+            }}
             className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-500/25 bg-white/5 text-stone-100 transition hover:border-brand-500/40 hover:text-brand-300 lg:hidden"
             aria-label="Toggle menu"
           >
             <MenuIcon open={mobileOpen} />
           </button>
         </div>
+
+        <form
+          onSubmit={submitSearch}
+          className={`flex min-w-0 items-center gap-3 overflow-hidden transition-[max-width,opacity,transform] duration-200 ease-out lg:hidden ${
+            mobileSearchOpen ? "max-w-full scale-x-100 opacity-100" : "pointer-events-none max-w-0 scale-x-95 opacity-0"
+          }`}
+          aria-hidden={!mobileSearchOpen}
+        >
+          <div className="flex h-11 min-w-0 flex-1 items-center rounded-full border border-brand-500/25 bg-black/80 px-4 shadow-[0_0_18px_rgba(212,175,55,0.12)]">
+            <span className="shrink-0 text-stone-300">
+              <SearchIcon />
+            </span>
+            <input
+              ref={mobileSearchInputRef}
+              type="search"
+              value={searchValue}
+              onChange={(event) => setSearchValue(event.target.value)}
+              placeholder="Search bats, gloves, kits..."
+              disabled={!mobileSearchOpen}
+              className="ml-3 min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-stone-500"
+            />
+          </div>
+          <button
+            type="button"
+            onClick={closeSearch}
+            tabIndex={mobileSearchOpen ? undefined : -1}
+            className="flex h-11 w-12 shrink-0 cursor-pointer items-center justify-center rounded-full border border-brand-500/45 bg-brand-500/15 text-brand-300 shadow-[0_0_16px_rgba(212,175,55,0.14)] transition hover:border-brand-300 hover:bg-brand-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-brand-300/70 focus:ring-offset-2 focus:ring-offset-black"
+            aria-label="Close search and restore navigation"
+            title="Close search"
+          >
+            <CloseIcon />
+          </button>
+        </form>
       </div>
 
       {mobileOpen ? (
         <div className="border-t border-brand-500/15 bg-black/97 px-4 pb-5 pt-4 lg:hidden">
           <div className="container-shell space-y-4 px-0">
-            <form onSubmit={submitSearch} className="flex items-center rounded-2xl border border-brand-500/20 bg-black/70 px-4 py-3">
-              <SearchIcon />
-              <input
-                type="search"
-                value={searchValue}
-                onChange={(event) => setSearchValue(event.target.value)}
-                placeholder="Search products"
-                className="ml-3 w-full bg-transparent text-sm text-white outline-none placeholder:text-stone-500"
-              />
-            </form>
-
             <div className="space-y-2">
               {navItems.map((item) => renderNavLink(item, true))}
             </div>
