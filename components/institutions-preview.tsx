@@ -27,10 +27,10 @@ export function InstitutionsPreview() {
               Institutions We Serve
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
-              Trusted for sports goods and net solutions.
+              Trusted by institutions, academies &amp; sports facilities.
             </h2>
             <p className="mt-4 text-base leading-7 text-stone-400">
-              We support institutions, academies, and sports facilities with dependable equipment and net supply.
+              We supply reliable sports equipment and net solutions for institutions, academies, and sports facilities.
             </p>
           </div>
           <div className="flex gap-2">
@@ -55,12 +55,12 @@ export function InstitutionsPreview() {
 
         <div
           ref={carouselRef}
-          className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-4 pt-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {institutions.map((institution, index) => (
             <div
               key={institution.name}
-              className="group flex min-h-56 min-w-[calc(100%-2rem)] snap-start flex-col justify-between rounded-2xl border border-brand-500/15 bg-[linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.015))] p-6 transition duration-300 hover:-translate-y-1 hover:border-brand-500/45 hover:shadow-[0_18px_40px_rgba(212,175,55,0.12)] sm:min-w-[calc(50%-0.5rem)] lg:min-w-[calc(33.333%-0.67rem)]"
+              className="group relative z-0 flex min-h-48 min-w-[calc(100%-2rem)] snap-start flex-col justify-between rounded-2xl border border-brand-500/15 bg-[linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.015))] p-5 transition duration-300 hover:z-10 hover:-translate-y-1 hover:border-brand-500/45 hover:shadow-[0_18px_40px_rgba(212,175,55,0.12)] focus-within:z-10 active:z-10 sm:min-w-[calc(50%-0.5rem)] lg:min-w-[calc(33.333%-0.67rem)] lg:p-6"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-brand-500/30 bg-black text-xs font-semibold tracking-[0.12em] text-brand-300 shadow-[inset_0_0_20px_rgba(212,175,55,0.08)]">
