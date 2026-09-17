@@ -88,7 +88,7 @@ export function getPopularProductGroups() {
     {
       id: "bats",
       title: "Popular Cricket Bats",
-      description: "Leather-ball and tennis-ball bats customers ask for first.",
+      description: "Explore our popular leather-ball and tennis-ball cricket bats.",
       products: products
         .filter((product) => product.category === "bats")
         .filter((product) => product.featured || product.price <= 3999)

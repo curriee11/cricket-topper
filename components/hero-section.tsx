@@ -9,7 +9,7 @@ import {
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-black py-16 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-black pb-8 pt-16 sm:pb-10 sm:pt-20 lg:pb-12 lg:pt-28">
       <div className="absolute inset-0 bg-hero-grid bg-[size:52px_52px] opacity-20" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.28),transparent_28%),radial-gradient(circle_at_top_left,rgba(212,175,55,0.16),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_45%)]" />
       <div className="container-shell relative">
