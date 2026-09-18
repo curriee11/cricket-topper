@@ -20,10 +20,10 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
   const category = searchParams?.category;
   const maxPrice = searchParams?.price ? Number(searchParams.price) : undefined;
   const query = searchParams?.query;
-  const products = filterProducts({ category, maxPrice, query });
+  const products = filterProducts({ category: query ? undefined : category, maxPrice, query });
 
   return (
-    <section className="relative overflow-hidden bg-black pb-20 pt-12 sm:pt-16">
+    <section className="relative overflow-x-hidden bg-black pb-20 pt-12 sm:pt-16">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(29,59,114,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(10,31,68,0.24),transparent_28%)]" />
       <div className="container-shell relative">
         <div className="max-w-3xl">
@@ -34,8 +34,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
             Find the right gear for your game.
             </h1>
             <p className="mt-4 text-base leading-7 text-stone-300">
-            Explore bats, gloves, kits, nets, turf, and match essentials, then narrow
-            your selection by category or budget.
+            Explore cricket bats, nets, turf, accessories and match essentials. Browse by category or narrow your selection by budget.
             </p>
           {query ? (
             <p className="mt-4 inline-flex rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-2 text-sm text-brand-300">
@@ -50,7 +49,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
 
         <div className="mt-8 flex items-center justify-between gap-4">
           <p className="text-sm text-stone-300">
-            Showing <span className="text-white">{products.length}</span> products
+            <span className="text-white">{products.length}</span> products
           </p>
         </div>
 
