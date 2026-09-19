@@ -10,23 +10,39 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
   { href: "/products?category=bats", label: "Bats" },
-  { href: "/products?category=accessories", label: "Accessories" },
   { href: "/products?category=nets", label: "Nets" },
+  { href: "/products?category=turf", label: "Turf" },
   { href: "/guides", label: "Guides" },
-  { href: "/contact", label: "Contact" },
-  { href: "/about", label: "About Us" },
-  { href: "/projects", label: "Our Projects" }
+  { href: "/projects", label: "Projects" },
+  { href: "/about", label: "About Us" }
 ];
 
-const primaryDesktopNavItems = navItems.slice(0, 5);
-const midDesktopNavItems = navItems.slice(5, 7);
-const secondaryDesktopNavItems = navItems.slice(7);
+const productMenuItems = [
+  { href: "/products?category=bats", label: "Bats" },
+  { href: "/products?category=gloves", label: "Gloves" },
+  { href: "/products?category=pads", label: "Pads" },
+  { href: "/products?category=helmets", label: "Helmets" },
+  { href: "/products?category=balls", label: "Cricket Balls" },
+  { href: "/products?category=kits", label: "Kits" },
+  { href: "/products?category=accessories", label: "Accessories" },
+  { href: "/products?category=nets", label: "Nets" },
+  { href: "/products?category=turf", label: "Turf" },
+  { href: "/products", label: "View All Products" }
+];
 
 function SearchIcon() {
   return (
     <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5" aria-hidden="true">
       <circle cx="9" cy="9" r="5.5" stroke="currentColor" strokeWidth="1.8" />
       <path d="M13.5 13.5L17 17" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" className={`h-3.5 w-3.5 transition-transform duration-200 ${open ? "rotate-180" : "rotate-0"}`} aria-hidden="true">
+      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -75,7 +91,7 @@ export function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
+  const [productMenuOpen, setProductMenuOpen] = useState(false);
   const [navigatingTo, setNavigatingTo] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
   const actionRef = useRef<HTMLDivElement | null>(null);
@@ -100,14 +116,14 @@ export function Navbar() {
       const target = event.target as Node;
       if (!actionRef.current?.contains(target) && !desktopSearchAreaRef.current?.contains(target)) {
         closeSearch();
-        setMoreOpen(false);
+        setProductMenuOpen(false);
       }
     }
 
     function handleEscape(event: KeyboardEvent) {
       if (event.key === "Escape") {
         closeSearch();
-        setMoreOpen(false);
+        setProductMenuOpen(false);
       }
     }
 
@@ -124,7 +140,7 @@ export function Navbar() {
     setMobileOpen(false);
     setMobileSearchOpen(false);
     setSearchOpen(false);
-    setMoreOpen(false);
+    setProductMenuOpen(false);
     setNavigatingTo(null);
   }, [pathname, searchString]);
 
@@ -194,8 +210,29 @@ export function Navbar() {
     }`;
   }
 
+  function isNavItemActive(item: (typeof navItems)[number]) {
+    const selectedCategory = searchParams.get("category");
+
+    if (item.href.startsWith("/products?category=")) {
+      return pathname === "/products" && selectedCategory === item.href.split("category=")[1];
+    }
+
+    if (item.href === "/products") {
+      return (
+        pathname === "/products" &&
+        !["bats", "nets", "turf"].includes(selectedCategory ?? "")
+      );
+    }
+
+    if (item.href === "/") {
+      return pathname === "/";
+    }
+
+    return pathname === item.href;
+  }
+
   function renderNavLink(item: (typeof navItems)[number], mobile = false, className = "") {
-    const active = currentHref === item.href;
+    const active = isNavItemActive(item);
     const pending = navigatingTo === item.href;
 
     return (
@@ -209,7 +246,7 @@ export function Navbar() {
           if (!active) {
             setNavigatingTo(item.href);
           }
-          setMoreOpen(false);
+          setProductMenuOpen(false);
         }}
       >
         {item.label}
@@ -217,11 +254,84 @@ export function Navbar() {
     );
   }
 
-  function renderMoreLink(item: (typeof navItems)[number], className = "") {
-    return renderNavLink(
-      item,
-      true,
-      `rounded-xl px-3 py-2.5 ${className}`
+  function renderProductMenuLink(item: (typeof productMenuItems)[number], mobile = false) {
+    const selectedCategory = searchParams.get("category");
+    const active =
+      item.href === "/products"
+        ? pathname === "/products" && !selectedCategory
+        : item.href.startsWith("/products?category=") &&
+          pathname === "/products" &&
+          selectedCategory === item.href.split("category=")[1];
+    const pending = navigatingTo === item.href;
+
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        aria-current={active ? "page" : undefined}
+        aria-busy={pending ? true : undefined}
+        className={`flex items-center justify-between rounded-xl text-sm transition ${
+          mobile
+            ? `px-3 py-2.5 ${
+                pending
+                  ? "bg-brand-500 text-black"
+                  : active
+                    ? "bg-brand-500/15 text-brand-300"
+                    : "text-stone-300 hover:bg-white/5 hover:text-brand-300"
+              }`
+            : `px-3 py-2.5 ${
+                pending
+                  ? "bg-brand-500 text-black"
+                  : active
+                    ? "bg-brand-500/15 text-brand-300"
+                    : "text-stone-200 hover:bg-white/5 hover:text-brand-300"
+              }`
+        }`}
+        role={mobile ? undefined : "menuitem"}
+        onClick={() => {
+          if (!active) {
+            setNavigatingTo(item.href);
+          }
+          setProductMenuOpen(false);
+          setMobileOpen(false);
+        }}
+      >
+        <span>{item.label}</span>
+        {active ? <span className="h-1.5 w-1.5 rounded-full bg-brand-400" aria-hidden="true" /> : null}
+      </Link>
+    );
+  }
+
+  function renderDesktopNavItem(item: (typeof navItems)[number]) {
+    if (item.href !== "/products") {
+      return renderNavLink(item);
+    }
+
+    const active = isNavItemActive(item);
+    const pending = navigatingTo === item.href;
+
+    return (
+      <div key={item.href} className="relative">
+        <button
+          type="button"
+          onClick={() => setProductMenuOpen((current) => !current)}
+          className={`${navLinkClasses({ active, pending })} inline-flex items-center gap-1.5`}
+          aria-current={active ? "page" : undefined}
+          aria-expanded={productMenuOpen}
+          aria-haspopup="menu"
+        >
+          <span>{item.label}</span>
+          <ChevronIcon open={productMenuOpen} />
+        </button>
+
+        {productMenuOpen ? (
+          <div className="absolute left-1/2 top-[calc(100%+0.9rem)] z-50 w-[min(34rem,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden rounded-2xl border border-brand-500/20 bg-black/95 p-3 shadow-[0_24px_60px_rgba(0,0,0,0.42)]" role="menu" aria-label="Product categories">
+            <div className="grid gap-1 sm:grid-cols-2">
+              {productMenuItems.map((productItem) => renderProductMenuLink(productItem))}
+            </div>
+          </div>
+        ) : null}
+      </div>
     );
   }
 
@@ -260,9 +370,7 @@ export function Navbar() {
             }`}
             aria-hidden={searchOpen}
           >
-            {primaryDesktopNavItems.map((item) => renderNavLink(item))}
-            {midDesktopNavItems.map((item) => renderNavLink(item, false, "hidden xl:inline-flex"))}
-            {secondaryDesktopNavItems.map((item) => renderNavLink(item, false, "hidden 2xl:inline-flex"))}
+            {navItems.map((item) => renderDesktopNavItem(item))}
           </nav>
 
           <form
@@ -300,35 +408,12 @@ export function Navbar() {
         </div>
 
         <div className={`flex min-w-0 items-center justify-end gap-2 lg:gap-3 ${mobileSearchOpen ? "hidden lg:flex" : ""}`} ref={actionRef}>
-          <div className={searchOpen ? "hidden" : "relative hidden lg:flex"}>
-            <button
-              type="button"
-              onClick={() => setMoreOpen((current) => !current)}
-              className="flex h-11 items-center justify-center rounded-full border border-brand-500/20 bg-white/5 px-4 text-sm text-stone-200 transition hover:border-brand-500/35 hover:text-brand-300 2xl:hidden"
-              aria-label="Open more navigation"
-              aria-expanded={moreOpen}
-              aria-haspopup="menu"
-            >
-              More
-            </button>
-            {moreOpen ? (
-              <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-52 overflow-hidden rounded-2xl border border-brand-500/20 bg-black/95 p-2 shadow-[0_20px_45px_rgba(0,0,0,0.38)]" role="menu">
-                <div className="xl:hidden">
-                  {midDesktopNavItems.map((item) => renderMoreLink(item))}
-                </div>
-                <div className="2xl:hidden">
-                  {secondaryDesktopNavItems.map((item) => renderMoreLink(item))}
-                </div>
-              </div>
-            ) : null}
-          </div>
-
           <div className={searchOpen ? "hidden" : "hidden min-w-0 items-center gap-2 lg:flex"}>
             <button
               type="button"
               onClick={() => {
                 setSearchOpen(true);
-                setMoreOpen(false);
+                setProductMenuOpen(false);
               }}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-500/20 bg-white/5 text-stone-200 transition hover:border-brand-500/35 hover:text-brand-300"
               aria-label="Open search"
